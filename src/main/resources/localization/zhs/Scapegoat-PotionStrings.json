@@ -1,0 +1,22 @@
+{
+  "Scapegoat:LiquidSequin": {
+    "NAME": "液态亮片",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 层 #y赋还 。"
+    ]
+  },
+  "Scapegoat:BottledRedemption": {
+    "NAME": "瓶装救赎",
+    "DESCRIPTIONS": [
+      "#y回溯 #b",
+      " 。"
+    ]
+  },
+  "Scapegoat:DevilInAJar": {
+    "NAME": "罐装恶魔",
+    "DESCRIPTIONS": [
+      "本回合内，每当你从一张牌失去生命时，获得等量 #y再生 。"
+    ]
+  }
+}

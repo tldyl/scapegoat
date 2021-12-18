@@ -1,0 +1,194 @@
+{
+  "Scapegoat:PayBackPower": {
+    "NAME": "赋还",
+    "DESCRIPTIONS": [
+      "受到攻击伤害时，对攻击者造成相同数值的伤害，然后赋还层数减少 #b1 。"
+    ]
+  },
+  "Scapegoat:BulletPower": {
+    "NAME": "子弹",
+    "DESCRIPTIONS": [
+      "受到的伤害增加 #b",
+      " 。 NL 持续 #b",
+      " 回合。"
+    ]
+  },
+  "Scapegoat:SacrificePower": {
+    "NAME": "献祭",
+    "DESCRIPTIONS": [
+      "每当你从一张牌失去生命时，在战斗结束时回复等量生命。"
+    ]
+  },
+  "Scapegoat:ForTheSinPower": {
+    "NAME": "替罪",
+    "DESCRIPTIONS": [
+      "每当你失去生命时，对随机敌人造成相当于失去生命 #b",
+      " 倍的伤害。"
+    ]
+  },
+  "Scapegoat:FalseAccusationPower": {
+    "NAME": "诬告",
+    "DESCRIPTIONS": [
+      "你每次 #y归葬 时，获得 #b",
+      " 层 #y赋还 。",
+      " NL 给予所有敌人 #b",
+      " 层 #y子弹 。"
+    ]
+  },
+  "Scapegoat:NextTurnDamagePower": {
+    "NAME": "刃返",
+    "DESCRIPTIONS": [
+      "在下回合开始时，对随机一名敌人造成 #b",
+      " 点 #y攻击 伤害。"
+    ]
+  },
+  "Scapegoat:AllOutParryPower": {
+    "NAME": "全力招架",
+    "DESCRIPTIONS": [
+      "你每 #y归葬 一张牌，获得 #b",
+      " 点 #y格挡 。"
+    ]
+  },
+  "Scapegoat:DealWithDevilPower": {
+    "NAME": "恶魔交易",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，所有敌人失去 #b",
+      " 点生命。"
+    ]
+  },
+  "Scapegoat:CrossDominatePower": {
+    "NAME": "交叉统治",
+    "DESCRIPTIONS": [
+      "你每 #y归葬 #b",
+      " 张牌，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "Scapegoat:MasteryOfFirearmsPower": {
+    "NAME": "枪械掌握",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，增加 #b",
+      " 张 #y连弹 到你的手牌。",
+      " 张 #y连弹+ 到你的手牌。"
+    ]
+  },
+  "Scapegoat:AdaptabilityPower": {
+    "NAME": "适应力",
+    "DESCRIPTIONS": [
+      "每当你失去生命时，获得 #b",
+      " 点 #y格挡 。"
+    ]
+  },
+  "Scapegoat:SplashPower": {
+    "NAME": "溅射",
+    "DESCRIPTIONS": [
+      "当这名敌人死亡时，对所有敌人造成等于其 #y子弹 层数 #b",
+      " 倍的伤害。"
+    ]
+  },
+  "Scapegoat:AimingShotPower": {
+    "NAME": "瞄准射击",
+    "DESCRIPTIONS": [
+      "所有随机伤害均以这个生物为目标。"
+    ]
+  },
+  "Scapegoat:BindingPower": {
+    "NAME": "结缚",
+    "DESCRIPTIONS": [
+      "免疫你在这个回合受到来自自身的生命值损失。"
+    ]
+  },
+  "Scapegoat:SacrificeReplacementPower": {
+    "NAME": "牲祭替换",
+    "DESCRIPTIONS": [
+      "阻止本回合内你受到的生命值损伤。 NL 每阻止一次，在你的抽牌堆中加入 #b",
+      " 张 #y碎片 。"
+    ]
+  },
+  "Scapegoat:DrinkPoisonToEndThirstPower": {
+    "NAME": "饮鸩止渴",
+    "DESCRIPTIONS": [
+      "在下个回合结束时，失去 #b",
+      " 点生命。",
+      "在本回合结束时，失去 #b"
+    ]
+  },
+  "Scapegoat:PriorRepairPower": {
+    "NAME": "事前修整",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，获得 #b",
+      " [E] 并抽 #b",
+      " 张牌。持续 #b",
+      " 回合。"
+    ]
+  },
+  "Scapegoat:MarkerCapturePower": {
+    "NAME": "印记捕获",
+    "DESCRIPTIONS": [
+      "每当拥有 #y子弹 的敌人受到攻击时，你获得 #b",
+      " 点 #y格挡 。"
+    ]
+  },
+  "Scapegoat:SpiritLinkPower": {
+    "NAME": "灵魂链接",
+    "DESCRIPTIONS": [
+      "当目标的灵魂受到伤害时，目标失去伤害值 #b2 倍的生命。"
+    ]
+  },
+  "Scapegoat:WashAwayPower": {
+    "NAME": "涤荡",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，如果你身上存在负面效果，随机解除其中的 #b",
+      " 种并 #y归葬 #b",
+      " 。"
+    ]
+  },
+  "Scapegoat:PunishmentFormPower": {
+    "NAME": "戕罚形态",
+    "DESCRIPTIONS": [
+      "敌人身上的 #y子弹 层数不会再下降。 NL 每回合开始时给予所有敌人 #b",
+      " 层 #y子弹 。"
+    ]
+  },
+  "Scapegoat:BloodstainPower": {
+    "NAME": "血迹",
+    "DESCRIPTIONS": [
+      "造成的 #y攻击 伤害增加 #b",
+      "% 。"
+    ]
+  },
+  "Scapegoat:SinPower": {
+    "NAME": "罪孽",
+    "DESCRIPTIONS": [
+      "从卡牌中获得的 #y格挡 增加 #b",
+      "% 。"
+    ]
+  },
+  "Scapegoat:DevilInAJarPower": {
+    "NAME": "罐装恶魔",
+    "DESCRIPTIONS": [
+      "本回合内，每当你从一张牌失去生命时，获得等量 #y再生 。"
+    ]
+  },
+  "Scapegoat:CounterAttackPower": {
+    "NAME": "反击",
+    "DESCRIPTIONS": [
+      "此目标在其回合外造成的伤害翻倍。"
+    ]
+  },
+  "Scapegoat:AsterismPower": {
+    "NAME": "星芒",
+    "DESCRIPTIONS": [
+      "你每进行一次 #y回溯 ，获得 #b",
+      " 点 #y格挡。"
+    ]
+  },
+  "Scapegoat:TemporaryCollaborationPower": {
+    "NAME": "临时协作",
+    "DESCRIPTIONS": [
+      "在你的回合开始时， #y归葬 #b",
+      " ， #y回溯 #b",
+      " 。"
+    ]
+  }
+}

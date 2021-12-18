@@ -1,0 +1,101 @@
+{
+  "Scapegoat:BronzePipe": {
+    "NAME": "黄铜烟斗",
+    "FLAVOR": "空空的黄铜烟斗，磨损的痕迹很严重，看起来已经使用了很久。",
+    "DESCRIPTIONS": [
+      "在每场战斗开始时， #y归葬 #b4 ， #y回溯 #b1 。"
+    ]
+  },
+  "Scapegoat:BurningPipe": {
+    "NAME": "点燃烟斗",
+    "FLAVOR": "烟斗中被填上足够的烟草并点燃了，暗蓝色的烟气从中升起。",
+    "DESCRIPTIONS": [
+      "#r替换黄铜烟斗 。 NL 在你的回合开始时， #y归葬 #b4 ， #y回溯 #b2 。"
+    ]
+  },
+  "Scapegoat:OldShell": {
+    "NAME": "旧弹壳",
+    "FLAVOR": "你的幸运小子弹，已经不能使用了。",
+    "DESCRIPTIONS": [
+      "在每场战斗开始时，给予所有敌人 #b1 层 #y子弹 。"
+    ]
+  },
+  "Scapegoat:AppleCandy": {
+    "NAME": "苹果糖",
+    "FLAVOR": "疼痛总是不经意间袭来，需要提前做好准备。",
+    "DESCRIPTIONS": [
+      "每当你从卡牌获得 #y易伤 时，获得 #b5 点 #y格挡 。 NL 每当你从敌人处获得 #y易伤 时，在下回合获得 #b5 点 #y格挡 。"
+    ]
+  },
+  "Scapegoat:MarkOfThePayback": {
+    "NAME": "赋还刻痕",
+    "FLAVOR": "欲加之罪，何患无辞——埃罗恩·戕罚。",
+    "DESCRIPTIONS": [
+      "#y赋还 造成的伤害增加 #b25％ 。"
+    ]
+  },
+  "Scapegoat:DarkBullet": {
+    "NAME": "漆黑子弹",
+    "FLAVOR": "这枚带有魔法的子弹将——这是上段冒险的故事了。",
+    "DESCRIPTIONS": [
+      "每有一名敌人死亡，将其身上的 #y子弹 层数转移到生命值最少的敌人身上。"
+    ]
+  },
+  "Scapegoat:BurningEye": {
+    "NAME": "燃烧之眸",
+    "FLAVOR": "凝视这只眼睛时，你将不再畏惧漆黑的过去。",
+    "DESCRIPTIONS": [
+      "#y回溯 将多检视 #b2 张牌，但可获得牌的数量不变。"
+    ]
+  },
+  "Scapegoat:ShinyShard": {
+    "NAME": "亮片",
+    "FLAVOR": "这些蓝色的菱形亮片会狠狠扎进有罪者的身体，并给予你力量。",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，你失去 #b2 点生命，获得 [E] 。"
+    ]
+  },
+  "Scapegoat:AzureFlame": {
+    "NAME": "湛蓝火焰",
+    "FLAVOR": "他硬是要来，你有什么办法呢？恶魔总如影随形，且满怀恶意。",
+    "DESCRIPTIONS": [
+      "当你要被杀死时，免死并回复到最大生命值的 #b30％ 。 NL 在本场战斗，你的回合结束时，对所有敌人造成 #b66 点伤害（仅能起效一次）。"
+    ]
+  },
+  "Scapegoat:SinAndBloodstain": {
+    "NAME": "罪孽与血迹",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "记录着你身上的 #p罪孽 与 #r血迹 。"
+    ]
+  },
+  "Scapegoat:RuneEctoplasm": {
+    "NAME": "符文外质",
+    "FLAVOR": "恶魔窃取的高塔的箴言，上面的符文无法辨识。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，获得 #b10 层 #y坚不可摧 。"
+    ]
+  },
+  "Scapegoat:BloodVial": {
+    "NAME": "小血瓶（？）",
+    "FLAVOR": "装着不知名红色液体的一个小瓶，很危险！",
+    "DESCRIPTIONS": [
+      "在战斗结束时，回复 #b2 点生命。"
+    ]
+  },
+  "Scapegoat:TechInSpire": {
+    "NAME": "尖端科技",
+    "FLAVOR": "一分钱，一分货。",
+    "DESCRIPTIONS": [
+      "拾起时，选择移除牌组中的 #b1 张牌。 NL 每场战斗开始时，随机 #y升级 抽牌堆中的 #b3 张牌。",
+      "选择一张牌移除。"
+    ]
+  },
+  "Scapegoat:GhostMask": {
+    "NAME": "幽灵面容",
+    "FLAVOR": "你终究会成为他们的一员。",
+    "DESCRIPTIONS": [
+      "你每次令自己失去生命时，回复 #b1 点生命。"
+    ]
+  }
+}

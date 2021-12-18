@@ -1,0 +1,12 @@
+{
+  "Scapegoat:BaredSoul": {
+    "NAME": "剥离的灵魂",
+    "DIALOG": [""],
+    "MOVES": [""]
+  },
+  "Scapegoat:CityVampire": {
+    "NAME": "吸血鬼",
+    "DIALOG": ["#r@恶魔没资格与我们同行！@"],
+    "MOVES": ["噬咬", "爪击"]
+  }
+}

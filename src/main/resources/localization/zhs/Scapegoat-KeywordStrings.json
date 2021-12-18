@@ -1,0 +1,66 @@
+[
+  {
+    "NAMES": [
+      "pay-back",
+      "赋还"
+    ],
+    "PROPER_NAME": "赋还",
+    "DESCRIPTION": "受到 #y攻击 伤害时，对攻击者造成相同数值的伤害，然后赋还层数减少 #b1 。"
+  },
+  {
+    "NAMES": [
+      "buried",
+      "归葬"
+    ],
+    "PROPER_NAME": "归葬",
+    "DESCRIPTION": "丢弃抽牌堆顶的 #bX 张牌(当抽牌堆牌数小于 #bX 时全部丢弃)。"
+  },
+  {
+    "NAMES": [
+      "recall",
+      "回溯"
+    ],
+    "PROPER_NAME": "回溯",
+    "DESCRIPTION": "检视弃牌堆中的 #bX 张随机牌，你可以选择获得其中的 #bX 张。"
+  },
+  {
+    "NAMES": [
+      "flash-back",
+      "闪光"
+    ],
+    "PROPER_NAME": "闪光",
+    "DESCRIPTION": "当这张卡被 #y归葬 或 #y消耗 时，触发该效果。"
+  },
+  {
+    "NAMES": [
+      "bullet",
+      "子弹"
+    ],
+    "PROPER_NAME": "子弹",
+    "DESCRIPTION": "有 #y子弹 效果的生物受到的伤害增加 #y子弹 的层数。子弹层数每回合下降 #b1 。"
+  },
+  {
+    "NAMES": [
+      "finale",
+      "尾声"
+    ],
+    "PROPER_NAME": "尾声",
+    "DESCRIPTION": "战斗开始或洗牌时，这张牌处于抽牌堆的底部。"
+  },
+  {
+    "NAMES": [
+      "sin",
+      "罪孽"
+    ],
+    "PROPER_NAME": "罪孽",
+    "DESCRIPTION": "你在下 #bX 场战斗中遇到的敌人因 #p罪孽 而增强。 NL 你每有 #b1 点 #p罪孽 ，你获得的 #y格挡 增加 #b10％ 。 NL 在战斗结束时， #p罪孽 的计数下降 #b1 。"
+  },
+  {
+    "NAMES": [
+      "bloodstain",
+      "血迹"
+    ],
+    "PROPER_NAME": "血迹",
+    "DESCRIPTION": "你的下 #bX 场战斗因 #r血迹 而付出代价。 NL #r血迹 造成的代价可能是：在战斗开始时，将两张 #y伤口 / #y晕眩 / #y代价 放入你的抽牌堆。 NL 你每有 #b1 点 #r血迹 ，你造成的伤害增加 #b10％ 。 NL 在战斗结束时， #r血迹 的计数下降 #b1 。"
+  }
+]
