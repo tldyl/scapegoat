@@ -44,13 +44,13 @@ public class RitualLunge extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new AbstractGameAction() {
+        Scapegoat.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        Scapegoat.addToBot(new AbstractGameAction() {
             @Override
             public void update() {
-                if (GameActionManager.damageReceivedThisTurn > 0) {
-                    addToTop(new ExhaustSpecificCardAction(RitualLunge.this, p.discardPile));
-                    addToTop(new HealAction(p, p, RitualLunge.this.magicNumber));
+                if (GameActionManager.damageReceivedThisTurn > 0 && !isDone) {
+                    Scapegoat.addToTop(new ExhaustSpecificCardAction(RitualLunge.this, p.discardPile));
+                    Scapegoat.addToTop(new HealAction(p, p, RitualLunge.this.magicNumber));
                     RitualLunge.this.exhaust = true;
                 }
                 isDone = true;

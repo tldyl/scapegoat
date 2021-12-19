@@ -44,7 +44,7 @@ public class DelayedFlame extends CustomCard implements PostBurialSubscriber {
     @Override
     public void triggerWhenDrawn() {
         super.triggerWhenDrawn();
-        this.setCostForTurn(this.cost - GameActionManagerPatch.AddFieldPatch.totalBurialThisTurn.get(AbstractDungeon.actionManager));
+        this.setCostForTurn(this.costForTurn - GameActionManagerPatch.AddFieldPatch.totalBurialThisTurn.get(AbstractDungeon.actionManager));
     }
 
     @Override

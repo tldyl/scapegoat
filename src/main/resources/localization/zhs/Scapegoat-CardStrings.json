@@ -316,7 +316,7 @@
   },
   "Scapegoat:SelfSacrifice": {
     "NAME": "牺牲",
-    "DESCRIPTION": "保留 。 NL 失去10点生命，获得 !M! 点最大生命。 NL 如果这张牌将要杀死你，这张牌获得 即逝 ，你复活并回复所有生命。 NL 消耗 。"
+    "DESCRIPTION": "保留 。 NL 失去10点生命，获得 !M! 点最大生命。 NL 如果这张牌将要杀死你，免死并回复全部生命，这张牌获得 即逝 。 NL 消耗 。"
   },
   "Scapegoat:Shame": {
     "NAME": "诬陷",

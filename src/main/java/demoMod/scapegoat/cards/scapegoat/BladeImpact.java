@@ -39,6 +39,7 @@ public class BladeImpact extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(5);
+            this.upgradeMagicNumber(-1);
         }
     }
 

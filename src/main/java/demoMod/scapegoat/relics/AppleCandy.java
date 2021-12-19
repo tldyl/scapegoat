@@ -4,6 +4,7 @@ import basemod.BaseMod;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomRelic;
 import basemod.interfaces.PostPowerApplySubscriber;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -36,7 +37,7 @@ public class AppleCandy extends CustomRelic implements PostPowerApplySubscriber 
     public void receivePostPowerApplySubscriber(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         AbstractPlayer p = AbstractDungeon.player;
         if (!p.relics.contains(this)) {
-            addToBot(new AbstractGameAction() {
+            Scapegoat.addToBot(new AbstractGameAction() {
                 @Override
                 public void update() {
                     BaseMod.unsubscribe(AppleCandy.this);
@@ -44,17 +45,28 @@ public class AppleCandy extends CustomRelic implements PostPowerApplySubscriber 
                 }
             });
         } else {
-            if (power.ID.equals(VulnerablePower.POWER_ID) && target instanceof AbstractPlayer) {
-                this.flash();
-                VulnerablePower vulnerablePower = (VulnerablePower) power;
-                boolean justApplied = ReflectionHacks.getPrivate(vulnerablePower, VulnerablePower.class, "justApplied");
-                addToBot(new RelicAboveCreatureAction(target, this));
-                if (justApplied) {
-                    addToBot(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, 5)));
-                } else {
-                    addToBot(new GainBlockAction(AbstractDungeon.player, 5));
+            Scapegoat.addToBot(new AbstractGameAction() {
+                private float duration = 0.3F;
+
+                @Override
+                public void update() {
+                    duration -= Gdx.graphics.getDeltaTime();
+                    if (duration <= 0 && !isDone) {
+                        if (power.ID.equals(VulnerablePower.POWER_ID) && power.owner instanceof AbstractPlayer && power.owner.hasPower(VulnerablePower.POWER_ID)) {
+                            AppleCandy.this.flash();
+                            VulnerablePower vulnerablePower = (VulnerablePower) power;
+                            boolean justApplied = ReflectionHacks.getPrivate(vulnerablePower, VulnerablePower.class, "justApplied");
+                            if (justApplied) {
+                                Scapegoat.addToTop(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, 5)));
+                            } else {
+                                Scapegoat.addToTop(new GainBlockAction(p, 5));
+                            }
+                            Scapegoat.addToTop(new RelicAboveCreatureAction(power.owner, AppleCandy.this));
+                        }
+                        isDone = true;
+                    }
                 }
-            }
+            });
         }
     }
 }

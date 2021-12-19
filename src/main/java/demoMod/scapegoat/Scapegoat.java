@@ -277,4 +277,8 @@ public class Scapegoat implements EditCardsSubscriber,
     public static void addToBot(AbstractGameAction action) {
         actionQueue.add(action);
     }
+
+    public static void addToTop(AbstractGameAction action) {
+        actionQueue.add(0, action);
+    }
 }

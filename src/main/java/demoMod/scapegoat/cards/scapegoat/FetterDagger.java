@@ -20,7 +20,7 @@ public class FetterDagger extends CustomCard {
 
     private static final CardStrings cardStrings;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     private static final int COST = 0;
@@ -46,7 +46,7 @@ public class FetterDagger extends CustomCard {
 
     @Override
     public void tookDamage() {
-        this.addToBot(new DiscardToHandAction(this));
+        this.addToTop(new DiscardToHandAction(this));
     }
 
     static {

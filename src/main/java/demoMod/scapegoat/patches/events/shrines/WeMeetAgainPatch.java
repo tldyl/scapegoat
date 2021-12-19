@@ -44,21 +44,23 @@ public class WeMeetAgainPatch {
                 Enum screen = ReflectionHacks.getPrivate(event, WeMeetAgain.class, "screen");
                 switch (screen.name()) {
                     case "INTRO":
-                        event.imageEventText.updateBodyText(DESCRIPTIONS[6]);
-                        CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.HIGH, ScreenShake.ShakeDur.SHORT, false);
-                        CardCrawlGame.sound.play("BLUNT_HEAVY");
-                        AbstractRelic relic = AbstractDungeon.returnRandomScreenlessRelic(AbstractDungeon.returnRandomRelicTier());
-                        AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float)Settings.WIDTH * 0.28F, (float)Settings.HEIGHT / 2.0F, relic);
-                        SinAndBloodstainManager.increaseSin(1);
-                        AbstractEvent.logMetricIgnored("WeMeetAgain");
-                        event.imageEventText.updateDialogOption(0, OPTIONS[8]);
-                        event.imageEventText.clearRemainingOptions();
-                        try {
-                            ReflectionHacks.setPrivate(event, WeMeetAgain.class, "screen", Enum.valueOf((Class<Enum>)Class.forName("com.megacrit.cardcrawl.events.shrines.WeMeetAgain$CUR_SCREEN"), "COMPLETE"));
-                        } catch (ClassNotFoundException e) {
-                            e.printStackTrace();
+                        if (buttonPressed == 3) {
+                            event.imageEventText.updateBodyText(DESCRIPTIONS[6]);
+                            CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.HIGH, ScreenShake.ShakeDur.SHORT, false);
+                            CardCrawlGame.sound.play("BLUNT_HEAVY");
+                            AbstractRelic relic = AbstractDungeon.returnRandomScreenlessRelic(AbstractDungeon.returnRandomRelicTier());
+                            AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) Settings.WIDTH * 0.28F, (float) Settings.HEIGHT / 2.0F, relic);
+                            SinAndBloodstainManager.increaseSin(1);
+                            AbstractEvent.logMetricIgnored("WeMeetAgain");
+                            event.imageEventText.updateDialogOption(0, OPTIONS[8]);
+                            event.imageEventText.clearRemainingOptions();
+                            try {
+                                ReflectionHacks.setPrivate(event, WeMeetAgain.class, "screen", Enum.valueOf((Class<Enum>) Class.forName("com.megacrit.cardcrawl.events.shrines.WeMeetAgain$CUR_SCREEN"), "COMPLETE"));
+                            } catch (ClassNotFoundException e) {
+                                e.printStackTrace();
+                            }
+                            return SpireReturn.Return(null);
                         }
-                        return SpireReturn.Return(null);
                 }
             }
             return SpireReturn.Continue();

@@ -34,7 +34,7 @@ public class SacrificePower extends AbstractPower {
     public void wasHPLost(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             this.flash();
-            addToTop(new ApplyPowerAction(owner, owner, new RepairPower(owner, damageAmount)));
+            Scapegoat.addToBot(new ApplyPowerAction(owner, owner, new RepairPower(owner, damageAmount)));
         }
     }
 

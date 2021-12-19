@@ -49,16 +49,16 @@ public class Gnaw extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (m != null) {
             if (Settings.FAST_MODE) {
-                addToBot(new VFXAction(new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Settings.GOLD_COLOR.cpy()), 0.1F));
+                Scapegoat.addToBot(new VFXAction(new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Settings.GOLD_COLOR.cpy()), 0.1F));
             } else {
-                addToBot(new VFXAction(new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Settings.GOLD_COLOR.cpy()), 0.3F));
+                Scapegoat.addToBot(new VFXAction(new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Settings.GOLD_COLOR.cpy()), 0.3F));
             }
-            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-            addToBot(new AbstractGameAction() {
+            Scapegoat.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            Scapegoat.addToBot(new AbstractGameAction() {
                 @Override
                 public void update() {
                     if (m.lastDamageTaken > 0) {
-                        addToTop(new HealAction(p, p, Gnaw.this.magicNumber));
+                        p.heal(Gnaw.this.magicNumber);
                     }
                     isDone = true;
                 }
