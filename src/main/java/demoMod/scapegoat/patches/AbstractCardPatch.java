@@ -169,6 +169,7 @@ public class AbstractCardPatch {
                 AbstractCard card = ReflectionHacks.getPrivate(popup, SingleCardViewPopup.class, "card");
                 if (card.assetUrl != null && !card.assetUrl.equals("status/beta")) {
                     int endingIndex = card.assetUrl.lastIndexOf(".");
+                    if (endingIndex == -1) return SpireReturn.Continue();
                     String newPath = card.assetUrl.substring(0, endingIndex) + "_p" + card.assetUrl.substring(endingIndex);
                     Texture portraitImg = ImageMaster.loadImage(newPath);
                     if (portraitImg != null) {
