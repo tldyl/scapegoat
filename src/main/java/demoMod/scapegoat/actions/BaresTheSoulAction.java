@@ -22,7 +22,7 @@ public class BaresTheSoulAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        AbstractMonster soul = new BaredSoul(0, 0, this.amount);
+        AbstractMonster soul = new BaredSoul(this.target.name, 0, 0, this.amount);
         addToTop(new ApplyPowerAction(target, p, new SpiritLinkPower(target, soul, false)));
         soul.drawX = target.drawX - 220.0F * Settings.scale;
         soul.drawY = target.drawY + 280.0F * Settings.scale;

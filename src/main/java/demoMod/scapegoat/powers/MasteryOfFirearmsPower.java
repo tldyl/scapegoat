@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.cards.scapegoat.SerialBullet;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 public class MasteryOfFirearmsPower extends AbstractPower {
     public static final String POWER_ID = Scapegoat.makeID("MasteryOfFirearmsPower");
@@ -28,7 +29,7 @@ public class MasteryOfFirearmsPower extends AbstractPower {
         this.owner = AbstractDungeon.player;
         this.amount = amount;
         this.upgraded = upgraded;
-        this.loadRegion("attackBurn");
+        PowerRegionLoader.loadRegion(this);
         this.updateDescription();
     }
 

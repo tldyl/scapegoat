@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.actions.BurialAction;
 import demoMod.scapegoat.actions.RecallAction;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 public class TemporaryCollaborationPower extends TwoAmountPower {
     public static final String POWER_ID = Scapegoat.makeID("TemporaryCollaborationPower");
@@ -23,7 +24,7 @@ public class TemporaryCollaborationPower extends TwoAmountPower {
         this.amount = amount;
         this.amount2 = amount2;
         this.loadRegion("tools");
-        this.updateDescription();
+        PowerRegionLoader.loadRegion(this);
     }
 
     @Override

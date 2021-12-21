@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 public class CrossDominatePower extends TwoAmountPower implements PostBurialSubscriber {
     public static final String POWER_ID = Scapegoat.makeID("CrossDominatePower");
@@ -22,7 +23,7 @@ public class CrossDominatePower extends TwoAmountPower implements PostBurialSubs
         this.owner = AbstractDungeon.player;
         this.amount = 1;
         this.amount2 = this.defaultAmount = amount;
-        this.loadRegion("rushdown");
+        PowerRegionLoader.loadRegion(this);
         this.updateDescription();
     }
 

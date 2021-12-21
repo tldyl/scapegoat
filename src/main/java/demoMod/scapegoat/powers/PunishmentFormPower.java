@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 public class PunishmentFormPower extends AbstractPower {
     public static final String POWER_ID = Scapegoat.makeID("PunishmentFormPower");
@@ -21,6 +22,7 @@ public class PunishmentFormPower extends AbstractPower {
         this.amount = amount;
         this.updateDescription();
         this.loadRegion("echo");
+        PowerRegionLoader.loadRegion(this);
     }
 
     @Override

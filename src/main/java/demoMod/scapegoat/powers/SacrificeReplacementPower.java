@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.cards.scapegoat.Shard;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 public class SacrificeReplacementPower extends AbstractPower {
     public static final String POWER_ID = Scapegoat.makeID("SacrificeReplacementPower");
@@ -21,7 +22,7 @@ public class SacrificeReplacementPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
-        this.loadRegion("heartDef");
+        PowerRegionLoader.loadRegion(this);
         this.updateDescription();
         this.priority = 101;
     }

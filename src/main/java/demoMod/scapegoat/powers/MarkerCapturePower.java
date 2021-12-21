@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 public class MarkerCapturePower extends AbstractPower {
     public static final String POWER_ID = Scapegoat.makeID("MarkerCapturePower");
@@ -21,7 +22,7 @@ public class MarkerCapturePower extends AbstractPower {
         this.owner = AbstractDungeon.player;
         this.amount = amount;
         this.updateDescription();
-        this.loadRegion("shackle");
+        PowerRegionLoader.loadRegion(this);
     }
 
     @Override

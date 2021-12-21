@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.actions.BurialAction;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,7 +28,7 @@ public class WashAwayPower extends TwoAmountPower {
         this.amount = removeDebuffAmount;
         this.amount2 = 6;
         this.updateDescription();
-        this.loadRegion("wireheading");
+        PowerRegionLoader.loadRegion(this);
     }
 
     @Override

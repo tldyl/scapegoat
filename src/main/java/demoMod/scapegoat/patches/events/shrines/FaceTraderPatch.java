@@ -41,7 +41,7 @@ public class FaceTraderPatch {
                             event.imageEventText.updateDialogOption(0, OPTIONS[0] + damage + OPTIONS[5] + (AbstractDungeon.ascensionLevel >= 15 ? 50 : 75) + OPTIONS[1]);
                             event.imageEventText.setDialogOption(OPTIONS[2]);
                             int amount = AbstractDungeon.ascensionLevel >= 15 ? 2 : 1;
-                            event.imageEventText.setDialogOption(String.format(OPTIONS[6], amount, amount));
+                            event.imageEventText.setDialogOption(String.format(OPTIONS[6], amount, amount), new GhostMask());
                             event.imageEventText.setDialogOption(OPTIONS[3]);
                             ReflectionHacks.setPrivate(event, FaceTrader.class, "screen", Enum.valueOf((Class<Enum>) Class.forName("com.megacrit.cardcrawl.events.shrines.FaceTrader$CurScreen"), "MAIN"));
                             return SpireReturn.Return(null);

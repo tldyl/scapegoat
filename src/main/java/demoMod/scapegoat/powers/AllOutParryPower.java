@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
+import demoMod.scapegoat.utils.PowerRegionLoader;
 
 public class AllOutParryPower extends AbstractPower implements PostBurialSubscriber {
     public static final String POWER_ID = Scapegoat.makeID("AllOutParryPower");
@@ -22,7 +23,7 @@ public class AllOutParryPower extends AbstractPower implements PostBurialSubscri
         this.owner = AbstractDungeon.player;
         this.amount = amount;
         this.updateDescription();
-        this.loadRegion("noPain");
+        PowerRegionLoader.loadRegion(this);
     }
 
     @Override
