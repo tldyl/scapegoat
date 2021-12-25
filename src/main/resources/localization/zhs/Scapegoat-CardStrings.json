@@ -270,11 +270,12 @@
   },
   "Scapegoat:CurtainCall": {
     "NAME": "谢幕",
-    "DESCRIPTION": "不能被打出 。 NL 尾声 。 NL 闪光 ：对所有敌人造成 !D! 点伤害。"
+    "DESCRIPTION": "不能被打出 。 NL 尾声 。 NL 闪光 ：对所有敌人造成 !D! 点伤害并将这张牌在本回合的伤害增加 !M! 。"
   },
   "Scapegoat:PriorRepair": {
     "NAME": "事前修整",
-    "DESCRIPTION": "在你的下X回合开始时，抽!M!张牌，获得 [E] 。 NL 消耗 。"
+    "DESCRIPTION": "在你的下X回合开始时，抽!M!张牌，获得 [E] 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "在你的下X+1回合开始时，抽!M!张牌，获得 [E] 。 NL 消耗 。"
   },
   "Scapegoat:SequinShard": {
     "NAME": "残缺亮片",

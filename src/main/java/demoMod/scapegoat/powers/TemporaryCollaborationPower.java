@@ -25,6 +25,7 @@ public class TemporaryCollaborationPower extends TwoAmountPower {
         this.amount2 = amount2;
         this.loadRegion("tools");
         PowerRegionLoader.loadRegion(this);
+        this.updateDescription();
     }
 
     @Override

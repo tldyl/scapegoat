@@ -31,7 +31,7 @@ public class CrossDominate extends CustomCard implements AbstractSecondaryMCard 
     public CrossDominate() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 4;
-        this.secondaryM = 4;
+        this.secondaryM = 3;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class CrossDominate extends CustomCard implements AbstractSecondaryMCard 
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(-1);
-            this.secondaryM = 3;
+            this.secondaryM = 2;
         }
     }
 

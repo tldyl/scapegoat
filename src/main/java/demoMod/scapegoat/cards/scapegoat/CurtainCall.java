@@ -31,7 +31,8 @@ public class CurtainCall extends CustomCard implements PostBurialSubscriber {
 
     public CurtainCall() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseDamage = 40;
+        this.baseDamage = 0;
+        this.baseMagicNumber = this.magicNumber = 30;
         AbstractCardPatch.AddFieldPatch.isBottom.set(this, true);
     }
 
@@ -39,7 +40,7 @@ public class CurtainCall extends CustomCard implements PostBurialSubscriber {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(10);
+            this.upgradeMagicNumber(10);
         }
     }
 
@@ -48,24 +49,39 @@ public class CurtainCall extends CustomCard implements PostBurialSubscriber {
     }
 
     @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return false;
+    }
+
+    @Override
     public void onBurial() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (Settings.FAST_MODE) {
-            this.addToBot(new VFXAction(new GrandFinalEffect(), 0.7F));
-        } else {
-            this.addToBot(new VFXAction(new GrandFinalEffect(), 1.0F));
-        }
         calculateCardDamage(null);
-        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        if (this.damage > 0) {
+            if (Settings.FAST_MODE) {
+                this.addToBot(new VFXAction(new GrandFinalEffect(), 0.7F));
+            } else {
+                this.addToBot(new VFXAction(new GrandFinalEffect(), 1.0F));
+            }
+            this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        }
+        this.addToBot(new AbstractGameAction() {
+            @Override
+            public void update() {
+                CurtainCall.this.baseDamage += CurtainCall.this.magicNumber;
+                isDone = true;
+            }
+        });
+    }
+
+    @Override
+    public void triggerOnEndOfPlayerTurn() {
+        this.baseDamage = 0;
     }
 
     @Override
     public void triggerOnExhaust() {
         onBurial();
-    }
-
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return false;
     }
 
     static {
