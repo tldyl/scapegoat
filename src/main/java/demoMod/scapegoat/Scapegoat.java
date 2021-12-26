@@ -248,6 +248,7 @@ public class Scapegoat implements EditCardsSubscriber,
         BaseMod.addRelicToCustomPool(new MarkOfThePayback(), AbstractCardEnum.SCAPEGOAT);
         BaseMod.addRelicToCustomPool(new DarkBullet(), AbstractCardEnum.SCAPEGOAT);
         BaseMod.addRelicToCustomPool(new BurningEye(), AbstractCardEnum.SCAPEGOAT);
+        BaseMod.addRelicToCustomPool(new BoneDagger(), AbstractCardEnum.SCAPEGOAT);
         BaseMod.addRelic(new AppleCandy(), RelicType.SHARED);
         BaseMod.addRelic(new ShinyShard(), RelicType.SHARED);
         BaseMod.addRelic(new AzureFlame(), RelicType.SHARED);

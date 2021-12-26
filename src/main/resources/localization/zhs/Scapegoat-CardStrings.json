@@ -342,7 +342,7 @@
   },
   "Scapegoat:Deflagration": {
     "NAME": "爆燃",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 你在本回合不能再打出攻击牌。"
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 你在本回合不能再打出攻击牌。"
   },
   "Scapegoat:CounterAttack": {
     "NAME": "反击",

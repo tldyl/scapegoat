@@ -2,6 +2,8 @@ package demoMod.scapegoat.utils;
 
 import com.megacrit.cardcrawl.blights.AbstractBlight;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+import demoMod.scapegoat.interfaces.PostIncreaseSinSubscriber;
 import demoMod.scapegoat.relics.SinAndBloodstain;
 
 public class SinAndBloodstainManager {
@@ -17,6 +19,11 @@ public class SinAndBloodstainManager {
         if (AbstractDungeon.ascensionLevel >= 15) amount++;
         SinAndBloodstain sinAndBloodstain = (SinAndBloodstain) AbstractDungeon.player.getBlight(SinAndBloodstain.ID);
         sinAndBloodstain.sinCounter += amount;
+        for (AbstractRelic relic : AbstractDungeon.player.relics) {
+            if (relic instanceof PostIncreaseSinSubscriber) {
+                ((PostIncreaseSinSubscriber) relic).onIncreaseSin(amount);
+            }
+        }
     }
 
     public static void increaseBloodstain(int amount) {

@@ -34,9 +34,23 @@ public class ShinyShard extends CustomRelic {
     }
 
     @Override
+    public void atBattleStart() {
+        this.counter = 0;
+    }
+
+    @Override
     public void atTurnStart() {
-        this.flash();
-        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, 2, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        this.counter++;
+        if (this.counter >= 2) {
+            this.flash();
+            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, 2, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            this.counter = 0;
+        }
+    }
+
+    @Override
+    public void onVictory() {
+        this.counter = -1;
     }
 }
