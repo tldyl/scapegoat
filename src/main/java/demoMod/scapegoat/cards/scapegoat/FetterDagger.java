@@ -46,7 +46,7 @@ public class FetterDagger extends CustomCard {
 
     @Override
     public void tookDamage() {
-        this.addToTop(new DiscardToHandAction(this));
+        this.addToBot(new DiscardToHandAction(this));
     }
 
     static {

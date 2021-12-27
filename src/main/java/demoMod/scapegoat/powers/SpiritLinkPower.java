@@ -68,7 +68,7 @@ public class SpiritLinkPower extends AbstractPower {
     public void onDeath() {
         if (!this.isSoul) {
             for (AbstractMonster monster : this.target) {
-                addToBot(new SuicideAction(monster, false));
+                addToBot(new SuicideAction(monster, true));
             }
         } else {
             addToBot(new RemoveSpecificPowerAction(this.target.get(0), this.owner, this.ID));

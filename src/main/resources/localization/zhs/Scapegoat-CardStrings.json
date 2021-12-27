@@ -17,7 +17,7 @@
   },
   "Scapegoat:FetterDagger": {
     "NAME": "牵绊匕首",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 每当你失去生命时，将这张牌从弃牌堆放回你的手牌。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 每当你失去生命时，如果这张牌在弃牌堆，将其放回手牌。"
   },
   "Scapegoat:BladeImpact": {
     "NAME": "执刃冲击",
