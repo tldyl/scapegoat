@@ -4,9 +4,10 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import demoMod.scapegoat.Scapegoat;
+import demoMod.scapegoat.interfaces.PostIncreaseBloodstainSubscriber;
 import demoMod.scapegoat.interfaces.PostIncreaseSinSubscriber;
 
-public class BoneDagger extends CustomRelic implements PostIncreaseSinSubscriber {
+public class BoneDagger extends CustomRelic implements PostIncreaseSinSubscriber, PostIncreaseBloodstainSubscriber {
     public static final String ID = Scapegoat.makeID("BoneDagger");
     public static final String IMG_PATH = "relics/boneDagger.png";
     public static final String IMG_OUTLINE_PATH = "relics/boneDaggerOutline.png";
@@ -25,6 +26,12 @@ public class BoneDagger extends CustomRelic implements PostIncreaseSinSubscriber
     @Override
     public void onIncreaseSin(int amount) {
         this.flash();
-        AbstractDungeon.player.gainGold(amount * 60);
+        AbstractDungeon.player.gainGold(amount * 25);
+    }
+
+    @Override
+    public void onIncreaseBloodstain(int amount) {
+        this.flash();
+        AbstractDungeon.player.gainGold(amount * 40);
     }
 }
