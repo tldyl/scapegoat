@@ -5,9 +5,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -26,7 +24,7 @@ public class BlazeAway extends CustomCard {
     public static final String IMG_PATH = "cards/blazeAway.png";
 
     private static final CardStrings cardStrings;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
@@ -48,8 +46,6 @@ public class BlazeAway extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        calculateCardDamage(null);
-        final int finalDamage = this.damage;
         for (int i=0;i<this.magicNumber;i++) {
             addToBot(new AbstractGameAction() {
                 @Override
@@ -57,7 +53,6 @@ public class BlazeAway extends CustomCard {
                     AbstractMonster monster = AbstractDungeon.getRandomMonster();
                     if (monster != null) {
                         addToTop(new ApplyPowerAction(monster, p, new BulletPower(monster, 1)));
-                        addToTop(new DamageAction(monster, new DamageInfo(p, finalDamage, BlazeAway.this.damageTypeForTurn)));
                         AbstractGameEffect e = new ThrowDaggerEffect(monster.hb.cX, monster.hb.cY);
                         ReflectionHacks.setPrivate(e, ThrowDaggerEffect.class, "playedSound", true);
                         addToTop(new VFXAction(e));

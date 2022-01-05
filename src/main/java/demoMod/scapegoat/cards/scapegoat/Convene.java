@@ -26,7 +26,7 @@ public class Convene extends CustomCard {
 
     public Convene() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseBlock = 15;
+        this.baseBlock = 18;
         this.baseMagicNumber = this.magicNumber = 1;
     }
 
@@ -34,7 +34,7 @@ public class Convene extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(5);
+            this.upgradeBlock(6);
         }
     }
 

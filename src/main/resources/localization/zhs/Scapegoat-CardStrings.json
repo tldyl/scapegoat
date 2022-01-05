@@ -94,7 +94,7 @@
   },
   "Scapegoat:Sacrifice": {
     "NAME": "献祭",
-    "DESCRIPTION": "每当你自身失去生命时，在战斗结束时回复等量生命。"
+    "DESCRIPTION": "失去 !M! 点生命。 NL 每当你自身失去生命时，在战斗结束时回复等量生命。"
   },
   "Scapegoat:ForTheSin": {
     "NAME": "替罪",
@@ -184,7 +184,7 @@
   },
   "Scapegoat:CrossDominate": {
     "NAME": "交叉统治",
-    "DESCRIPTION": "失去 !M! 点生命。 NL 你每 归葬 !2M! 张牌，抽一张牌。"
+    "DESCRIPTION": "你每 归葬 !M! 张牌，抽一张牌。"
   },
   "Scapegoat:MasteryOfFirearms": {
     "NAME": "枪械掌握",
@@ -230,7 +230,7 @@
   },
   "Scapegoat:BlazeAway": {
     "NAME": "连续射击",
-    "DESCRIPTION": "对随机一名敌人造成 !D! 点伤害并给予1层 子弹 ，重复 !M! 次。"
+    "DESCRIPTION": "对随机敌人给予1层 子弹 !M! 次。"
   },
   "Scapegoat:Gnaw": {
     "NAME": "咬噬",
@@ -309,7 +309,8 @@
   },
   "Scapegoat:WashAway": {
     "NAME": "涤荡",
-    "DESCRIPTION": "在你的回合开始时，如果你身上存在负面效果，解除其中的随机一种并 归葬 !M! 。"
+    "DESCRIPTION": "在你的回合开始时，如果你身上存在负面效果，解除其中的随机一种并 归葬 !M! 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 在你的回合开始时，如果你身上存在负面效果，解除其中的随机一种并 归葬 !M! 。"
   },
   "Scapegoat:PunishmentForm": {
     "NAME": "戕罚形态",

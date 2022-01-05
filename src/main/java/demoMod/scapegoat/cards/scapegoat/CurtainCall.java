@@ -31,7 +31,7 @@ public class CurtainCall extends CustomCard implements PostBurialSubscriber {
 
     public CurtainCall() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseDamage = 0;
+        this.baseDamage = 20;
         this.baseMagicNumber = this.magicNumber = 30;
         AbstractCardPatch.AddFieldPatch.isBottom.set(this, true);
     }

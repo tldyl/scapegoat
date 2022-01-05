@@ -31,8 +31,8 @@ public class BloodyThorns extends CustomCard {
 
     public BloodyThorns() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseDamage = this.damage = 15;
-        this.misc = 1;
+        this.baseDamage = this.damage = 18;
+        this.misc = 3;
         this.magicNumber = this.baseMagicNumber = 1;
         this.exhaust = true;
     }
@@ -40,7 +40,7 @@ public class BloodyThorns extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeDamage(5);
+            this.upgradeDamage(3);
             this.misc++;
             this.upgradeName();
         }
