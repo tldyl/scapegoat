@@ -76,7 +76,7 @@ public class CurtainCall extends CustomCard implements PostBurialSubscriber {
 
     @Override
     public void triggerOnEndOfPlayerTurn() {
-        this.baseDamage = 0;
+        this.baseDamage = 20;
     }
 
     @Override
