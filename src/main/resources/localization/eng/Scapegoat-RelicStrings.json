@@ -1,0 +1,108 @@
+{
+  "Scapegoat:BronzePipe": {
+    "NAME": "Bronze Pipe",
+    "FLAVOR": "The empty brass pipe was badly worn and looked very old.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, #yReburial #b4 , #yRecall #b1 ."
+    ]
+  },
+  "Scapegoat:BurningPipe": {
+    "NAME": "Burning Pipe",
+    "FLAVOR": "The pipe was filled with enough tobacco and lit, dark blue smoke rose from it.",
+    "DESCRIPTIONS": [
+      "Replaces #rBronze Pipe.  NL  At the start of your turn, #yReburial #b4 , #yRecall #b2 ."
+    ]
+  },
+  "Scapegoat:OldShell": {
+    "NAME": "Old Bullet Casings",
+    "FLAVOR": "Your little lucky bullet, it's not working anymore.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, apply #b1 #yBullet to ALL enemies. "
+    ]
+  },
+  "Scapegoat:AppleCandy": {
+    "NAME": "Apple Candy",
+    "FLAVOR": "Pain comes unawares and needs to be prepared.",
+    "DESCRIPTIONS": [
+      "Whenever you gain #yVulnerable from your card , gain #b5 #yBlock .  NL Whenever you gain #yVulnerable from enemies ,Gain #b5 #yBlock at the start of next turn."
+    ]
+  },
+  "Scapegoat:MarkOfThePayback": {
+    "NAME": "Signet of Return",
+    "FLAVOR": "He who has a mind to beat his dog will easily find a stick - Iron Overlord. ",
+    "DESCRIPTIONS": [
+      "#yReturn deals #b25% more damage. "
+    ]
+  },
+  "Scapegoat:DarkBullet": {
+    "NAME": "Dark Bullet",
+    "FLAVOR": "This magic bullet will... this is the story of the last adventure.",
+    "DESCRIPTIONS": [
+      "Whenever an enemy dies, transfer any #yBullet it has to the enemy with the least HP."
+    ]
+  },
+  "Scapegoat:BurningEye": {
+    "NAME": "Burning Eye",
+    "FLAVOR": "As you gaze into this eye, you will no longer fear the dark past.",
+    "DESCRIPTIONS": [
+      "Whenever you #yRecall , #yRecall #b2 cards more, but the number of cards available remains the same. "
+    ]
+  },
+  "Scapegoat:ShinyShard": {
+    "NAME": "Shard",
+    "FLAVOR": "These blue diamond-shaped lights stab into the guilty and give you power.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn, NL Every #b2 turns, at the start of your turn,lose #b2 HP."
+    ]
+  },
+  "Scapegoat:AzureFlame": {
+    "NAME": "Azure Flame",
+    "FLAVOR": "What can you do if he insists on coming? The devil is always with you and full of malice.",
+    "DESCRIPTIONS": [
+      "When you would die, heal to #b30% of your Max HP instead. NL In this combat, at the end of your turn, deal #b66 damage to ALL enemies(works once)."
+    ]
+  },
+  "Scapegoat:SinAndBloodstain": {
+    "NAME": "Sin And Blood",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Record your #pSin and #rBlood. "
+    ]
+  },
+  "Scapegoat:RuneEctoplasm": {
+    "NAME": "Rune Ectoplasm",
+    "FLAVOR": "The tower of proverbs the devil stole, the runes are indecipherable. ",
+    "DESCRIPTIONS": [
+      "At the start of combat, gain #b10 #yInvincible ."
+    ]
+  },
+  "Scapegoat:BloodVial": {
+    "NAME": "Blood Vial(?)",
+    "FLAVOR": "A vial of unknown red liquid. Very dangerous!",
+    "DESCRIPTIONS": [
+      "At the end of combat, heal #b2 HP."
+    ]
+  },
+  "Scapegoat:TechInSpire": {
+    "NAME": "TechIn Spire",
+    "FLAVOR": "You get what you pay for.",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove #b1 card from your deck. NL At the start of each combat, #yUpgrade #b3 random cards in your draw pile for the rest of combat.",
+      "Choose a card to remove."
+    ]
+  },
+  "Scapegoat:GhostMask": {
+    "NAME": "Ghost Mask",
+    "FLAVOR": "You will eventually become one of them.",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP by yourself , heal #b1 HP."
+    ]
+  },
+  "Scapegoat:BoneDagger": {
+    "NAME": "Bone Dagger",
+    "FLAVOR": "This dagger will help you to catch more.",
+    "DESCRIPTIONS": [
+      "Whenever you gain #b1 #pSin ,gain #b25 #yGold , NL Whenever you gain #b1 #rBlood , gain #b40 #yGold ."
+    ]
+  }
+}

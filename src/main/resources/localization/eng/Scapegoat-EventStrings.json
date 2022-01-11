@@ -1,0 +1,385 @@
+{
+  "Scapegoat:Liars Game": {
+    "NAME": "The Ssssserpent",
+    "DESCRIPTIONS": [
+      "You walk into a room to find a large hole in the ground. As you approach the hole, an enormous serpent creature appears from within. NL NL ~\"Ho~ ~hooo!~ ~Hello~ ~hello!~ ~what~ ~have~ ~we~ ~got~ ~here?~ Hello adventurer, I ask a simple question. NL The most fulfilling of lives is that in which you can #y~buy~ #y~anything!~ NL Do you agree?\"",
+      "The truth is you don't need money much. What you need more than money is ~...HUNGER.~",
+      "The serpent stares at you with a look of extreme disappointment.",
+      "So you draw out your dagger and Devil laughs behind to help you. NL Serpent's greedy soul goes up in flames for so long that you think it can light your way. NL NL If only the spires were full of such opportunities."
+    ],
+    "OPTIONS": [
+      "[Murder] #gGain #gSoul #gFlame. #rBlood+%d",
+      "[Disagree]",
+      "[Continue]",
+      "[Leave]"
+    ]
+  },
+  "Scapegoat:Ghosts": {
+    "NAME": "Council of Ghosts",
+    "DESCRIPTIONS": [
+       "As you continue your ascent, #p~thick~ #p~black~ #p~smoke~ begins to billow out of the ground and walls around you, coalescing into three masked forms that start to speak. NL NL ~\"Another~ ~puppet~ ~of~ #y~Neow~ ~I~ ~think.\"~ NL #r@\"AGREED!@ #r@SHE@ #r@ALWAYS@ #r@MAKES@ #r@THE@ #r@FUNNEST@ #r@TOYS!\"@ NL NL You notice an over-sized grin as the third addresses you. NL \"Ignore the others... Would you like a taste of our #y~power?\"~ ",
+      "#y“……” NL ",
+      "Before you have time to recover ghostly shape, that #b~Azure~ #b~flame~ burn ahead of you. NL NL You hear them #r@giggling@ and #b@hooting@ , probably because the situation itself is ~funny~ enough. NL Feasted Devil piercing your heart, overwhelming fire into your body. NL NL You lost consciousness for a short time.When you woke up, you heard the devil's happy grunt. NL NL You have run out of opportunities to apologize to those three. You're back on the road.You feel something #bprotecting your wounded heart.",
+      "\"What a disappointment...\" NL ~\"It's going to try another option sooner or later anyway.\"~  NL  #r@\"HA@ #r@HA@ #r@HA@ #r@HAHAHA!\"@ NL NL The shapes fade away, you heard Devil’s snort.",
+      ""
+    ],
+    "OPTIONS": [
+      "[Devour] #gObtain #gRune #gEctoplasm. #rLose #r",
+      " #rMax HP. #rBlood+%d",
+      "[Refuse]",
+      "[Leave]"
+    ]
+  },
+  "Scapegoat:Vampires": {
+    "NAME": "Vampires(?)",
+    "DESCRIPTIONS": [
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~brother,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~sister,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~",
+      "The tall figure grabs your arm, pulls you forward, and sinks his fangs into your neck. You feel a @dark@ @force@ pour into your neck and @course@ through your body. NL ... NL You wake up some time later, alone. An intense ~hunger~ passes through your belly. You #rmust #rfeed...",
+      "You step back and raise your weapon in defiance. The tall figure sighs. @\"She@ @is@ @a@ @devil!@ @An@ @impure@ @being!@ @An@ #r@ENEMY@ @of@ @our@ @master!\"@ The hooded figures swarmed towards you. You cut a few with your sword but they changed into a thick black mist and fled. NL However,you also lost your blood to their fangs in the chaos.",
+      "The pale figures gasp as you take out the #yBlood #yVial. NL ~\"The~ ~master's~ ~blood...~ ~the~ ~master's~ ~blood!~ @THE@ @MASTER'S@ @BLOOD!\"@ NL They all chant fervently as the tall one bows before you. \"If you give it to us, we will forgive your impurity, DEVIL.\" NL You send out #yBlood Vial.You see them sharing the blood in a frenzy. The Shouting gets louder and louder until it becomes #r@WAILING and WHINING!! NL #bAzure flames cut open their stomachs.The pale people were eaten away by the cold flames into droplets that evaporated into the air. NL  The only thing left on the floor is the little bottle. You go up and pick it up. You also pick up a #yrelic that didn't burn up. NL You wanted to taste the liquid, #rNow you don't want it...",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~broken~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+    ],
+    "OPTIONS": [
+      "[Accept(?)] #rBattle.",
+      "[Refuse] #rLose6HP.",
+      "[Lose ",
+      "] #gGain #gBlood #gVial(?) #gand #ga #grandom #gcommon #grelic.",
+      "[Leave]"
+    ]
+  },
+  "Scapegoat:Forgotten Altar": {
+    "NAME": "Forgotten Altar",
+    "DESCRIPTIONS": [
+      "In front of you sits an altar to a forgotten god. NL Atop the altar sits an ornate female statue with arms outstretched. NL She calls out to you, demanding sacrifice.",
+      "As you gently set the idol onto the altar a #bcold wind swirls throughout the room. NL The arms of the statue begin to discolor and crumble. NL NL Your #ygolden #yidol begins to dull in color and begins bleeding from its eyes. NL The bleeding never ceases.",
+      "You intend to offer a sacrifice, but never give to it. NL You cut your finger, #bAzure fire wipes the blood. #pDark magic breaks the spell this room has on you. A wailing of grief echoed around. NL You ignored it and left the room. ",
+      "You lash out and smash the statue in front of you, breaking the magical hold the room had placed upon you. NL A dark wail echoes all around you, and you can feel the #p~cursed~ #p~magic~ seep into your bones."
+    ],
+    "OPTIONS": [
+      "[Offer: Golden Idol] #gObtain #ga #gspecial #gRelic. #rLose #rGolden #rIdol.",
+      "[Locked] Requires: Golden Idol.",
+      "[Desecrate] #rLose #r",
+      " #rHP.",
+      "[Desecrate] #rBecome #rCursed #r- #rDecay."
+    ]
+  },
+  "Scapegoat:SensoryStone": {
+    "NAME": "Sensory Stone",
+    "DESCRIPTIONS": [
+      "Navigating through the Beyond, you discover a #bglowing #btesseract @spinning@ and ~shifting~ gently in the air.",
+      "You touch it. NL NL A #r@sharp@ #r@pain@ flows through you, followed by vivid flashes of a distant memory. NL ...whose memories are these?",
+      "#b~Confused~ NL NL Your #ypipe is empty, the #ydagger you carried around is missing, even your #ylucky bullet and the #ycandy you just bought are gone! And you now inexplicably want to enter this looks very ominous tower -- to learn? NL NL #b~\"The~ ~more~ ~we~ ~know,~ ~the~ ~more~ ~we~ ~can't~ ~see,~ ~and~ ~the~ ~stronger~ ~we~ ~become.\"~ Devil says to you. NL NL You don't understand his words, all you know is that your vacation is ruined. NL But at least he gave you a sword, so you pack up and go with him to the tower. NL You snuck your gun..."
+    ],
+    "OPTIONS": [
+      "[Recall] #gAdd #g1 #gColorless #gcard #gto #gyour #gdeck.",
+      "[Recall] #gAdd #g2 #gColorless #gcards #gto #gyour #gdeck. #rLose #r",
+      "[Recall] #gAdd #g3 #gColorless #gcards #gto #gyour #gdeck. #rLose #r",
+      " #rHP.",
+      "[Leave]",
+      "[Interact]"
+    ]
+  },
+  "Scapegoat:The Moai Head": {
+    "NAME": "The Moai Head",
+    "DESCRIPTIONS": [
+      "You stumble across something that feels *very* out of place. Before you, an enormous stony head emerges from a large wall segment that does not shift and change like the rest of this area. NL The head's mouth is wide open, and it reveals large intimidating teeth stained red with blood. The surface of the statue is riddled with pictographs that seem to indicate people throwing themselves into the mouth of this head and being devoured. Why would anyone do that?",
+      "You know what's gonna happen. You get out of Devil's way.Then you step into the mouth. The giant molars of the statue came crashing down and crushed you.NL #b~You~ #b~see~ #b~starlight.~ NL But the scene was fleeting. The light came on gradually, and there was a rumbling sound. The teeth of the statue rose slowly. You walked out,Devil was furious at the loss of blood food. NL NL You try to comfort him, there will be a time to eat again. NL #pWon't be long.",
+     "You jump back a little as the gigantic molars smash down on the idol, smashing it into dust. As the teeth start to rise up again, #ygold pours forth in a torrent from the opening, flooding you with riches.",
+     "You leave, wondering what could have been."
+    ],
+    "OPTIONS": [
+      "[Jump Inside]  #rLose #r",
+      " #rMax HP. #gGain #gSelf #gSacrifice .",
+      "[Offer: Golden Idol] #gGain #g333 #gGold. #rLose #rGolden #rIdol.",
+      "[Locked] Requires: Golden Idol.",
+      "[Leave]"
+    ]
+  },
+  "Scapegoat:Addict": {
+    "NAME": "Pleading Vagrant",
+    "DESCRIPTIONS": [
+      "While sneaking past a group of shrouded figures, one of them approaches you. NL \"Got anything for me friend? Please... maybe some #yCoin?\" NL \"I just need somewhere to stay, I have treasures I can trade...\" NL He seems delusional, but harmless.",
+      "\"Oh yes, ~yes!~ Here here, a fair trade!\"",
+      "You heard the sound of flames burning. NL This time you finally stop the evil in time to save the stranger's life. NL  He was so scared, you even saw him wet his pants, but he pointed at you and shouted: NL #r@\"Devil,@ #r@you@ #r@deadly@ #r@devil,@ #r@you@ #r@killed@ #r@everyone!\"@ NL He fled with a trail of water and even left his #yrelic on the ground. NL are you really that bad? NL You pick up the #yrelic and feel a little #bframed."
+    ],
+    "OPTIONS": [
+      "[Offer Gold] #y",
+      " #yGold: #gObtain #ga #gRelic.",
+      "[Locked] Requires: ",
+      " Gold.",
+      "[Rob] #gObtain #ga #gRelic. #rBecome #rCursed #r- #rFrame.",
+      "[Leave]",
+      "",
+      ""
+    ]
+  },
+  "Scapegoat:Designer": {
+    "NAME": "“Designer In-Spire",
+    "DESCRIPTIONS": [
+      "You discover a #g~colorful~ shop with the banner \"IN-SPIRE\" and walk in to see what's inside. NL \"No, no way. Nope. Can't let you in!\" NL NL A man with ridiculous clothing appears at the entrance to bar you.",
+      "\"This will not do, no no. What is this style? @Disgusting!@ Are you #rbleeeeding? #p~Groooss.~ @Business??@ You a customer? Fine. ~Whaaatever.\"~ NL He lets out an exaggerated sigh and points at a list of services. NL NL The services seem fine, but you would rather punch this smug man in his smug face.",
+      "\"Okay, bye bye now.\" NL NL ...should've punched him.",
+      "You punch him so hard your fist hurts. NL \"My @FACE!!@ Now I'll have to-\" NL NL He fainted. Who's #p~groooss~ and #rbleeeeding now?",
+      "#b~\"With~ #b~such~ #b~a~ #b~sophisticated~ #b~and~ #b~stylish~ #b~design~ #b~,~ #b~I~ #b~think~ #b~I~ #b~can~ #b~shine~ #b~a~ #b~light~ #b~on~ #b~your~ #b~talent!\"~ Devil pushes past you, takes your purse, and goes to talk to him. NL You can't understand what they're saying.You just think they talk for ages, and then he signs the contract with his eyes shining. NL NL As always, you see him go up in #bflames, #r@Shrill@ #r@crying@ makes you nervous.But finally #ysomething remains. NL Devil picks up that #ything.Throw it back to you with your empty purse. NL Devil smiles. NL #b~\"Spire,~ #b~absolutely~ #b~in-spire.\"~"
+    ],
+    "OPTIONS": [
+      "[Continue]",
+      "[Adjustments] #rLose #r",
+      "[Clean Up] #rLose #r",
+      "[Full Service] #rLose #r",
+      "[Punch] #rLose #r",
+      " #rHP.",
+      " #rGold. ",
+      "#gUpgrade #g",
+      " #grandom #gcards.",
+      "#gUpgrade #ga #gcard.",
+      "#gRemove #ga #gcard.",
+      "#gTransform #g",
+      " #gcards.",
+      "#gRemove #ga #gcard #gand #gupgrade #ga #grandom #gcard.",
+      "[Leave]",
+      "Choose a Card to Upgrade",
+      "Choose 2 Cards to Transform",
+      "Choose a Card to Remove",
+      "[Fan Service] #rLose #rALL #rGold. #gObtain #ga #gspecial #grelic. #rBlood+%d"
+    ]
+  },
+  "Scapegoat:Nest": {
+    "NAME": "The Nest",
+    "DESCRIPTIONS": [
+       "A long line of #b~hooded~ #b~figures~ can be seen entering NL an #punassuming #pcathedral.",
+      "Naturally, you join the line and are quickly surrounded by #rCultists! NL They ignore you as they gleefully @chant@ and ~wave~ their weapons around. NL NL #r@\"MURDER!!@ #r@MURDER@ #r@MURDER!!\"@ NL #b~\"CAW~ #b~CAW~ #b~CAAAAAWWW!\"~ NL #r@\"MURDER!@ #r@MURDER@ #r@MUURDER!!\"@ NL #b~\"CAAW~ #b~CAW~ #b~CAAAAAAWW!!\"~ NL NL You eye a #yDonation #yBox...",
+      "You decide to stay in line (out of fear) to see what will happen. NL NL Eventually, you are face-to-face with the leader. A well-dressed cultist hands you an #yOrnate #yDagger. Like the others before you, you slash your forearm and let the blood drip into a misshapen bowl. NL NL The cultists @chant@ and @holler@ for you! NL NL #b~\"CAAW~ #b~CAW~ #b~CAAAAAAWW!!\"~ NL NL You chant, too. Why not?",
+       "They didn't even notice.",
+      "You stayed in line. Devil comes out of your body. You don't know what he's up to. NL The flames all went out in a moment.You saw the outlines of an huge bird on the wall. The cultists in their robes were trembling on their knees, and the cultists were waving their weapons. NL #b~\"CAAW~ #b~CAW~ #b~CAAAAAAWW!!\"~ NL Their bodies swelled and deformed so violently that they became twisted bird-shaped monsters that smashed windows with fluttering wings then flew away. NL #rThat's #rnot #rthe #rstate #rthey #rwant #rto #rbe #rin. NL Devil emptied the money out of the donation box and stuffed it in your bag. At the same time you perceive the wrath of a god who has been robbed of his followers.You ignore it. NL That's not the only one with a problem with you.",
+      ""
+    ],
+    "OPTIONS": [ "[Stay in Line] #gObtain Ritual Dagger. #rLose #r",
+      " #rHP.",
+      "[Smash and Grab] #gObtain #g",
+	  " #gGold.",
+      "[Leave]",
+      "[Continue]",
+      "[BE THEIR GOD!] #gGain #g200 #gGold. #rBlood+%d #rSin+%d"
+    ]
+  },
+  "Scapegoat:Big Fish": {
+    "NAME": "Big Fish",
+    "DESCRIPTIONS": [
+      "As you make your way down a long corridor you see a #ybanana, a #ydonut, and a #ybox ~floating~ about. No... upon closer inspection they are tied to strings coming from holes in the ceiling. There is a quiet @cackling@ from above as you approach the objects. NL What do you do?",
+      "You eat the #ybanana. It is nutritious and slightly #bmagical, healing you.",
+      "You eat the #ydonut. It really hits the spot! Your Max HP increases.",
+      "",
+      "You grab the box. Inside you find a #yrelic!",
+      " NL However, you really craved the donut...  NL You haven't eaten for a long time and you are #yvery #r~ hungry~...",
+      "You grab the #y donut first, and Devil gets the #y banana for you. NL Giggling stops and turns into a whisper of curses.But you don't understand, you just know that the rope has snapped without the strength of the two of you, and now you have both #y banana and #y donut. NL That little voice is still complaining all the time, tired of hearing Devil threw a flame over here, now the voice is gone. NL You ate them all.They were delicious, #yseems to have some #bmagic. You feel less hungry, you have a lot of energy back, and your Max health has increased. NL But apparently, the #rminaret monsters were attracted to the sound."
+    ],
+    "OPTIONS": [
+      " [Banana] #gHeal #g",
+      " #gHP.",
+      "[Donut] #gMax #gHP #g+",
+      ".",
+      "[Box] #gObtain #ga #gRelic. #rBecome #rCursed #r- #rRegret.",
+      "[Leave]",
+      "[Take ALL Food] #gHeal #g%d #gHP , #gMax #gHP+5 #rSin+%d"
+    ]
+  },
+  "Scapegoat:The Woman in Blue": {
+    "NAME": "The Woman in Blue",
+    "DESCRIPTIONS": [
+     "From the darkness, an arm pulls you into a small shop. As your eyes adjust, you see a pale woman in sharp clothes gesturing towards a wall of potions. NL \"Buy a potion. Now!\" she states.",
+      "\"Good. Now leave.\" NL You exit the shop cautiously.",
+      "#r@WHAM@ NL Her gloved fist collides with your face, nearly knocking you off your feet. NL \"Get out before I litter the floor with your guts.\" You take her word and exit with your guts still safely in your body.",
+      "It was Devil. They fought like hell. NL You are huddled in a safe corner smoking a smokey, with broken glass everywhere and various colored potions pouring out. NL It ends with Devil carrying you and the potion, smashing the #ySmoke #ybomb in his hand. NL You two escaped with some potion. NL You caused blood, but all you really wanted to do was pay for that bottle of #yJuice on the shelf."
+    ],
+    "OPTIONS": [
+      "[Buy 1 Potion] #y",
+      "[Buy 2 Potions] #y",
+      "[Buy 3 Potions] #y",
+      " #yGold.",
+      "[Leave]",
+      "[Leave] #rTake #r",
+      " #rDamage.",
+      "[Rob] #gGain #g2 #grandom #gpotions. #rBlood+%d"
+    ]
+  },
+  "Scapegoat:Beggar": {
+    "NAME": "Old Beggar",
+    "DESCRIPTIONS": [
+      "An old beggar cloaked in fur reaches his hands out towards you as you pass. \"Spare some coin, child?\"",
+      "The beggar looks to the floor as you pass. NL \"You will never make a difference... You never do.\"",
+      "The beggar takes off its cloak to reveal that he is #bCleric! NL  \" @I@ @never@ @thought@ @devils@ @could@ @be@ @good.@ @Come@ @and@ @be@ @purified!@ \" He shouted. NL Honestly you don't know if he wants to kill you or help you.",
+      "\" @Hope@ @you'll@ @be@ @kind@ @this@ @time@ , @little@ @one!@ \" he shouted. NL Wondering what was implied by this, you push forward.",
+      "You stare at the old beggar and grab the devil by the wrist. NL \"Well, well, well, bad luck.\" The beggar (actually #bCleric) don't overdo it, \"old price, special offer for YOU.\" NL You don't think it's good to force people to do things, but you can guarantee that they will fight each other any longer. NL You don't want to make a scene.",
+      "\" @Don't@ @die@ @on@ @the@ @way@ , @little@ @one!@ \" he shouted. NL Wondering what was implied by this, you push forward."
+    ],
+    "OPTIONS": [
+      "[Offer Gold] #y",
+      " #yGold: #gRemove #ga #gcard #gfrom #gyour #gdeck.",
+      "[Locked] Requires: ",
+      " Gold.",
+      "[Continue]",
+      "[Leave]",
+      "Select a Card to Remove.",
+      "[Exposure Identity] #y50  #yGold:  #gRemove #ga #gcard #gfrom #gyour #gdeck. #rSin+%d"
+    ]
+  },
+  "Scapegoat:The Cleric": {
+    "NAME": "The Cleric",
+    "DESCRIPTIONS": [
+    "A strange blue humanoid with a golden helm(?) approaches you with a huge smile. NL @\"Hello@ @the@ @presence@ @of@ @evil!@ @I@ @am@ #b@Cleric!@ @Are@ @you@ @interested@ @in@ @my@ @services?!\"@ the creature shouts, loudly.",
+     "A warm golden light envelops your body and dissipates. NL The creature grins. \"Cleric best healer. @Have@ @a@ @good@ @day!\"@",
+      "You raise your weapon, and Devil is on your shoulder,Obviously if you try to attack,Devil will rush in and rip the creature apart. NL \"Oh, you don't have to attack me so quickly, why don't you try it first?\" The #bCleric waves a cold #bblue flame over you. NL When the flame dissipates, #bCleric is gone, but you can vaguely sense his disgust. NL Maybe he'll put a little bump in your path.",
+      "You don't believe this #b\"Cleric\" at all and plan to walk away. NL But the #ygolden light suddenly fell from the sky, even if you dodged quickly.Still get a little #rburn. NL #bCleric is gone, you heard Devil's angry grunt. NL Rarely, this time you are a little confused and angry."
+    ],
+    "OPTIONS": [
+      "[Threat] #gRemove #ga #gcard #gfrom #gyour #gdeck. #rSin+%d",
+      "[Leave] #rLose #r4 #rHP",
+      "[Leave]",
+      "Select a Card to Remove."
+    ]
+  },
+  "Scapegoat:FaceTrader": {
+    "NAME": "Face Trader",
+    "DESCRIPTIONS": [
+      "You walk by an eerie statue holding several masks... NL Something behind you softly whispers, NL ~\"Stop.\"~",
+      "You swerve around to face the statue which is now facing you! NL On closer inspection, it's not a statue but a statuesque, gaunt man. Is he even breathing? NL NL ~\"Face.~ ~Let~ ~me~ ~touch?~ ~Maybe~ ~trade?\"~",
+      "~\"Compensation?~ ~Compensation.\"~ NL Mechanically, he cranes out a neat stack of #ygold and places it into your pouch. NL NL ~\"What~ ~a~ ~nice~ ~face.~ ~Nice~ ~face.\"~ NL While he touches your face, you begin to feel your life drain out of it! NL During this, his mask falls off and shatters. Screaming, he quickly covers his face with all six arms dropping even more masks! Amidst all the screaming and shattering, you escape. NL NL His face was completely blank.",
+      "~\"For~ ~me?~ @FOR@ @ME?@ ~Oh~ ~yes..~ ~Yes.~ ~Yes..~ ~mmm...\"~ NL NL You see one of his arms flicker, and your face is in its hand! Your face has been swapped. NL NL ~\"Nice~ ~face.~ ~Nice~ ~face.\"~",
+      "~\"Stop.~ ~Stop.~ ~Stop.~ ~Stop.~ ~Stop.\"~ NL NL This was probably the right call.",
+      "~\"Oh,~ ~oh,~ ~I~ ~have~ ~a~ ~face~ ~specially~ ~for~ ~you...~ ~Let~ ~me~ ~find~ ~it.\"~ NL He sees you, with body shaking. He rummages for a long time then hands you a #ymask. NL NL You made eye contact with Devil.Then you put it on. NL ~\"Ohh.It's~ ~a~ ~good~ ~face.~ ~It~ ~fits~ ~your~ ~face.\"~"
+    ],
+    "OPTIONS": [
+      "[Touch] #rLose #r",
+      " #gGold.",
+      "[Trade] #g50%: #gGood #gFace. #r50%: #rBad #rFace.",
+      "[Leave]",
+	  "[Continue]",
+	  " #rHP, #ggain #g",
+      "[Special Collection] #gObtain #ga #gspecial #gface. #rBlood+%d #rSin+%d"
+    ]
+  },
+  "Scapegoat:N'loth": {
+    "NAME": "N'loth",
+    "DESCRIPTIONS": [
+     "An odd creature with a hunched back sprouting several tentacles is scrounging through a pile of trash and debris in front of you. As you approach, he shuffles towards you in a non-threatening manner. NL \"N'loth hungry. Feed N'loth.\"",
+      "Holding the #ycard out towards him.He blinked a little, but Devil's gaze forced him to swallow it. More tentacles appear from behind the NL cloak, trembling and thrusting a neat little box at you. Then he ran away, as fast as he could. NL Are you that scary? You touch the little box, a little confused.",
+     "You shake your head. N'loth hunches even further and sighs, then scuttles away."
+    ],
+    "OPTIONS": [
+      "[Offer： ",
+      "] #rLose #ra #rcard. #gObtain #ga #gspecial #grelic. #rBlood+%d",
+      "[Leave]"
+    ]
+  },
+  "Scapegoat:The Mausoleum": {
+    "NAME": "The Mausoleum",
+    "DESCRIPTIONS": [
+      "Venturing through a series of tombs, you are faced with a large sarcophagus ~studded~ ~with~ ~gems~ in the center of a circular room. NL You cannot make out the writing on the coffin, however, you do notice #p~black~ #p~fog~ seeping out from the sides.",
+      "You push open the coffin. As you do, #p~black~ #p~fog~ spews forth and covers the entire room! Inside, you find no body, only a #y~relic.~ You take it and move onwards, #r@coughing@ #r@violently.@",
+      "You push open the coffin. The fog dissipates harmlessly. Inside, you find the mortal remains of a decorated soldier grasping an old #yrelic. You pilfer it and move on.",
+      "You continue along your way, leaving the forgotten dead undisturbed.",
+      "You're about to pry the powder out of a bullet. But Devil shrugs and snaps his fingers. NL NL @HE@ @BLEW@ @UP@ @THE@ @SARCOPHAGUS!@ NL NL You get a little cut from the rubble, but whatever in the sarcophagus is pretty much burnt out. You dispelled the flames and dug out one intact #yrelic from the pile of debris. NL You picked it up and left the room."
+    ],
+    "OPTIONS": [
+      "[Blow Up] #gGain #ga #grelic #rlose #r",
+      " #rHP. #rBlood+%d",
+      "[Leave]"
+    ]
+  },
+  "Scapegoat:Wheel of Change": {
+    "NAME": "Wheel of Change",
+    "DESCRIPTIONS": [
+      "You come upon a dapper looking, cheery gremlin. NL \"It's time to spin the wheel! Are you ~R~ ~E~ ~A~ ~D~ ~Y~ ~?~ Of course you are!\"",
+      "\"You win some #yGOLD! NL YAY!!!!\"",
+      "\"Ah, a #ggift! NL Enjoy!\"",
+      "\"Oooh, a free #gHeal for you!\"",
+      "\"Looks like you won a #pCurse! NL That's not good. NL Oh well! Better luck next time!\"",
+      "\"Ohh, the power of #r~darkness...~ NL Choose a card to remove from your deck!\"",
+      "\"Uh oh! NL You lose!\" NL You spot him readying a shiv...",
+      "You slash at the crazy gremlin but he's simply too quick! NL He gets you a few times with a crude shiv. NL \"The price has been paid!!\" NL and with that, both the gremlin and its wheel disappear in a puff of smoke.",
+      "Though you're not smart enough, you know it's not a prize. Prize may be a #ybanana or a #ydonut. NL Under your silent protest (and the #bFLAME of Devil almost touching the gremlin's face). The gremlin slips you a tiny #ycupcake.  NL  \"The devil broke the rules of the game first!\" The gremlin's voice was angry.Then both the gremlin and its wheel disappear in a puff of smoke. NL You don't understand what he says. But #ycupcake is delicious, and with #bmagic. Your Max HP has been increased."
+    ],
+    "OPTIONS": [
+       "[Play]",
+      "[Prize!] YAY!!!!",
+      "[Prize!] #gObtain #ga #gRelic.",
+      "[Prize!] #gHeal #gto #gfull #ghealth.",
+      "[Prize?] #rCurse #r- #rDecay.",
+      "[Prize!] #gRemove #ga #gcard #gfrom #gyour #gdeck.",
+      "[Prize?] #rLose #r",
+      " #rHP.",
+      "[Leave]",
+      "Select a Card to Remove.",
+      "[Prize？] #gRefuse #gthe #gprize. #gGain #g9 #gMax #gHP. #rSin+%d"
+    ]
+  },
+  "Scapegoat:The Joust": {
+    "NAME": "The Joust",
+    "DESCRIPTIONS": [
+        "As you make your way through the large buildings you come across a long narrow bridge and spot knights on either side, facing one another. You approach... NL @\"Halt!\"@ NL NL A knight forcefully gestures you to stop with its giant lance.",
+      "\"Today is the day I must settle the score with the #rmurderer of my beloved pet, #yNoodles. Until then, you may not pass. NL NL Fellow witness, why don't you #bbet on who you think will emerge victorious?\"",
+      "\"I can't believe you're betting against #yNoodles!\" NL NL Furious, he clamps down his helmet and rushes towards his nemesis.",
+      "\"Give me strength, #yNoodles!\" NL NL Clamping down his helmet, the knight charges forward.",
+      "NL #y@*CRASH!!!*@ #r@*KLAAAANG!*@ NL NL #g@*POW!*@",
+      "The nemesis was slain. NL NL ",
+      "The owner died. NL NL ",
+      "You #gwin the bet. Unsure what to think, you grab your winnings and leave.",
+      "You #rlost the bet, but at least you weren't gouged by a lance.",
+      "You can't figure it out, and you're craving #ynoodles, so you split the horse's leg in an instant, and it takes its rider with it down into the abyss. NL Devil did the same thing on the other side. NL #rYou #rtook #rall #rthe #rmoney. NL But do they really have #ynoodles? Or places where #ynoodles are sold? Instead of being found in dusty boxes as they are now?"
+    ],
+    "OPTIONS": [
+      "[Continue]",
+      "[Murderer] #yBet #y",
+      " #yGold - #g70%: #gwin #g",
+      " #gGold.",
+      "[Owner] #yBet #y",
+      " #yGold - #g30%: #gwin #g",
+      "[Watch]",
+      "[Leave]",
+      "#r[PUSH #rTHEM #rAll #rDown] #gGain 300 Gold. #rBlood+%d #rSin+%d"
+    ]
+  },
+  "Scapegoat:Tomb of Lord Red Mask": {
+    "NAME": "Tomb of Lord Red Mask",
+    "DESCRIPTIONS": [
+       "A highly ornamented tomb can be seen on the other side of a floating path. Upon reaching the tomb, you notice a slot for #ygold coins with a scratched out inscription above it.",
+      "You don the mask and the tomb starts to ~flake~ ~away...~ a secret passage! NL NL The passage is lined with countless stolen goods and mounds of #ygold!",
+      "An opening appears in the tomb and out slides a small red mask with a note attached. \"Take from others as I have taken from you!\"",
+      "The stone walls of the tomb aren't a problem for you,at least not for Devil. NL You found a little red mask and some not-so-valuable funerary items. NL You get headache when you see those #yinscriptions.You don't want to stay any longer.You quickly drag Devil out."
+    ],
+    "OPTIONS": [
+      "[Don the Red Mask] #gGain #g222 #gGold.",
+      "[Locked] Requires: Red Mask.",
+      "[Offer: ",
+      " Gold] #rLose #rall #rGold. #gObtain #ga #gRelic.",
+      "[Leave]",
+      "[Rob] #gGain #g100 #gGold. #gObtain#g #ga #gRelic. #rSin+%d"
+    ]
+  },
+  "Scapegoat:WeMeetAgain": {
+    "NAME": "We Meet Again!",
+    "DESCRIPTIONS": [
+       "\"We meet again!\" NL A cheery disheveled fellow approaches you gleefully. You do not know this man. NL NL \"It's me, #yRanwid! Have any goods for me today? The usual? A fella like me can't make it alone, you know?\" NL You eye him suspiciously and consider your options...",
+      "\"Exquisite! Was feeling parched.\" NL #b~Glup~ #b~glup~ #b~glup~ NL NL He downs the potion in one go and lets out a satisfied @burp.@",
+      "\"Magnificent! This will be quite handy if I run into those #rmask #rwearing #rhoodlums again.\"",
+      "\"Exemplary! I shall study this further in my chambers.\"",
+      "\" @Aaaaagghh!!@ What a jerk you are sometimes!\" NL He runs away.",
+      "  NL NL He rummages around his various pockets... NL \"Here, look what I've got for you today! Take it take it!\"",
+      "@\"You@ @two@ @really@ @haven't@ @changed@ @even@ @a@ @little@ @bit!\"@ He jumps back,throws you the contents of his pocket. NL @\"Bad@ @deeds@ @many,@ @death@ @comes@ @early!\"@ NL He ran away as fast as he could."
+    ],
+    "OPTIONS": [
+     "[Give Potion] #rLose ",
+      "[Locked] Requires: Potion.",
+      "[Give Gold] #rLose #r",
+      "[Locked] Requires: At least 50 Gold.",
+      "[Give Card] #rLose ",
+      "[Locked] Requires: Card.",
+      ". #gObtain #ga #gRelic.",
+      "[Attack] #gObtain a relic. #rSin+%d",
+      "[Leave]",
+      " #rGold."
+    ]
+  }
+}

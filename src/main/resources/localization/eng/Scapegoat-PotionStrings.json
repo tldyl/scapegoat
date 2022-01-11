@@ -1,0 +1,22 @@
+{
+  "Scapegoat:LiquidSequin": {
+    "NAME": "Liquid Shard",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      "  #yReturn. "
+    ]
+  },
+  "Scapegoat:BottledRedemption": {
+    "NAME": "Bottled Redemption",
+    "DESCRIPTIONS": [
+      "#yRecall #b",
+      " 。"
+    ]
+  },
+  "Scapegoat:DevilInAJar": {
+    "NAME": "Devil in a Jar",
+    "DESCRIPTIONS": [
+      "In this turn. Whenever you lose HP, Gain same #yRegen. "
+    ]
+  }
+}

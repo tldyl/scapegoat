@@ -1,0 +1,59 @@
+[
+  {
+    "NAMES": [
+      "return"
+    ],
+    "PROPER_NAME": "Return",
+    "DESCRIPTION": "When receiving #yAttack damage ,deals same damage back.Then Return is reduced by #b1 ."
+  },
+  {
+    "NAMES": [
+      "reburial"
+   ],
+    "PROPER_NAME": "Reburial",
+    "DESCRIPTION": "Throw #bX card from the top of your draw pile.(When the number of card from your draw pile less than  #bX ,throw them ALL)."
+  },
+  {
+    "NAMES": [
+      "recall"
+    ],
+    "PROPER_NAME": "Recall",
+    "DESCRIPTION": "Look #bX random cards from your discard pile, you can choose any of them into your hand."
+  },
+  {
+    "NAMES": [
+      "spark"
+    ],
+    "PROPER_NAME": "Spark",
+    "DESCRIPTION": "When the card is #yReburial or #yExhausted, trigger the effect. "
+  },
+  {
+    "NAMES": [
+      "bullet"
+    ],
+    "PROPER_NAME": "Bullet",
+    "DESCRIPTION": "Creatures with #yBullet takes more amount of #yBullet damage. NL Each turn, Bullet is reduced by #b1 ."
+  },
+  {
+    "NAMES": [
+      "finale"
+    ],
+    "PROPER_NAME": "Finale",
+    "DESCRIPTION": "At the start of a combat or shuffle, this card is on the bottom of your draw pile."
+  },
+  {
+    "NAMES": [
+      "sin"
+    ],
+    "PROPER_NAME": "Sin",
+    "DESCRIPTION": "The enemies you encounter in the next #bX battle are enhanced by #pSin. NL For every  #b1  #pSin you have, increase #b10% #yBlock gained from cards. NL #pSin is reduced by #b1 at the end of combat."
+  },
+  {
+    "NAMES": [
+      "blood",
+      "bloodstain"
+    ],
+    "PROPER_NAME": "Blood",
+    "DESCRIPTION": "Your next #bX turn will be paid for by #pBlood.  NL The cost of #rBlood ：At the start of combat, shuffle 2 #yWounds / #yBazed / #yCost into your draw pile. NL For every  #b1  #pBlood you have, increase #b10% damage you deal. NL #pBlood is reduced by #b1 at the end of combat."
+  }
+]

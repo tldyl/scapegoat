@@ -1,0 +1,194 @@
+{
+  "Scapegoat:PayBackPower": {
+    "NAME": "Return",
+    "DESCRIPTIONS": [
+      "When receiving #yAttack damage ,deals same damage back.Then Return is reduced by #b1 ."
+    ]
+  },
+  "Scapegoat:BulletPower": {
+    "NAME": "Bullet",
+    "DESCRIPTIONS": [
+      "Increase #b damage received",
+      " . NL Lasts #b",
+      " Rounds. "
+    ]
+  },
+  "Scapegoat:SacrificePower": {
+    "NAME": "Offering",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP by yourself,at the end of combat, heal same HP."
+    ]
+  },
+  "Scapegoat:ForTheSinPower": {
+    "NAME": "Substitute",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP by yourself,deal #b",
+      " times damage to a random enemy."
+    ]
+  },
+  "Scapegoat:FalseAccusationPower": {
+    "NAME": "Sin Loaner",
+    "DESCRIPTIONS": [
+      "Whenever you #yReburial ,gain #b",
+      " #yReturn .",
+      " NL Gain #b",
+      "  #yBullet to ALL enemies. "
+    ]
+  },
+  "Scapegoat:NextTurnDamagePower": {
+    "NAME": "Lai",
+    "DESCRIPTIONS": [
+      "At the start of next turn, deal #b",
+      "  #yAttack damage to a random enemy."
+    ]
+  },
+  "Scapegoat:AllOutParryPower": {
+    "NAME": "All Out Parry",
+    "DESCRIPTIONS": [
+      "Whenever you #yReburial a card, gain #b",
+      "  #yBlock ."
+    ]
+  },
+  "Scapegoat:DealWithDevilPower": {
+    "NAME": "Fiendish Deal",
+    "DESCRIPTIONS": [
+      "At the end of your turn, ALL enemies lose #b",
+      " HP"
+    ]
+  },
+  "Scapegoat:CrossDominatePower": {
+    "NAME": "Cross Domination",
+    "DESCRIPTIONS": [
+      "Whenever you #yReburial #b",
+      " cards, draw #b",
+      " cards."
+    ]
+  },
+  "Scapegoat:MasteryOfFirearmsPower": {
+    "NAME": "SimGuns",
+    "DESCRIPTIONS": [
+      "At the start of your turn,add #b",
+      "  #yGalssBullet into your hand.",
+      "  #yGlassBullet+ into your hand."
+    ]
+  },
+  "Scapegoat:AdaptabilityPower": {
+    "NAME": "Adaptability",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP by yourself,gain #b",
+      "  #yBlock."
+    ]
+  },
+  "Scapegoat:SplashPower": {
+    "NAME": "Splash",
+    "DESCRIPTIONS": [
+      "When the enemy dies,deal the damage equal to its #yBullet  #b",
+      " times to ALL enemies."
+    ]
+  },
+  "Scapegoat:AimingShotPower": {
+    "NAME": "Aim",
+    "DESCRIPTIONS": [
+      "All the random Attack target this enemy."
+    ]
+  },
+  "Scapegoat:BindingPower": {
+    "NAME": "Binding",
+    "DESCRIPTIONS": [
+      "Immune lose HP by yourself this turn."
+    ]
+  },
+  "Scapegoat:SacrificeReplacementPower": {
+    "NAME": "Replacement",
+    "DESCRIPTIONS": [
+      "Stop lose HP by yourself this turn. NL When trigger, add #b",
+      " #yShard to your draw pile. "
+    ]
+  },
+  "Scapegoat:DrinkPoisonToEndThirstPower": {
+    "NAME": "Harm Than",
+    "DESCRIPTIONS": [
+      "At the next end of your turn,lose #b",
+      " HP",
+      "At the end of your turn,lose #b"
+    ]
+  },
+  "Scapegoat:PriorRepairPower": {
+    "NAME": "Prior Repair",
+    "DESCRIPTIONS": [
+      "At the start of your turn,gain #b",
+      " [E] and draw #b",
+      " cards. Last #b",
+      " Rounds."
+    ]
+  },
+  "Scapegoat:MarkerCapturePower": {
+    "NAME": "Imprint Marker",
+    "DESCRIPTIONS": [
+      "Whenever you attack an enemy with Bullet, Gain #b",
+      " #yBlock."
+    ]
+  },
+  "Scapegoat:SpiritLinkPower": {
+    "NAME": "Spirit Link",
+    "DESCRIPTIONS": [
+      "The damage taken by this soul will double returned to the enemy."
+    ]
+  },
+  "Scapegoat:WashAwayPower": {
+    "NAME": "Cleanse",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you have debuff, remove #b",
+      " of them and #yReburial #b",
+      " 。"
+    ]
+  },
+  "Scapegoat:PunishmentFormPower": {
+    "NAME": "Punishment Form",
+    "DESCRIPTIONS": [
+      "#yBullet will no longer decrease at the end of your turn. NL At the start of your turn, apply #b",
+      " Bullet to ALL enemies."
+    ]
+  },
+  "Scapegoat:BloodstainPower": {
+    "NAME": "Blood",
+    "DESCRIPTIONS": [
+      "#yAttack damage you deal increase #b",
+      "% ."
+    ]
+  },
+  "Scapegoat:SinPower": {
+    "NAME": "Sin",
+    "DESCRIPTIONS": [
+      "#yBlock you gain from card increase #b",
+      "% ."
+    ]
+  },
+  "Scapegoat:DevilInAJarPower": {
+    "NAME": "Devil in a Jar",
+    "DESCRIPTIONS": [
+      "In this turn. Whenever you lose HP, Gain same #yRegen."
+    ]
+  },
+  "Scapegoat:CounterAttackPower": {
+    "NAME": "Counter",
+    "DESCRIPTIONS": [
+      "Double ALL damage sources from you when outside of your turn."
+    ]
+  },
+  "Scapegoat:AsterismPower": {
+    "NAME": "Asterism",
+    "DESCRIPTIONS": [
+      "Whenever you #yRecall, gain #b",
+      " #yBlock."
+    ]
+  },
+  "Scapegoat:TemporaryCollaborationPower": {
+    "NAME": "Short-term Cooperation",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yReburial #b",
+      " , #yRecall #b",
+      " ."
+    ]
+  }
+}

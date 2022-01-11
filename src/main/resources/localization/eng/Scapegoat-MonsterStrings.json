@@ -1,0 +1,12 @@
+{
+  "Scapegoat:BaredSoul": {
+    "NAME": " 's Soul ",
+    "DIALOG": [""],
+    "MOVES": [""]
+  },
+  "Scapegoat:CityVampire": {
+    "NAME": "Vampire",
+    "DIALOG": ["#r@Devil@ #r@doesn't@ #r@deserve@ #r@to@ #r@be@ #r@one@ #r@of@ #r@us!@"],
+    "MOVES": ["Bite", "Claw"]
+  }
+}

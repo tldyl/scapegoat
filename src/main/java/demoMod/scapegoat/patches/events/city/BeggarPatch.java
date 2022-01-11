@@ -81,14 +81,16 @@ public class BeggarPatch {
                                 return SpireReturn.Return(null);
                         }
                     case "GAVE_MONEY":
+                        AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[6], false, false, false, true);
+                        event.imageEventText.clearAllDialogs();
+                        event.imageEventText.setDialogOption(OPTIONS[5]);
+                        ReflectionHacks.setPrivate(event, Beggar.class, "screen", Beggar.CurScreen.LEAVE);
                         if (discovered) {
-                            AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[6], false, false, false, true);
                             event.imageEventText.updateBodyText(DESCRIPTIONS[5]);
-                            event.imageEventText.clearAllDialogs();
-                            event.imageEventText.setDialogOption(OPTIONS[5]);
-                            ReflectionHacks.setPrivate(event, Beggar.class, "screen", Beggar.CurScreen.LEAVE);
-                            return SpireReturn.Return(null);
+                        } else {
+                            event.imageEventText.updateBodyText(DESCRIPTIONS[3]);
                         }
+                        return SpireReturn.Return(null);
                 }
             }
             return SpireReturn.Continue();
