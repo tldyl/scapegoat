@@ -190,5 +190,12 @@
       " , #yRecall #b",
       " ."
     ]
+  },
+  "Scapegoat:Omega2Power": {
+    "NAME": "Omega",
+    "DESCRIPTIONS": [
+      "At the end of your turn, deal #b",
+      " damage to ALL \"enemies\"."
+    ]
   }
 }

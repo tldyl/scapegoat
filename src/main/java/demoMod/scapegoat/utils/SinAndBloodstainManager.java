@@ -20,6 +20,7 @@ public class SinAndBloodstainManager {
         if (AbstractDungeon.ascensionLevel >= 15) amount++;
         SinAndBloodstain sinAndBloodstain = (SinAndBloodstain) AbstractDungeon.player.getBlight(SinAndBloodstain.ID);
         sinAndBloodstain.sinCounter += amount;
+        sinAndBloodstain.sinThisGame += amount;
         for (AbstractRelic relic : AbstractDungeon.player.relics) {
             if (relic instanceof PostIncreaseSinSubscriber) {
                 ((PostIncreaseSinSubscriber) relic).onIncreaseSin(amount);
@@ -32,6 +33,7 @@ public class SinAndBloodstainManager {
         if (AbstractDungeon.ascensionLevel >= 15) amount++;
         SinAndBloodstain sinAndBloodstain = (SinAndBloodstain) AbstractDungeon.player.getBlight(SinAndBloodstain.ID);
         sinAndBloodstain.bloodstainCounter += amount;
+        sinAndBloodstain.bloodstainThisGame += amount;
         for (AbstractRelic relic : AbstractDungeon.player.relics) {
             if (relic instanceof PostIncreaseBloodstainSubscriber) {
                 ((PostIncreaseBloodstainSubscriber) relic).onIncreaseBloodstain(amount);

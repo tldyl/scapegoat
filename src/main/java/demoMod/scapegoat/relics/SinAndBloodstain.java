@@ -41,6 +41,8 @@ public class SinAndBloodstain extends AbstractBlight implements CustomSavable<Ma
     public static final String KEY_WORD_BLOODSTAIN_NAME = BaseMod.getKeywordTitle("bloodstain");
     public static final String KEY_WORD_SIN_BODY = BaseMod.getKeywordDescription("sin");
     public static final String KEY_WORD_BLOODSTAIN_BODY = BaseMod.getKeywordDescription("bloodstain");
+    public int sinThisGame = 0;
+    public int bloodstainThisGame = 0;
     public int sinCounter = 0;
     public int bloodstainCounter = 0;
     private AbstractPlayer p;
@@ -121,6 +123,8 @@ public class SinAndBloodstain extends AbstractBlight implements CustomSavable<Ma
         Map<String, Integer> ret = new HashMap<>();
         ret.put("sinCounter", this.sinCounter);
         ret.put("bloodstainCounter", this.bloodstainCounter);
+        ret.put("sinThisGame", this.sinThisGame);
+        ret.put("bloodstainThisGame", this.bloodstainThisGame);
         if (!p.blights.contains(this)) {
             Scapegoat.addToBot(new AbstractGameAction() {
                 @Override
@@ -138,6 +142,8 @@ public class SinAndBloodstain extends AbstractBlight implements CustomSavable<Ma
         if (data != null) {
             this.sinCounter = data.getOrDefault("sinCounter", 0);
             this.bloodstainCounter = data.getOrDefault("bloodstainCounter", 0);
+            this.sinThisGame = data.getOrDefault("sinThisGame", 0);
+            this.bloodstainThisGame = data.getOrDefault("bloodstainThisGame", 0);
         }
     }
 

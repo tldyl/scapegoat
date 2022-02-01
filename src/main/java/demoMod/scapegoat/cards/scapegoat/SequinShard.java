@@ -2,7 +2,6 @@ package demoMod.scapegoat.cards.scapegoat;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -53,7 +52,7 @@ public class SequinShard extends CustomCard implements PostBurialSubscriber {
 
     @Override
     public void onBurial() {
-        addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.discardPile, true));
+        triggerOnExhaust();
     }
 
     @Override

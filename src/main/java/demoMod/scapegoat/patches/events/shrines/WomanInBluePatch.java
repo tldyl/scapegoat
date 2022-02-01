@@ -2,9 +2,11 @@ package demoMod.scapegoat.patches.events.shrines;
 
 import basemod.ReflectionHacks;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
@@ -55,6 +57,11 @@ public class WomanInBluePatch {
                 Enum screen = ReflectionHacks.getPrivate(event, WomanInBlue.class, "screen");
                 switch (screen.name()) {
                     case "INTRO":
+                        try {
+                            ReflectionHacks.setPrivate(event, WomanInBlue.class, "screen", Enum.valueOf((Class<Enum>) Class.forName("com.megacrit.cardcrawl.events.shrines.WomanInBlue$CurScreen"), "RESULT"));
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                        }
                         switch (buttonPressed) {
                             case 0:
                                 CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.HIGH, ScreenShake.ShakeDur.MED, true);
@@ -81,11 +88,17 @@ public class WomanInBluePatch {
                                 AbstractEvent.logMetric("The Woman in Blue", "Bought 2 Potions");
                                 event.imageEventText.clearAllDialogs();
                                 event.imageEventText.setDialogOption(OPTIONS[4]);
-                                try {
-                                    ReflectionHacks.setPrivate(event, WomanInBlue.class, "screen", Enum.valueOf((Class<Enum>) Class.forName("com.megacrit.cardcrawl.events.shrines.WomanInBlue$CurScreen"), "RESULT"));
-                                } catch (ClassNotFoundException e) {
-                                    e.printStackTrace();
+                                return SpireReturn.Return(null);
+                            case 1:
+                                event.imageEventText.updateBodyText(DESCRIPTIONS[2]);
+                                CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.MED, false);
+                                CardCrawlGame.sound.play("BLUNT_FAST");
+                                if (AbstractDungeon.ascensionLevel >= 15) {
+                                    AbstractDungeon.player.damage(new DamageInfo(null, MathUtils.ceil((float)AbstractDungeon.player.maxHealth * 0.05F), DamageInfo.DamageType.HP_LOSS));
                                 }
+                                event.imageEventText.clearAllDialogs();
+                                event.imageEventText.setDialogOption(OPTIONS[4]);
+                                event.logMetric("Bought 0 Potions");
                                 return SpireReturn.Return(null);
                         }
                 }

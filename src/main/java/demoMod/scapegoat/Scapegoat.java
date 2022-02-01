@@ -1,6 +1,7 @@
 package demoMod.scapegoat;
 
 import basemod.BaseMod;
+import basemod.devcommands.ConsoleCommand;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -15,6 +16,8 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import demoMod.scapegoat.cards.scapegoat.*;
 import demoMod.scapegoat.cards.status.Cost;
 import demoMod.scapegoat.characters.ScapegoatCharacter;
+import demoMod.scapegoat.commands.BloodstainCommand;
+import demoMod.scapegoat.commands.SinCommand;
 import demoMod.scapegoat.dynamicVars.MiscNumber;
 import demoMod.scapegoat.dynamicVars.SecondaryM;
 import demoMod.scapegoat.enums.AbstractCardEnum;
@@ -263,6 +266,8 @@ public class Scapegoat implements EditCardsSubscriber,
         BaseMod.addPotion(LiquidSequin.class, Color.BLUE, Color.CYAN, Color.WHITE, LiquidSequin.ID, AbstractPlayerEnum.SCAPEGOAT);
         BaseMod.addPotion(BottledRedemption.class, Color.WHITE, Color.WHITE, null, BottledRedemption.ID, AbstractPlayerEnum.SCAPEGOAT);
         BaseMod.addPotion(DevilInAJar.class, Color.BLUE, Color.BLACK, Color.BLUE, DevilInAJar.ID, AbstractPlayerEnum.SCAPEGOAT);
+        ConsoleCommand.addCommand("sin", SinCommand.class);
+        ConsoleCommand.addCommand("bloodstain", BloodstainCommand.class);
     }
 
     @Override

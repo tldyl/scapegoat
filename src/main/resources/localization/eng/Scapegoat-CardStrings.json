@@ -150,7 +150,7 @@
   },
   "Scapegoat:PryIntoTruth": {
     "NAME": "See The Truth",
-    "DESCRIPTION": "Upgrade !M! cards in your hand for the rest of combat. NL Exhaust."
+    "DESCRIPTION": "Upgrade !M! cards in your draw pile for the rest of combat. NL Exhaust."
   },
   "Scapegoat:BloodVibration": {
     "NAME": "Lai",
@@ -279,8 +279,8 @@
   },
   "Scapegoat:SequinShard": {
     "NAME": "Sequin Shard",
-    "DESCRIPTION": "Unplayable. NL Spark: Gain [E] ,Gain !M! Return . Exhaust. ",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL Spark: Gain [E] [E] ,Gain !M! Return . Exhaust. "
+    "DESCRIPTION": "Unplayable. NL Spark: Gain [E] ,Gain !M! Return .",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Spark: Gain [E] [E] ,Gain !M! Return ."
   },
   "Scapegoat:StockUp": {
     "NAME": "Hold Back A Trick",
@@ -357,5 +357,18 @@
   "Scapegoat:TemporaryCollaboration": {
     "NAME": "Short-term Cooperation",
     "DESCRIPTION": "At the start of your turn, Reburial !M! , Recall !2M! ."
+  },
+  "Scapegoat:Alpha2": {
+    "NAME": "Alpha",
+    "DESCRIPTION": "Shuffle a *Beta into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Beta into your draw pile. NL Exhaust."
+  },
+  "Scapegoat:Beta2": {
+    "NAME": "Beta",
+    "DESCRIPTION": "Shuffle an *Omega into your draw pile. NL Exhaust."
+  },
+  "Scapegoat:Omega2": {
+    "NAME": "Omega",
+    "DESCRIPTION": "At the end of your turn, deal !M! damage to ALL \"enemies\"."
   }
 }

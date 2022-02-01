@@ -279,8 +279,8 @@
   },
   "Scapegoat:SequinShard": {
     "NAME": "残缺亮片",
-    "DESCRIPTION": "不能被打出 。 NL 闪光 ：获得 [E] ，获得 !M! 层 赋还 并 消耗 这张牌。",
-    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 闪光 ：获得 [E] [E] ，获得 !M! 层 赋还 并 消耗 这张牌。"
+    "DESCRIPTION": "不能被打出 。 NL 闪光 ：获得 [E] ，获得 !M! 层 赋还 。",
+    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 闪光 ：获得 [E] [E] ，获得 !M! 层 赋还 。"
   },
   "Scapegoat:StockUp": {
     "NAME": "备置一手",
@@ -357,5 +357,18 @@
   "Scapegoat:TemporaryCollaboration": {
     "NAME": "临时协作",
     "DESCRIPTION": "在你的回合开始时， 归葬 !M! ， 回溯 !2M! 。"
+  },
+  "Scapegoat:Alpha2": {
+    "NAME": "阿尔法",
+    "DESCRIPTION": "将一张 *贝塔 放入你的抽牌堆中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 将一张 *贝塔 放入你的抽牌堆中。 NL 消耗 。"
+  },
+  "Scapegoat:Beta2": {
+    "NAME": "贝塔",
+    "DESCRIPTION": "将一张 *欧米伽 放入你的抽牌堆中。 NL 消耗 。"
+  },
+  "Scapegoat:Omega2": {
+    "NAME": "欧米伽",
+    "DESCRIPTION": "在你的回合结束时，对所有“敌人”造成 !M! 点伤害。"
   }
 }
