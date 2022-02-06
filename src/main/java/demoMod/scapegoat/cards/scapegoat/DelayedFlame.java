@@ -11,10 +11,11 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.enums.AbstractCardEnum;
+import demoMod.scapegoat.interfaces.CardAddToHandSubscriber;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
 import demoMod.scapegoat.patches.GameActionManagerPatch;
 
-public class DelayedFlame extends CustomCard implements PostBurialSubscriber {
+public class DelayedFlame extends CustomCard implements PostBurialSubscriber, CardAddToHandSubscriber {
     public static final String ID = Scapegoat.makeID("DelayedFlame");
     public static final String NAME;
     public static final String DESCRIPTION;
@@ -43,8 +44,7 @@ public class DelayedFlame extends CustomCard implements PostBurialSubscriber {
 
     @Override
     public void triggerWhenDrawn() {
-        super.triggerWhenDrawn();
-        this.setCostForTurn(this.costForTurn - GameActionManagerPatch.AddFieldPatch.totalBurialThisTurn.get(AbstractDungeon.actionManager));
+        this.setCostForTurn(this.cost - GameActionManagerPatch.AddFieldPatch.totalBurialThisTurn.get(AbstractDungeon.actionManager));
     }
 
     @Override
@@ -55,12 +55,23 @@ public class DelayedFlame extends CustomCard implements PostBurialSubscriber {
     }
 
     @Override
+    public void atTurnStart() {
+        this.resetAttributes();
+        this.applyPowers();
+    }
+
+    @Override
     public void onBurial() {
     }
 
     @Override
     public void onBurialForCard() {
         this.setCostForTurn(this.costForTurn - 1);
+    }
+
+    @Override
+    public void onCardAddToHand() {
+        triggerWhenDrawn();
     }
 
     static {

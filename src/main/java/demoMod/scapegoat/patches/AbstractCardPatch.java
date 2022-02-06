@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.characters.ScapegoatCharacter;
+import demoMod.scapegoat.interfaces.CardAddToHandSubscriber;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +49,20 @@ public class AbstractCardPatch {
             }
             drawPile.group.removeAll(tmp);
             drawPile.group.addAll(0, tmp);
+        }
+    }
+
+    @SpirePatch(
+            clz = CardGroup.class,
+            method = "addToHand"
+    )
+    public static class PatchAddToHand {
+        public static void Prefix(CardGroup group, AbstractCard c) {
+            if (group.type == CardGroup.CardGroupType.HAND) {
+                if (c instanceof CardAddToHandSubscriber) {
+                    ((CardAddToHandSubscriber) c).onCardAddToHand();
+                }
+            }
         }
     }
 
