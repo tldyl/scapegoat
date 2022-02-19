@@ -3,5 +3,17 @@
     "TEXT": [
       "Put it in your draw pile"
     ]
+  },
+  "Scapegoat:Reskin": {
+    "TEXT": [
+      "Skin",
+      "Original",
+      "Sacrifice Jr."
+    ]
+  },
+  "Scapegoat:ReskinUnlocked": {
+    "TEXT": [
+      "Scapegoat Alternative Art Unlocked!"
+    ]
   }
 }

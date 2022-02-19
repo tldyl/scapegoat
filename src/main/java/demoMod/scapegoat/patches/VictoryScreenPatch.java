@@ -5,11 +5,14 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.VictoryScreen;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.scene.SilentVictoryStarEffect;
+import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.characters.ScapegoatCharacter;
+import demoMod.scapegoat.effects.ReskinUnlockedTextEffect;
 
 import java.util.ArrayList;
 
@@ -42,6 +45,21 @@ public class VictoryScreenPatch {
             if (AbstractDungeon.player instanceof ScapegoatCharacter) {
                 sb.setColor(Color.WHITE);
                 AbstractDungeon.player.renderShoulderImg(sb);
+            }
+        }
+    }
+
+    @SpirePatch(
+            clz = VictoryScreen.class,
+            method = "updateAscensionAndBetaArtProgress"
+    )
+    public static class PatchUpdateAscensionAndBetaArtProgress {
+        public static void Prefix(VictoryScreen screen) {
+            if (!Settings.seedSet && !Settings.isTrial) {
+                if (!Scapegoat.hasUnlockedReskin && Scapegoat.isReskinUnlocked && AbstractDungeon.player instanceof ScapegoatCharacter) {
+                    AbstractDungeon.topLevelEffects.add(new ReskinUnlockedTextEffect());
+                    Scapegoat.hasUnlockedReskin = true;
+                }
             }
         }
     }

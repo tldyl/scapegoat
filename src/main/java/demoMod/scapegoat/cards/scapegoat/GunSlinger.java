@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import demoMod.scapegoat.Scapegoat;
+import demoMod.scapegoat.actions.BurialAction;
 import demoMod.scapegoat.enums.AbstractCardEnum;
 
 public class GunSlinger extends CustomCard {
@@ -34,6 +35,7 @@ public class GunSlinger extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeBlock(3);
             this.upgradeMagicNumber(1);
         }
     }
@@ -41,6 +43,7 @@ public class GunSlinger extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
+        addToBot(new BurialAction(3));
         addToBot(new MakeTempCardInHandAction(new SerialBullet(), this.magicNumber));
     }
 

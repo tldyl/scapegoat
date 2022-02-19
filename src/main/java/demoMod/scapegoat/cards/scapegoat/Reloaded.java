@@ -27,7 +27,7 @@ public class Reloaded extends CustomCard {
     public Reloaded() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.baseBlock = 8;
-        this.baseMagicNumber = this.magicNumber = 1;
+        this.baseMagicNumber = this.magicNumber = 2;
     }
 
     @Override
@@ -35,7 +35,6 @@ public class Reloaded extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(3);
-            this.upgradeMagicNumber(1);
         }
     }
 

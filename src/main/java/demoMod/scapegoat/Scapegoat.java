@@ -7,6 +7,7 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -22,11 +23,13 @@ import demoMod.scapegoat.dynamicVars.MiscNumber;
 import demoMod.scapegoat.dynamicVars.SecondaryM;
 import demoMod.scapegoat.enums.AbstractCardEnum;
 import demoMod.scapegoat.enums.AbstractPlayerEnum;
+import demoMod.scapegoat.patches.CharacterSelectScreenPatch;
 import demoMod.scapegoat.potions.BottledRedemption;
 import demoMod.scapegoat.potions.DevilInAJar;
 import demoMod.scapegoat.potions.LiquidSequin;
 import demoMod.scapegoat.relics.*;
 
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +53,18 @@ public class Scapegoat implements EditCardsSubscriber,
     private static final String SKILL_CARD_PORTRAIT = "1024/bg_skill_scapegoat.png";
     private static final String POWER_CARD_PORTRAIT = "1024/bg_power_scapegoat.png";
     private static final String ENERGY_ORB_PORTRAIT = "1024/card_scapegoat_orb.png";
+    public static boolean isReskinUnlocked = false;
+    public static boolean hasUnlockedReskin = false;
+    public static SpireConfig reskinSaveData;
+
+    static {
+        try {
+            reskinSaveData = new SpireConfig("Scapegoat", "reskinSaveData.properties");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static Color mainGoatColor = new Color(0.066F, 0.631F, 0.714F, 1.0F);
 
     private static final List<AbstractGameAction> actionQueue = new ArrayList<>();
@@ -268,6 +283,21 @@ public class Scapegoat implements EditCardsSubscriber,
         BaseMod.addPotion(DevilInAJar.class, Color.BLUE, Color.BLACK, Color.BLUE, DevilInAJar.ID, AbstractPlayerEnum.SCAPEGOAT);
         ConsoleCommand.addCommand("sin", SinCommand.class);
         ConsoleCommand.addCommand("bloodstain", BloodstainCommand.class);
+
+        try {
+            reskinSaveData.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (reskinSaveData.has("reskinIndex")) {
+            CharacterSelectScreenPatch.reskinIndex = reskinSaveData.getInt("reskinIndex");
+        }
+        if (reskinSaveData.has("isReskinUnlocked")) {
+            isReskinUnlocked = reskinSaveData.getBool("isReskinUnlocked");
+        }
+        if (isReskinUnlocked) {
+            hasUnlockedReskin = true;
+        }
     }
 
     @Override

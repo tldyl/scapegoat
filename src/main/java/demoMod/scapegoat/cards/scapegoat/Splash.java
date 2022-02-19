@@ -29,7 +29,7 @@ public class Splash extends CustomCard implements AbstractSecondaryMCard {
 
     public Splash() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseMagicNumber = this.magicNumber = 3;
+        this.baseMagicNumber = this.magicNumber = 4;
         this.secondaryM = 4;
     }
 
@@ -37,7 +37,7 @@ public class Splash extends CustomCard implements AbstractSecondaryMCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
             this.secondaryM = 6;
         }
     }

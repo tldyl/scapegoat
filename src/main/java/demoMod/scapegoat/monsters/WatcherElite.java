@@ -30,6 +30,8 @@ import demoMod.scapegoat.stances.EnemyCalmStance;
 import demoMod.scapegoat.stances.EnemyDivinityStance;
 import demoMod.scapegoat.stances.EnemyWrathStance;
 
+import java.io.IOException;
+
 public class WatcherElite extends AbstractMonster {
     public static final String ID = Scapegoat.makeID("Watcher");
     public static final String NAME = CardCrawlGame.languagePack.getCharacterString("Watcher").NAMES[0];
@@ -269,6 +271,13 @@ public class WatcherElite extends AbstractMonster {
         this.state.setTimeScale(0.1F);
         this.stance.onExitStance();
         this.useShakeAnimation(5.0F);
+        Scapegoat.isReskinUnlocked = true;
+        Scapegoat.reskinSaveData.setBool("isReskinUnlocked", Scapegoat.isReskinUnlocked);
+        try {
+            Scapegoat.reskinSaveData.save();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         super.die(triggerRelics);
     }
 }

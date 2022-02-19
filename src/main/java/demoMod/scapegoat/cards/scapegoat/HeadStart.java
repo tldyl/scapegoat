@@ -23,11 +23,11 @@ public class HeadStart extends CustomCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
 
     public HeadStart() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseDamage = 5;
+        this.baseDamage = 4;
         this.baseMagicNumber = this.magicNumber = 1;
         this.isInnate = true;
         this.exhaust = true;

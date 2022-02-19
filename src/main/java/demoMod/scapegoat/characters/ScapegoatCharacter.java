@@ -33,6 +33,7 @@ import demoMod.scapegoat.cards.scapegoat.Ritual;
 import demoMod.scapegoat.cards.scapegoat.Strike_Scapegoat;
 import demoMod.scapegoat.enums.AbstractCardEnum;
 import demoMod.scapegoat.enums.AbstractPlayerEnum;
+import demoMod.scapegoat.patches.CharacterSelectScreenPatch;
 import demoMod.scapegoat.relics.BronzePipe;
 
 import java.util.ArrayList;
@@ -67,7 +68,17 @@ public class ScapegoatCharacter extends CustomPlayer {
         if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera") || ModHelper.isModEnabled("Blue Cards"))) {
             this.masterMaxOrbs = 1;
         }
-        this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character.gif"));
+        switch (CharacterSelectScreenPatch.reskinIndex) {
+            case 0:
+                this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character.gif"));
+                break;
+            case 1:
+                this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character_skin.gif"));
+                break;
+            default:
+                this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character.gif"));
+                break;
+        }
         this.frameBuffer = new FrameBuffer(Pixmap.Format.RGBA8888, Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), false);
         this.img = frameBuffer.getColorBufferTexture();
     }

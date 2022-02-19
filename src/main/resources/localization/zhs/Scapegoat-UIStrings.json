@@ -3,5 +3,17 @@
     "TEXT": [
       "放到你的抽牌堆。"
     ]
+  },
+  "Scapegoat:Reskin": {
+    "TEXT": [
+      "皮肤",
+      "原版",
+      "咩咩子"
+    ]
+  },
+  "Scapegoat:ReskinUnlocked": {
+    "TEXT": [
+      "已解锁替罪羔羊皮肤！"
+    ]
   }
 }

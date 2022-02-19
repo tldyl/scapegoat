@@ -78,7 +78,7 @@
   },
   "Scapegoat:GunSlinger": {
     "NAME": "枪斗",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *连弹 到你的手牌。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 归葬 3 。 NL 增加 !M! 张 *连弹 到你的手牌。"
   },
   "Scapegoat:SerialBullet": {
     "NAME": "连弹",
@@ -352,7 +352,8 @@
   },
   "Scapegoat:Asterism": {
     "NAME": "星芒",
-    "DESCRIPTION": "你每进行一次 回溯 ，获得 !M! 点 格挡 。"
+    "DESCRIPTION": "你每进行一次 回溯 ，获得 !M! 层 金属化 。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "你每进行一次 回溯 ，获得 !M! 层 金属化 。"
   },
   "Scapegoat:TemporaryCollaboration": {
     "NAME": "临时协作",

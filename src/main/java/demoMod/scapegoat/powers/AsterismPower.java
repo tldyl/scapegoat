@@ -1,10 +1,11 @@
 package demoMod.scapegoat.powers;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.MetallicizePower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.interfaces.PostRecallSubscriber;
 
@@ -31,7 +32,7 @@ public class AsterismPower extends AbstractPower implements PostRecallSubscriber
     @Override
     public void onRecall() {
         this.flash();
-        this.addToTop(new GainBlockAction(this.owner, this.amount));
+        this.addToTop(new ApplyPowerAction(this.owner, this.owner, new MetallicizePower(this.owner, this.amount)));
     }
 
     static {

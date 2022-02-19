@@ -55,5 +55,12 @@
     ],
     "PROPER_NAME": "Blood",
     "DESCRIPTION": "Your next #bX turn will be paid for by #pBlood.  NL The cost of #rBlood ：At the start of combat, shuffle 2 #yWounds / #yBazed / #yCost into your draw pile. NL For every  #b1  #pBlood you have, increase #b10% damage you deal. NL #pBlood is reduced by #b1 at the end of combat."
+  },
+  {
+    "NAMES": [
+      "metallicize"
+    ],
+    "PROPER_NAME": "Metallicize",
+    "DESCRIPTION": "At the end of your turn, gain #yBlock equal to its amount."
   }
 ]

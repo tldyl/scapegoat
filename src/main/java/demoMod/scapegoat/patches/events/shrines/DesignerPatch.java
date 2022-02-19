@@ -4,7 +4,6 @@ import basemod.ReflectionHacks;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
@@ -36,7 +35,6 @@ public class DesignerPatch {
                     int adjustCost = ReflectionHacks.getPrivate(event, Designer.class, "adjustCost");
                     int cleanUpCost = ReflectionHacks.getPrivate(event, Designer.class, "cleanUpCost");
                     int fullServiceCost = ReflectionHacks.getPrivate(event, Designer.class, "fullServiceCost");
-                    int hpLoss = ReflectionHacks.getPrivate(event, Designer.class, "hpLoss");
                     switch (screen.name()) {
                         case "INTRO":
                             event.imageEventText.updateBodyText(DESCRIPTIONS[1]);
@@ -56,7 +54,6 @@ public class DesignerPatch {
 
                             event.imageEventText.setDialogOption(OPTIONS[3] + fullServiceCost + OPTIONS[6] + OPTIONS[13], (AbstractDungeon.player.gold < fullServiceCost || CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck).size() == 0));
                             event.imageEventText.setDialogOption(String.format(OPTIONS[18], AbstractDungeon.ascensionLevel >= 15 ? 2 : 1), new TechInSpire());
-                            event.imageEventText.setDialogOption(OPTIONS[4] + hpLoss + OPTIONS[5]);
 
                             ReflectionHacks.setPrivate(event, Designer.class, "curScreen", Enum.valueOf((Class<Enum>) Class.forName("com.megacrit.cardcrawl.events.shrines.Designer$CurrentScreen"), "MAIN"));
                             return SpireReturn.Return(null);
@@ -69,16 +66,6 @@ public class DesignerPatch {
                                     float drawX = ReflectionHacks.getPrivate(event, AbstractEvent.class, "drawX");
                                     float drawY = ReflectionHacks.getPrivate(event, AbstractEvent.class, "drawY");
                                     AbstractDungeon.getCurrRoom().spawnRelicAndObtain(drawX, drawY, new TechInSpire());
-                                    event.imageEventText.updateDialogOption(0, OPTIONS[14]);
-                                    event.imageEventText.clearRemainingOptions();
-                                    ReflectionHacks.setPrivate(event, Designer.class, "curScreen", Enum.valueOf((Class<Enum>) Class.forName("com.megacrit.cardcrawl.events.shrines.Designer$CurrentScreen"), "DONE"));
-                                    return SpireReturn.Return(null);
-                                case 4:
-                                    event.imageEventText.loadImage("images/events/designerPunched2.jpg");
-                                    event.imageEventText.updateBodyText(DESCRIPTIONS[3]);
-                                    AbstractEvent.logMetricTakeDamage("Designer", "Punched", hpLoss);
-                                    CardCrawlGame.sound.play("BLUNT_FAST");
-                                    AbstractDungeon.player.damage(new DamageInfo(null, hpLoss, DamageInfo.DamageType.HP_LOSS));
                                     event.imageEventText.updateDialogOption(0, OPTIONS[14]);
                                     event.imageEventText.clearRemainingOptions();
                                     ReflectionHacks.setPrivate(event, Designer.class, "curScreen", Enum.valueOf((Class<Enum>) Class.forName("com.megacrit.cardcrawl.events.shrines.Designer$CurrentScreen"), "DONE"));

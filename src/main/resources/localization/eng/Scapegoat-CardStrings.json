@@ -78,7 +78,7 @@
   },
   "Scapegoat:GunSlinger": {
     "NAME": "Gun-fu",
-    "DESCRIPTION": "Gain !B! Block. NL Add !M!  *Glass Bullet into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Reburial 3. NL Add !M! *Glass Bullet into your hand."
   },
   "Scapegoat:SerialBullet": {
     "NAME": "Glass Bullet",
@@ -352,7 +352,8 @@
   },
   "Scapegoat:Asterism": {
     "NAME": "Asterism",
-    "DESCRIPTION": "Whenever you Recall card , Gain !M! Block. "
+    "DESCRIPTION": "Whenever you Recall card , Gain !M! Metallicize. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you Recall card , Gain !M! Metallicize."
   },
   "Scapegoat:TemporaryCollaboration": {
     "NAME": "Short-term Cooperation",
