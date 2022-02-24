@@ -1,9 +1,11 @@
 package demoMod.scapegoat.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import demoMod.scapegoat.characters.ScapegoatCharacter;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
 import demoMod.scapegoat.patches.GameActionManagerPatch;
 
@@ -18,6 +20,11 @@ public class BurialAction extends AbstractGameAction {
         if (this.duration == this.startDuration) {
             for (int i=0;i<this.amount;i++) {
                 if (AbstractDungeon.player.drawPile.group.size() == 0) {
+                    if (AbstractDungeon.player.hasRelic("IsaacExt:Birthright") && AbstractDungeon.player.discardPile.group.size() > 0 && AbstractDungeon.player instanceof ScapegoatCharacter) {
+                        AbstractDungeon.player.getRelic("IsaacExt:Birthright").onTrigger();
+                        addToBot(new EmptyDeckShuffleAction());
+                        addToBot(new BurialAction(this.amount - i));
+                    }
                     break;
                 }
                 AbstractCard card = AbstractDungeon.player.drawPile.getTopCard();

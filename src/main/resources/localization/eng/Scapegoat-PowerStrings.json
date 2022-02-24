@@ -197,5 +197,12 @@
       "At the end of your turn, deal #b",
       " damage to ALL \"enemies\"."
     ]
+  },
+  "Scapegoat:ProtectionPower": {
+    "NAME": "Protection",
+    "DESCRIPTIONS": [
+      "Decreases received attack damage by #b",
+      " ."
+    ]
   }
 }

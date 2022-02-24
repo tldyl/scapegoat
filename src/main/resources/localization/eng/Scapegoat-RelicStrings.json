@@ -104,5 +104,34 @@
     "DESCRIPTIONS": [
       "Whenever you gain #b1 #pSin ,gain #b25 #yGold , NL Whenever you gain #b1 #rBlood , gain #b40 #yGold ."
     ]
+  },
+  "Scapegoat:ScapegoatBirthrightRelic": {
+    "NAME": "Birthright",
+    "FLAVOR": "---",
+    "DESCRIPTIONS": [
+      "Whenever you #yBurial, if the number of cards in the draw pile is less than the amount of #yBurialed cards, shuffle and #yBurial until the amount of the #yBurialed cards reach."
+    ]
+  },
+  "Scapegoat:PageOfFreischutz": {
+    "NAME": "Der Freischütz' Page",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Choose 1 effect upon pickup.",
+      "Request",
+      "At the start of each combat, #yExhaust 3 random cards in your hand. Deal #b18 damage and apply 2 #yVulnerable to ALL enemies.",
+      "Just as the Devil said, the bullets will puncture anything you please. Forever.",
+
+      "The Seventh Bullet",
+      "Whenever you play 1 Attack, gain 1 #yStrength (Up to #b7 each combat). Every time you play #b7 Attacks, #yExhaust the last Attack and a random card in your discard pile.",
+      "The Devil proposed a childish contract: The last bullet would puncture the head of his beloved. The moment he heard that, he sought and shot all the people he loved.",
+
+      "Dark Flame",
+      "Whenever you #yExhaust a card, gain 1 #yStrength and #yProtection. At the end of your turn, if you kill no enemy this turn, lose #b2 HP.",
+      "One day, the marksman realized the Devil no longer followed him. He pondered why, then realized that his soul had already fallen to Hell from the beginning.",
+
+      "At the start of each combat, Exhaust 3 random cards in your hand. Deal 18 damage and apply 2 Vulnerable to ALL enemies.",
+      "Whenever you play 1 Attack, gain 1 Strength (Up to 7 each combat). Every time you play 7 Attacks, Exhaust the last Attack and a random card in your discard pile.",
+      "Whenever you Exhaust a card, gain 1 Strength and Protection. At the end of your turn, if you kill no enemy this turn, lose 2 HP."
+    ]
   }
 }

@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.TalkAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -20,6 +21,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.MonsterRoom;
@@ -120,6 +122,38 @@ public class ScapegoatCharacter extends CustomPlayer {
             }
         } else {
             this.renderShoulderImg(sb);
+        }
+    }
+
+    @Override
+    public void preBattlePrep() {
+        super.preBattlePrep();
+        int index = -1;
+        for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+            switch (monster.id) {
+                case "ruina:Gunman":
+                    index = 3;
+                    break;
+                case "ruina:NightmareWolf":
+                    index = 4;
+                    break;
+                case "ruina:ParadiseLost":
+                    index = 5;
+                    break;
+                case "ruina:Twilight":
+                    index = 6;
+                    break;
+                case "ruina:JesterOfNihil":
+                    index = 7;
+                    break;
+                case "ruina:QueenBee":
+                    index = 8;
+                    break;
+            }
+            if (index > 0) break;
+        }
+        if (index > 0) {
+            AbstractDungeon.actionManager.addToBottom(new TalkAction(true, charStrings.TEXT[index], 2.0F, 2.0F));
         }
     }
 

@@ -1,18 +1,22 @@
 package demoMod.scapegoat;
 
 import basemod.BaseMod;
+import basemod.ReflectionHacks;
 import basemod.devcommands.ConsoleCommand;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import demoMod.scapegoat.cards.scapegoat.*;
 import demoMod.scapegoat.cards.status.Cost;
@@ -33,6 +37,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @SpireInitializer
 public class Scapegoat implements EditCardsSubscriber,
@@ -274,6 +279,9 @@ public class Scapegoat implements EditCardsSubscriber,
         BaseMod.addRelic(new BloodVial(), RelicType.SHARED);
         BaseMod.addRelic(new TechInSpire(), RelicType.SHARED);
         BaseMod.addRelic(new GhostMask(), RelicType.SHARED);
+        if (!Loader.isModLoaded("Library of Ruina")) {
+            BaseMod.addRelic(new PageOfFreischutz(), RelicType.SHARED);
+        }
     }
 
     @Override
@@ -298,6 +306,16 @@ public class Scapegoat implements EditCardsSubscriber,
         if (isReskinUnlocked) {
             hasUnlockedReskin = true;
         }
+
+        if (Loader.isModLoaded("IsaacModExtend")) {
+            try {
+                Class cls = Class.forName("isaacModExtend.relics.Birthright");
+                Map<Class<? extends AbstractPlayer>, AbstractRelic> birthrightEffects = ReflectionHacks.getPrivateStatic(cls, "birthrightEffects");
+                birthrightEffects.put(ScapegoatCharacter.class, new ScapegoatBirthrightRelic());
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
@@ -316,5 +334,9 @@ public class Scapegoat implements EditCardsSubscriber,
 
     public static void addToTop(AbstractGameAction action) {
         actionQueue.add(0, action);
+    }
+
+    public static String abnormalityCardImage(String id) {
+        return getResourcePath("cards/abnormality/" + id + ".png");
     }
 }

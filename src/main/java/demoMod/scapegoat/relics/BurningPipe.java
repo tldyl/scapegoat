@@ -45,9 +45,9 @@ public class BurningPipe extends CustomRelic {
     @Override
     public void atTurnStart() {
         this.flash();
-        addToTop(new RecallAction(2));
-        addToTop(new BurialAction(4));
-        addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        addToBot(new BurialAction(4));
+        addToBot(new RecallAction(2));
     }
 
     @Override
