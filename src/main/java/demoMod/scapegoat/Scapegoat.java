@@ -1,6 +1,8 @@
 package demoMod.scapegoat;
 
 import basemod.BaseMod;
+import basemod.ModLabeledToggleButton;
+import basemod.ModPanel;
 import basemod.ReflectionHacks;
 import basemod.devcommands.ConsoleCommand;
 import basemod.helpers.RelicType;
@@ -14,7 +16,10 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -60,6 +65,7 @@ public class Scapegoat implements EditCardsSubscriber,
     private static final String ENERGY_ORB_PORTRAIT = "1024/card_scapegoat_orb.png";
     public static boolean isReskinUnlocked = false;
     public static boolean hasUnlockedReskin = false;
+    public static boolean showWatcherComeOnStageAnimation = true;
     public static SpireConfig reskinSaveData;
 
     static {
@@ -303,10 +309,27 @@ public class Scapegoat implements EditCardsSubscriber,
         if (reskinSaveData.has("isReskinUnlocked")) {
             isReskinUnlocked = reskinSaveData.getBool("isReskinUnlocked");
         }
+        if (reskinSaveData.has("showWatcherComeOnStageAnimation")) {
+            showWatcherComeOnStageAnimation = reskinSaveData.getBool("showWatcherComeOnStageAnimation");
+        }
         if (isReskinUnlocked) {
             hasUnlockedReskin = true;
         }
-
+        UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(makeID("ModPanel"));
+        ModPanel settingsPanel = new ModPanel();
+        ModLabeledToggleButton showWatcherComeOnStageAnimationOption = new ModLabeledToggleButton(uiStrings.TEXT[0], 350.0F, 700.0F, Color.WHITE, FontHelper.buttonLabelFont, showWatcherComeOnStageAnimation, settingsPanel, (me) -> {},
+                (me) -> {
+                    showWatcherComeOnStageAnimation = me.enabled;
+                    reskinSaveData.setBool("showWatcherComeOnStageAnimation", showWatcherComeOnStageAnimation);
+                    try {
+                        reskinSaveData.save();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+        );
+        settingsPanel.addUIElement(showWatcherComeOnStageAnimationOption);
+        BaseMod.registerModBadge(ImageMaster.loadImage(getResourcePath("ui/badge.png")), "IsaacMod Extend", "Everyone", "TODO", settingsPanel);
         if (Loader.isModLoaded("IsaacModExtend")) {
             try {
                 Class cls = Class.forName("isaacModExtend.relics.Birthright");

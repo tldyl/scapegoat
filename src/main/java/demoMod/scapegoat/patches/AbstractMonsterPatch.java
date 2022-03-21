@@ -66,13 +66,15 @@ public class AbstractMonsterPatch {
                             WatcherElite watcher = new WatcherElite();
                             Scapegoat.addToTop(new WatcherComeOnStageAction(watcher));
                             Scapegoat.addToTop(new SpawnMonsterAction(watcher, false));
-                            addToTop(new AbstractGameAction() {
-                                @Override
-                                public void update() {
-                                    AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
-                                    isDone = true;
-                                }
-                            });
+                            if (Scapegoat.showWatcherComeOnStageAnimation) {
+                                addToTop(new AbstractGameAction() {
+                                    @Override
+                                    public void update() {
+                                        AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
+                                        isDone = true;
+                                    }
+                                });
+                            }
                             isDone = true;
                         }
                     });

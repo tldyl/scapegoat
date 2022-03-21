@@ -20,5 +20,10 @@
     "TEXT": [
       "Choose a effect"
     ]
+  },
+  "Scapegoat:ModPanel": {
+    "TEXT": [
+      "Enable special elite's come-on-stage animation."
+    ]
   }
 }

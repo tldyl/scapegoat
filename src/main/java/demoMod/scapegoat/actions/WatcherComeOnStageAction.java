@@ -18,6 +18,9 @@ import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.effects.WatcherEliteSanctityEffect;
 import demoMod.scapegoat.monsters.WatcherElite;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class WatcherComeOnStageAction extends AbstractGameAction {
     private WatcherElite watcherElite;
     private AbstractPlayer p;
@@ -33,16 +36,31 @@ public class WatcherComeOnStageAction extends AbstractGameAction {
         this.p = AbstractDungeon.player;
         this.pStartX = p.drawX;
         this.watcherStartY = watcherElite.drawY;
-        this.duration = 6.0F;
+        this.duration = this.startDuration = 6.0F;
     }
 
     @Override
     public void update() {
+        if (!Scapegoat.showWatcherComeOnStageAnimation) {
+            List<AbstractMonster> toRemove = new ArrayList<>();
+            for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+                if (monster instanceof SpireSpear || monster instanceof SpireShield) {
+                    toRemove.add(monster);
+                    monster.dispose();
+                }
+            }
+            AbstractDungeon.getMonsters().monsters.removeAll(toRemove);
+            watcherElite.movePosition(watcherElite.drawX, Settings.HEIGHT * 0.33F);
+            p.movePosition(Settings.WIDTH * 0.25F, p.drawY);
+            isDone = true;
+            return;
+        }
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
             if (monster instanceof SpireSpear || monster instanceof SpireShield) {
                 monster.update();
             }
         }
+        if (this.duration == this.startDuration) AbstractDungeon.actionManager.clearPostCombatActions();
         if (this.duration < 4.0F) {
             if (this.duration >= 3.0F) {
                 if (!killShieldAndSpear) {
@@ -58,6 +76,13 @@ public class WatcherComeOnStageAction extends AbstractGameAction {
                             isDone = true;
                         }
                     };
+                    Scapegoat.addToTop(new AbstractGameAction() {
+                        @Override
+                        public void update() {
+                            AbstractDungeon.actionManager.actions.clear();
+                            isDone = true;
+                        }
+                    });
                     Scapegoat.addToTop(killAllMonsterAction);
                     for (int i=0;i<6;i++) {
                         Scapegoat.addToTop(new MyAttackDamageRandomEnemyAction(AttackEffect.LIGHTNING, 60));

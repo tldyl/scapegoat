@@ -3,7 +3,7 @@
   "name": "Scapegoat",
   "author_list": ["GM_Whitose", "Temple9"],
   "description": "“祭品小朋友和某位屑恶魔的带薪假\n对，人物代号祭品，别称是替罪羔羊，因为和铁哥卡片撞了用的是咩咩子\n是15岁的小女孩，不是男人，也不是高达\n当然她并不在乎这件事，恶魔爽了就行\n当然也希望屏幕前的你能爽！”\n\t- Whitose\n\n新增一个角色：替罪羔羊。\n四个新机制：赋还、归葬、回溯、子弹。\n13个新遗物。\n对原版的20个事件进行了修改，同时加入了角色的剧情。\n\n美术资源由Whitose绘制，我们合作的非常愉快！\n爬塔mod交流群：723677239",
-  "version": "1.4.1",
+  "version": "1.4.3",
   "mts_version": "3.22.0",
   "dependencies": ["basemod", "stslib"]
 }

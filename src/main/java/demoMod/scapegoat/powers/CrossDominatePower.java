@@ -3,9 +3,11 @@ package demoMod.scapegoat.powers;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
 import demoMod.scapegoat.utils.PowerRegionLoader;
@@ -36,11 +38,13 @@ public class CrossDominatePower extends TwoAmountPower implements PostBurialSubs
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
         this.amount += 1;
-        if (stackAmount < this.amount2) {
-            this.amount2 = stackAmount;
-        }
-        if (stackAmount < this.defaultAmount) {
-            this.defaultAmount = stackAmount;
+    }
+
+    @Override
+    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if (power instanceof CrossDominatePower) {
+            TwoAmountPower power1 = (TwoAmountPower) power;
+            this.amount2 = Math.min(this.amount2, power1.amount2);
         }
     }
 
