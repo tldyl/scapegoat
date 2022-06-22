@@ -44,8 +44,8 @@ public class StockUp extends CustomCard {
         addToBot(new RecallAction(this.magicNumber, new AbstractGameAction() {
             @Override
             public void update() {
-                if (RecallAction.lastRecalledCard.size() == 1) {
-                    AbstractCard card = RecallAction.lastRecalledCard.get(0);
+                if (RecallAction.lastSelectedCard.size() == 1) {
+                    AbstractCard card = RecallAction.lastSelectedCard.get(0);
                     addToTop(new MakeTempCardInDrawPileAction(card.makeStatEquivalentCopy(), 2, true, true));
                 }
                 isDone = true;

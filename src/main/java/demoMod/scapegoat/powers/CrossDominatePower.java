@@ -43,8 +43,9 @@ public class CrossDominatePower extends TwoAmountPower implements PostBurialSubs
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power instanceof CrossDominatePower) {
-            TwoAmountPower power1 = (TwoAmountPower) power;
-            this.amount2 = Math.min(this.amount2, power1.amount2);
+            CrossDominatePower power1 = (CrossDominatePower) power;
+            this.defaultAmount = Math.min(this.defaultAmount, power1.defaultAmount);
+            if (this.amount2 > this.defaultAmount) this.amount2 = this.defaultAmount;
         }
     }
 

@@ -19,7 +19,7 @@ public class RecallAction extends AbstractGameAction {
     private CardGroup tmpGroup = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
     private boolean setFreeToPlayOnce = false;
     private AbstractGameAction followupAction;
-    public static List<AbstractCard> lastRecalledCard = new ArrayList<>();
+    public static List<AbstractCard> lastSelectedCard = new ArrayList<>();
 
     public RecallAction(int amount) {
         this.amount = amount;
@@ -40,7 +40,7 @@ public class RecallAction extends AbstractGameAction {
     @Override
     public void update() {
         if (this.duration == this.startDuration) {
-            lastRecalledCard.clear();
+            lastSelectedCard.clear();
             if (player.hasRelic(BurningEye.ID)) {
                 this.amount += 2;
             }
@@ -70,9 +70,8 @@ public class RecallAction extends AbstractGameAction {
                         }
                         this.player.hand.addToHand(selectedCard);
                         this.player.discardPile.removeCard(selectedCard);
-                        lastRecalledCard.add(selectedCard);
                     }
-
+                    lastSelectedCard.add(selectedCard);
                     selectedCard.lighten(false);
                     selectedCard.unhover();
                     selectedCard.applyPowers();
