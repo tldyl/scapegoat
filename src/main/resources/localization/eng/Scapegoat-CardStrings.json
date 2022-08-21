@@ -98,7 +98,7 @@
   },
   "Scapegoat:ForTheSin": {
     "NAME": "Substitute",
-    "DESCRIPTION": "Whenever you lose HP by yourself, NL deal !M! times damage to a random enemies."
+    "DESCRIPTION": "Whenever you lose HP by yourself, apply !M! times as many Bullets as you lose your HP to a random enemy."
   },
   "Scapegoat:AggravatedSin": {
     "NAME": "Double Spite",
@@ -141,8 +141,7 @@
   },
   "Scapegoat:Malice": {
     "NAME": "Double Malice",
-    "DESCRIPTION": "Double ALL enemies Bullet. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Triple ALL enemies Bullet. NL Exhaust."
+    "DESCRIPTION": "Double ALL enemies Bullet."
   },
   "Scapegoat:BurnTheBoat": {
     "NAME": "The Last Stand",
@@ -180,7 +179,7 @@
   },
   "Scapegoat:BrandishingNeedle": {
     "NAME": "Dancing Needle",
-    "DESCRIPTION": "Gain !M! Thorns NL Recall 1 ."
+    "DESCRIPTION": "Gain !M! Thorns. NL Recall !M! ."
   },
   "Scapegoat:CrossDominate": {
     "NAME": "Cross Domination",
@@ -188,12 +187,12 @@
   },
   "Scapegoat:MasteryOfFirearms": {
     "NAME": "SimGuns",
-    "DESCRIPTION": "At the start of your turn, add a  *Glass Bullet into your hand. ",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, add a  *Glass Bullet+ into your hand. "
+    "DESCRIPTION": "At the start of your turn, add a *Glass Bullet into your hand. ",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add a *Glass Bullet+ into your hand. "
   },
   "Scapegoat:DelayedFlame": {
     "NAME": "Spread",
-    "DESCRIPTION": "Whenever you Reburial card , cost 1 less  [E] this turn. NL Deal !D! damage !M!  times."
+    "DESCRIPTION": "Whenever you Reburial card , cost 1 less [E] this turn. NL Deal !D! damage !M!  times."
   },
   "Scapegoat:ReturnToSilence": {
     "NAME": "Deathly Stillness",
@@ -214,7 +213,7 @@
   },
   "Scapegoat:Adaptability": {
     "NAME": "Adaptability",
-    "DESCRIPTION": "Whenever you lose HP by yourself,  Gain !M! Block."
+    "DESCRIPTION": "Whenever you lose HP, gain !M! Block next turn."
   },
   "Scapegoat:RitualLunge": {
     "NAME": "Ritual Slash",
@@ -258,7 +257,7 @@
   },
   "Scapegoat:DrinkPoisonToEndThirst": {
     "NAME": "Harm Than",
-    "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP. NL Lose 12 HP at the next end of your turn. NL Exhaust. "
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Heal !M! HP. NL Lose 12 HP at the next end of your turn. NL Exhaust. "
   },
   "Scapegoat:MarkerCapture": {
     "NAME": "Imprint Marker",

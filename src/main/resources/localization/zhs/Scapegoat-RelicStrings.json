@@ -17,7 +17,7 @@
     "NAME": "旧弹壳",
     "FLAVOR": "你的幸运小子弹，已经不能使用了。",
     "DESCRIPTIONS": [
-      "在每场战斗开始时，给予所有敌人 #b1 层 #y子弹 。"
+      "在每场战斗开始时，给予所有敌人 #b2 层 #y子弹 。"
     ]
   },
   "Scapegoat:AppleCandy": {
@@ -102,7 +102,7 @@
     "NAME": "骨匕首",
     "FLAVOR": "这把匕首能帮助你猎获更多。",
     "DESCRIPTIONS": [
-      "你每获得 #b1 点 #p罪孽 ，获得 #b25 #y金币 。 NL 你每获得 #b1 点 #r血迹 ，获得 #b40 #y金币 。"
+      "你每获得 #b1 点 #p罪孽 ，获得 #b60 #y金币 。 NL 你每获得 #b1 点 #r血迹 ，获得 #b90 #y金币 。"
     ]
   },
   "Scapegoat:ScapegoatBirthrightRelic": {

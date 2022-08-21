@@ -1,11 +1,12 @@
 package demoMod.scapegoat.powers;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import demoMod.scapegoat.Scapegoat;
 
 public class AdaptabilityPower extends AbstractPower {
@@ -30,9 +31,9 @@ public class AdaptabilityPower extends AbstractPower {
 
     @Override
     public void wasHPLost(DamageInfo info, int damageAmount) {
-        if (info.type == DamageInfo.DamageType.HP_LOSS) {
+        if (damageAmount > 0) {
             this.flash();
-            addToBot(new GainBlockAction(this.owner, this.amount));
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new NextTurnBlockPower(this.owner, this.amount), this.amount));
         }
     }
 

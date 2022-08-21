@@ -30,6 +30,7 @@ public class DrinkPoisonToEndThirst extends CustomCard {
         this.baseMagicNumber = this.magicNumber = 6;
         this.baseBlock = 6;
         this.exhaust = true;
+        this.selfRetain = true;
     }
 
     @Override

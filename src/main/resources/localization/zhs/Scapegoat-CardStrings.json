@@ -65,7 +65,7 @@
   },
   "Scapegoat:Convene": {
     "NAME": "召集",
-    "DESCRIPTION": "获得 !M! 层 易伤 。 NL 获得 !B! 点格挡。"
+    "DESCRIPTION": "获得 !M! 层 易伤 。 NL 获得 !B! 点 格挡 。"
   },
   "Scapegoat:Barrier": {
     "NAME": "屏障",
@@ -98,7 +98,7 @@
   },
   "Scapegoat:ForTheSin": {
     "NAME": "替罪",
-    "DESCRIPTION": "每当你自身失去生命时，对随机敌人造成相当于失去生命 !M! 倍的伤害。"
+    "DESCRIPTION": "每当你自身失去生命时，给予随机敌人 !M! 倍于失去生命的子弹"
   },
   "Scapegoat:AggravatedSin": {
     "NAME": "罪孽复加",
@@ -141,8 +141,7 @@
   },
   "Scapegoat:Malice": {
     "NAME": "恶念复加",
-    "DESCRIPTION": "将所有敌人的 子弹 层数翻倍。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "将所有敌人的 子弹 层数变为三倍。 NL 消耗 。"
+    "DESCRIPTION": "将所有敌人的 子弹 层数翻倍。"
   },
   "Scapegoat:BurnTheBoat": {
     "NAME": "破釜沉舟",
@@ -180,7 +179,7 @@
   },
   "Scapegoat:BrandishingNeedle": {
     "NAME": "舞动之针",
-    "DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回溯 1 。"
+    "DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回溯 !M! 。"
   },
   "Scapegoat:CrossDominate": {
     "NAME": "交叉统治",
@@ -214,7 +213,7 @@
   },
   "Scapegoat:Adaptability": {
     "NAME": "适应力",
-    "DESCRIPTION": "每当你失去生命时，获得 !M! 点 格挡 。"
+    "DESCRIPTION": "每当你受到未被 格挡 的伤害时，在下回合获得 !M! 点 格挡 。"
   },
   "Scapegoat:RitualLunge": {
     "NAME": "仪式突刺",
@@ -258,7 +257,7 @@
   },
   "Scapegoat:DrinkPoisonToEndThirst": {
     "NAME": "饮鸩止渴",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 回复 !M! 点生命。 NL 在下个回合结束时失去 12 点生命。 NL 消耗 。"
+    "DESCRIPTION": "保留 。 NL 获得 !B! 点格挡。 NL 回复 !M! 点生命。 NL 在下个回合结束时失去 12 点生命。 NL 消耗 。"
   },
   "Scapegoat:MarkerCapture": {
     "NAME": "印记捕获",

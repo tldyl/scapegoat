@@ -22,11 +22,11 @@ public class BrandishingNeedle extends CustomCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
 
     public BrandishingNeedle() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseMagicNumber = this.magicNumber = 1;
+        this.baseMagicNumber = this.magicNumber = 2;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class BrandishingNeedle extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, this.magicNumber)));
-        addToBot(new RecallAction(1));
+        addToBot(new RecallAction(this.magicNumber));
     }
 
     static {

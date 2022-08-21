@@ -17,7 +17,7 @@
     "NAME": "Old Bullet Casings",
     "FLAVOR": "Your little lucky bullet, it's not working anymore.",
     "DESCRIPTIONS": [
-      "At the start of each combat, apply #b1 #yBullet to ALL enemies. "
+      "At the start of each combat, apply #b2 #yBullet to ALL enemies. "
     ]
   },
   "Scapegoat:AppleCandy": {
@@ -102,7 +102,7 @@
     "NAME": "Bone Dagger",
     "FLAVOR": "This dagger will help you to catch more.",
     "DESCRIPTIONS": [
-      "Whenever you gain #b1 #pSin ,gain #b25 #yGold , NL Whenever you gain #b1 #rBlood , gain #b40 #yGold ."
+      "Whenever you gain #b1 #pSin ,gain #b60 #yGold , NL Whenever you gain #b1 #rBlood , gain #b90 #yGold ."
     ]
   },
   "Scapegoat:ScapegoatBirthrightRelic": {

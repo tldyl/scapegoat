@@ -22,8 +22,8 @@
   "Scapegoat:ForTheSinPower": {
     "NAME": "Substitute",
     "DESCRIPTIONS": [
-      "Whenever you lose HP by yourself,deal #b",
-      " times damage to a random enemy."
+      "Whenever you lose HP by yourself,apply #b",
+      " time(s) #yBullet to a random enemy."
     ]
   },
   "Scapegoat:FalseAccusationPower": {
@@ -75,8 +75,8 @@
   "Scapegoat:AdaptabilityPower": {
     "NAME": "Adaptability",
     "DESCRIPTIONS": [
-      "Whenever you lose HP by yourself,gain #b",
-      "  #yBlock."
+      "Whenever you lose HP, gain #b",
+      " #yBlock next turn."
     ]
   },
   "Scapegoat:SplashPower": {

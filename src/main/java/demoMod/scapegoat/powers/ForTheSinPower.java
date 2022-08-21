@@ -1,11 +1,13 @@
 package demoMod.scapegoat.powers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.utils.PowerRegionLoader;
@@ -34,7 +36,10 @@ public class ForTheSinPower extends AbstractPower {
     public void wasHPLost(DamageInfo info, int damageAmount) {
         if (info.type == DamageInfo.DamageType.HP_LOSS) {
             this.flash();
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(this.owner, damageAmount * this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+            AbstractMonster m = AbstractDungeon.getRandomMonster();
+            if (m != null) {
+                addToBot(new ApplyPowerAction(m, this.owner, new BulletPower(m, damageAmount * this.amount)));
+            }
         }
     }
 

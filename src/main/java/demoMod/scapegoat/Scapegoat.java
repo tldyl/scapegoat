@@ -9,12 +9,15 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -361,5 +364,15 @@ public class Scapegoat implements EditCardsSubscriber,
 
     public static String abnormalityCardImage(String id) {
         return getResourcePath("cards/abnormality/" + id + ".png");
+    }
+
+    public static void loadJokeCardImage(AbstractCard card, String img) {
+        Texture cardTexture;
+        cardTexture = ImageMaster.loadImage(img);
+        cardTexture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+        int tw = cardTexture.getWidth();
+        int th = cardTexture.getHeight();
+        TextureAtlas.AtlasRegion cardImg = new TextureAtlas.AtlasRegion(cardTexture, 0, 0, tw, th);
+        ReflectionHacks.setPrivate(card, AbstractCard.class, "jokePortrait", cardImg);
     }
 }

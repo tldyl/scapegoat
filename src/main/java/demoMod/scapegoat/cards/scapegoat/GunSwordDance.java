@@ -1,6 +1,7 @@
 package demoMod.scapegoat.cards.scapegoat;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,13 +12,17 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.enums.AbstractCardEnum;
+import demoMod.scapegoat.interfaces.BetaArtCard;
 import demoMod.scapegoat.powers.BulletPower;
 
-public class GunSwordDance extends CustomCard {
+import java.util.function.Supplier;
+
+public class GunSwordDance extends CustomCard implements BetaArtCard {
     public static final String ID = Scapegoat.makeID("GunSwordDance");
     public static final String NAME;
     public static final String DESCRIPTION;
     public static final String IMG_PATH = "cards/gunSwordDance.png";
+    private static final String BETA_ART_PATH = Scapegoat.getResourcePath("cards/betaArt/gunSwordDance.png");
 
     private static final CardStrings cardStrings;
     private static final CardType TYPE = CardType.SKILL;
@@ -31,6 +36,7 @@ public class GunSwordDance extends CustomCard {
         this.exhaust = true;
         this.cardsToPreview = new SerialBullet();
         this.baseMagicNumber = this.magicNumber = 2;
+        Scapegoat.loadJokeCardImage(this, BETA_ART_PATH);
     }
 
     @Override
@@ -71,6 +77,31 @@ public class GunSwordDance extends CustomCard {
                 addToBot(new ApplyPowerAction(monster, p, new BulletPower(monster, this.magicNumber)));
             }
         }
+    }
+
+    @Override
+    public String getCardID() {
+        return cardID;
+    }
+
+    @Override
+    public String getTextureImg() {
+        return textureImg;
+    }
+
+    @Override
+    public String getBetaArtPath() {
+        return BETA_ART_PATH;
+    }
+
+    @Override
+    public Supplier<Texture> getDefaultTexture() {
+        return () -> super.getPortraitImage();
+    }
+
+    @Override
+    public Texture getPortraitImage() {
+        return BetaArtCard.super.getPortraitImage();
     }
 
     static {

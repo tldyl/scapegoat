@@ -30,7 +30,7 @@ public class OldShell extends CustomRelic {
         this.flash();
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
             addToBot(new RelicAboveCreatureAction(monster, this));
-            addToBot(new ApplyPowerAction(monster, AbstractDungeon.player, new BulletPower(monster, 1)));
+            addToBot(new ApplyPowerAction(monster, AbstractDungeon.player, new BulletPower(monster, 2)));
         }
     }
 }

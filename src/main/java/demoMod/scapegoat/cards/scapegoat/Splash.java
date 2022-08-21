@@ -23,7 +23,7 @@ public class Splash extends CustomCard implements AbstractSecondaryMCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
     private int secondaryM;
 

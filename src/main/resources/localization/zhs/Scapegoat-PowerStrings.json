@@ -22,8 +22,8 @@
   "Scapegoat:ForTheSinPower": {
     "NAME": "替罪",
     "DESCRIPTIONS": [
-      "每当你失去生命时，对随机敌人造成相当于失去生命 #b",
-      " 倍的伤害。"
+      "每当你失去生命时，给予随机敌人相当于失去生命点数 #b",
+      " 倍的 #y子弹 。"
     ]
   },
   "Scapegoat:FalseAccusationPower": {
@@ -75,7 +75,7 @@
   "Scapegoat:AdaptabilityPower": {
     "NAME": "适应力",
     "DESCRIPTIONS": [
-      "每当你失去生命时，获得 #b",
+      "每当你失去生命，在下回合开始时获得 #b",
       " 点 #y格挡 。"
     ]
   },

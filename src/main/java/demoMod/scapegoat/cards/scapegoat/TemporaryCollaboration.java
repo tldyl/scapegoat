@@ -1,6 +1,7 @@
 package demoMod.scapegoat.cards.scapegoat;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -9,13 +10,17 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.enums.AbstractCardEnum;
 import demoMod.scapegoat.interfaces.AbstractSecondaryMCard;
+import demoMod.scapegoat.interfaces.BetaArtCard;
 import demoMod.scapegoat.powers.TemporaryCollaborationPower;
 
-public class TemporaryCollaboration extends CustomCard implements AbstractSecondaryMCard {
+import java.util.function.Supplier;
+
+public class TemporaryCollaboration extends CustomCard implements AbstractSecondaryMCard, BetaArtCard {
     public static final String ID = Scapegoat.makeID("TemporaryCollaboration");
     public static final String NAME;
     public static final String DESCRIPTION;
     public static final String IMG_PATH = "cards/temporaryCollaboration.png";
+    private static final String BETA_ART_PATH = Scapegoat.getResourcePath("cards/betaArt/temporaryCollaboration.png");
 
     private static final CardStrings cardStrings;
     private static final CardType TYPE = CardType.POWER;
@@ -27,6 +32,7 @@ public class TemporaryCollaboration extends CustomCard implements AbstractSecond
     public TemporaryCollaboration() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 2;
+        Scapegoat.loadJokeCardImage(this, BETA_ART_PATH);
     }
 
     @Override
@@ -60,6 +66,31 @@ public class TemporaryCollaboration extends CustomCard implements AbstractSecond
     @Override
     public boolean isSecondaryMUpgraded() {
         return false;
+    }
+
+    @Override
+    public String getCardID() {
+        return cardID;
+    }
+
+    @Override
+    public String getTextureImg() {
+        return this.textureImg;
+    }
+
+    @Override
+    public String getBetaArtPath() {
+        return BETA_ART_PATH;
+    }
+
+    @Override
+    public Supplier<Texture> getDefaultTexture() {
+        return () -> super.getPortraitImage();
+    }
+
+    @Override
+    public Texture getPortraitImage() {
+        return BetaArtCard.super.getPortraitImage();
     }
 
     static {

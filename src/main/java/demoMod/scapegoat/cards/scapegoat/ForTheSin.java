@@ -25,14 +25,14 @@ public class ForTheSin extends CustomCard {
 
     public ForTheSin() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseMagicNumber = this.magicNumber = 3;
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(1);
         }
     }
 

@@ -26,12 +26,12 @@ public class BoneDagger extends CustomRelic implements PostIncreaseSinSubscriber
     @Override
     public void onIncreaseSin(int amount) {
         this.flash();
-        AbstractDungeon.player.gainGold(amount * 25);
+        AbstractDungeon.player.gainGold(amount * 60);
     }
 
     @Override
     public void onIncreaseBloodstain(int amount) {
         this.flash();
-        AbstractDungeon.player.gainGold(amount * 40);
+        AbstractDungeon.player.gainGold(amount * 90);
     }
 }

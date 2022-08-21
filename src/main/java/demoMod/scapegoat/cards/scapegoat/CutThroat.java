@@ -30,7 +30,7 @@ public class CutThroat extends CustomCard {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.baseDamage = 5;
         this.damage = this.baseDamage;
-        this.magicNumber = this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
     @Override
@@ -38,7 +38,6 @@ public class CutThroat extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(3);
-            this.upgradeMagicNumber(1);
         }
     }
 

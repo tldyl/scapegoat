@@ -1,6 +1,7 @@
 package demoMod.scapegoat.cards.scapegoat;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -8,12 +9,16 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.actions.MaliciousErosionAction;
 import demoMod.scapegoat.enums.AbstractCardEnum;
+import demoMod.scapegoat.interfaces.BetaArtCard;
 
-public class MaliciousErosion extends CustomCard {
+import java.util.function.Supplier;
+
+public class MaliciousErosion extends CustomCard implements BetaArtCard {
     public static final String ID = Scapegoat.makeID("MaliciousErosion");
     public static final String NAME;
     public static final String DESCRIPTION;
     public static final String IMG_PATH = "cards/maliciousErosion.png";
+    private static final String BETA_ART_PATH = Scapegoat.getResourcePath("cards/betaArt/maliciousErosion.png");
 
     private static final CardStrings cardStrings;
     private static final CardType TYPE = CardType.SKILL;
@@ -25,6 +30,7 @@ public class MaliciousErosion extends CustomCard {
     public MaliciousErosion() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.exhaust = true;
+        Scapegoat.loadJokeCardImage(this, BETA_ART_PATH);
     }
 
     @Override
@@ -40,6 +46,31 @@ public class MaliciousErosion extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new MaliciousErosionAction());
+    }
+
+    @Override
+    public String getCardID() {
+        return cardID;
+    }
+
+    @Override
+    public String getTextureImg() {
+        return this.textureImg;
+    }
+
+    @Override
+    public String getBetaArtPath() {
+        return BETA_ART_PATH;
+    }
+
+    @Override
+    public Supplier<Texture> getDefaultTexture() {
+        return () -> super.getPortraitImage();
+    }
+
+    @Override
+    public Texture getPortraitImage() {
+        return BetaArtCard.super.getPortraitImage();
     }
 
     static {

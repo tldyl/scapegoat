@@ -23,28 +23,25 @@ public class Malice extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
 
     public Malice() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 1;
-        this.exhaust = true;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeBaseCost(1);
         }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster mo) {
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-            if (m.hasPower(BulletPower.POWER_ID)) {
+            if (m.hasPower(BulletPower.POWER_ID) && !m.isDeadOrEscaped()) {
                 AbstractPower power = m.getPower(BulletPower.POWER_ID);
                 addToBot(new ApplyPowerAction(m, p, new BulletPower(m, power.amount * this.magicNumber)));
             }

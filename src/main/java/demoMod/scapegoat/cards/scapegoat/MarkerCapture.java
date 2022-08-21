@@ -21,18 +21,18 @@ public class MarkerCapture extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
 
     public MarkerCapture() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
-        this.baseMagicNumber = this.magicNumber = 1;
+        this.baseMagicNumber = this.magicNumber = 2;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeBaseCost(1);
         }
     }
 
