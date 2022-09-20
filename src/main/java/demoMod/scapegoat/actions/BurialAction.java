@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import demoMod.scapegoat.characters.ScapegoatCharacter;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
 import demoMod.scapegoat.patches.GameActionManagerPatch;
@@ -12,7 +13,8 @@ import demoMod.scapegoat.patches.GameActionManagerPatch;
 public class BurialAction extends AbstractGameAction {
     public BurialAction(int amount) {
         this.amount = amount;
-        this.duration = this.startDuration = AbstractGameAction.DEFAULT_DURATION;
+        this.duration = this.startDuration = 1.5F;
+        this.actionType = ActionType.CARD_MANIPULATION;
     }
 
     @Override
@@ -28,7 +30,9 @@ public class BurialAction extends AbstractGameAction {
                     break;
                 }
                 AbstractCard card = AbstractDungeon.player.drawPile.getTopCard();
-                AbstractDungeon.player.drawPile.moveToDiscardPile(card);
+                AbstractDungeon.player.drawPile.group.remove(card);
+                //AbstractDungeon.player.drawPile.moveToDiscardPile(card);
+                AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(card));
                 if (card instanceof PostBurialSubscriber) {
                     ((PostBurialSubscriber) card).onBurial();
                 }

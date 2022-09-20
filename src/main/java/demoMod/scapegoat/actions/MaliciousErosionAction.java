@@ -29,10 +29,10 @@ public class MaliciousErosionAction extends AbstractGameAction {
             if (this.p.hand.isEmpty()) {
                 this.isDone = true;
             } else if (this.p.hand.size() == 1) {
-                playAndExhaustCard(this.p.hand.getBottomCard());
                 if (this.p.hand.getBottomCard().costForTurn > 0) {
                     this.addToTop(new DrawCardAction(this.p.hand.getBottomCard().costForTurn));
                 }
+                playAndExhaustCard(this.p.hand.getBottomCard());
                 this.tickDuration();
             } else {
                 AbstractDungeon.handCardSelectScreen.open(RecycleAction.TEXT[0], 1, false);
@@ -41,10 +41,10 @@ public class MaliciousErosionAction extends AbstractGameAction {
         } else {
             if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
                 for(AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                    playAndExhaustCard(c);
                     if (c.costForTurn > 0) {
                         this.addToTop(new DrawCardAction(c.costForTurn));
                     }
+                    playAndExhaustCard(c);
                 }
 
                 AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
