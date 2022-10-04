@@ -18,6 +18,7 @@ import demoMod.scapegoat.interfaces.BetaArtCard;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
 import demoMod.scapegoat.patches.AbstractCardPatch;
 
+import java.util.ArrayList;
 import java.util.function.Supplier;
 
 public class CurtainCall extends CustomCard implements PostBurialSubscriber, BetaArtCard {
@@ -40,6 +41,8 @@ public class CurtainCall extends CustomCard implements PostBurialSubscriber, Bet
         this.baseMagicNumber = this.magicNumber = 30;
         AbstractCardPatch.AddFieldPatch.isBottom.set(this, true);
         Scapegoat.loadJokeCardImage(this, BETA_ART_PATH);
+        this.tags = new ArrayList<>();
+        this.tags.add(AbstractCardEnum.FLASH);
     }
 
     @Override

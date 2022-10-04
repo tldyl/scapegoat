@@ -12,7 +12,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.effects.BlueFireAttackEffect;
+import demoMod.scapegoat.enums.AbstractCardEnum;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
+
+import java.util.ArrayList;
 
 public class SoulFlame extends CustomCard implements PostBurialSubscriber {
     public static final String ID = Scapegoat.makeID("SoulFlame");
@@ -33,6 +36,8 @@ public class SoulFlame extends CustomCard implements PostBurialSubscriber {
         this.damage = this.baseDamage;
         this.isMultiDamage = true;
         this.magicNumber = this.baseMagicNumber = 2;
+        this.tags = new ArrayList<>();
+        this.tags.add(AbstractCardEnum.FLASH);
     }
 
     @Override

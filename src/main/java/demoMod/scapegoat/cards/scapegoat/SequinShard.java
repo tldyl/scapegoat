@@ -13,6 +13,8 @@ import demoMod.scapegoat.enums.AbstractCardEnum;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
 import demoMod.scapegoat.powers.PayBackPower;
 
+import java.util.ArrayList;
+
 public class SequinShard extends CustomCard implements PostBurialSubscriber {
     public static final String ID = Scapegoat.makeID("SequinShard");
     public static final String NAME;
@@ -29,6 +31,8 @@ public class SequinShard extends CustomCard implements PostBurialSubscriber {
     public SequinShard() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 2;
+        this.tags = new ArrayList<>();
+        this.tags.add(AbstractCardEnum.FLASH);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package demoMod.scapegoat.actions;
 
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.BetterDiscardPileToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,6 +12,8 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import demoMod.scapegoat.interfaces.PostRecallSubscriber;
 import demoMod.scapegoat.relics.BurningEye;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,10 +98,26 @@ public class RecallAction extends AbstractGameAction {
                 if (this.followupAction != null) {
                     addToTop(followupAction);
                 }
-                for (AbstractPower power : AbstractDungeon.player.powers) {
-                    if (power instanceof PostRecallSubscriber) {
-                        ((PostRecallSubscriber) power).onRecall();
+                boolean modLoaded = Loader.isModLoaded("DerFreischutz");
+                Class<?> recall = null;
+                try {
+                    if (modLoaded) {
+                        recall = Class.forName("demoMod.derfreischutz.interfaces.PostRecallSubscriber");
                     }
+                    for (AbstractPower power : AbstractDungeon.player.powers) {
+                        if (power instanceof PostRecallSubscriber) {
+                            ((PostRecallSubscriber) power).onRecall();
+                        }
+                        if (modLoaded) {
+                            if (recall.isInstance(power)) {
+                                Method method = recall.getDeclaredMethod("onRecall");
+                                method.invoke(power);
+                            }
+                        }
+                    }
+                } catch (ClassNotFoundException | NoSuchMethodException | InvocationTargetException |
+                         IllegalAccessException e) {
+                    throw new RuntimeException(e);
                 }
             }
         }

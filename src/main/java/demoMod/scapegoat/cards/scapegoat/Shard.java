@@ -9,7 +9,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.actions.RecallAction;
+import demoMod.scapegoat.enums.AbstractCardEnum;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
+
+import java.util.ArrayList;
 
 public class Shard extends CustomCard implements PostBurialSubscriber {
     public static final String ID = Scapegoat.makeID("Shard");
@@ -28,6 +31,8 @@ public class Shard extends CustomCard implements PostBurialSubscriber {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, CardColor.COLORLESS, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 1;
         this.exhaust = true;
+        this.tags = new ArrayList<>();
+        this.tags.add(AbstractCardEnum.FLASH);
     }
 
     @Override

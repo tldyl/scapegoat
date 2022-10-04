@@ -27,11 +27,9 @@ target/
 sendToDevs/
 src/test/
 .idea/
-*.lnk
 .idea/vcs.xml
 *.iml
 idea.txt
-*.psd
 *.docx
 *.xlsx
 cards/cardToCut/

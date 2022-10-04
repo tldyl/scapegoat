@@ -18,7 +18,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
-import com.megacrit.cardcrawl.localization.KeywordStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
@@ -46,12 +45,13 @@ public class SinAndBloodstain extends AbstractBlight implements CustomSavable<Ma
     public int sinCounter = 0;
     public int bloodstainCounter = 0;
     private AbstractPlayer p;
+    private static final Texture IMG = new Texture("scapegoatImages/relics/sinAndBloodstain.png");
+    private static final Texture OUTLINE_IMG = new Texture("scapegoatImages/relics/sinAndBloodstain.png");
 
     public SinAndBloodstain() {
         super(ID, NAME, DESCRIPTION, "durian.png", true);
-        String IMG_PATH = "scapegoatImages/relics/sinAndBloodstain.png";
-        this.img = new Texture(IMG_PATH);
-        this.outlineImg = new Texture(IMG_PATH);
+        this.img = IMG;
+        this.outlineImg = OUTLINE_IMG;
         this.increment = 0;
         this.p = AbstractDungeon.player;
         BaseMod.addSaveField(ID, this);

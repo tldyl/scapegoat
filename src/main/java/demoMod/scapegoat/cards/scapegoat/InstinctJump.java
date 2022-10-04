@@ -11,6 +11,8 @@ import demoMod.scapegoat.Scapegoat;
 import demoMod.scapegoat.enums.AbstractCardEnum;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
 
+import java.util.ArrayList;
+
 public class InstinctJump extends CustomCard implements PostBurialSubscriber {
     public static final String ID = Scapegoat.makeID("InstinctJump");
     public static final String NAME;
@@ -27,6 +29,8 @@ public class InstinctJump extends CustomCard implements PostBurialSubscriber {
     public InstinctJump() {
         super(ID, NAME, Scapegoat.getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, AbstractCardEnum.SCAPEGOAT, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = 2;
+        this.tags = new ArrayList<>();
+        this.tags.add(AbstractCardEnum.FLASH);
     }
 
     @Override
