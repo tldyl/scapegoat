@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
+import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.TalkAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -70,16 +71,11 @@ public class ScapegoatCharacter extends CustomPlayer {
         if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera") || ModHelper.isModEnabled("Blue Cards"))) {
             this.masterMaxOrbs = 1;
         }
-        switch (CharacterSelectScreenPatch.reskinIndex) {
-            case 0:
-                this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character.gif"));
-                break;
-            case 1:
-                this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character_skin.gif"));
-                break;
-            default:
-                this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character.gif"));
-                break;
+        this.loadAnimation(Scapegoat.getResourcePath("char/tizui.atlas"), Scapegoat.getResourcePath("char/tizui37.json"), 6.0F);
+        AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
+        e.setTimeScale(0.6F);
+        if (CharacterSelectScreenPatch.reskinIndex == 1) {
+            this.gifAnimation = new GifAnimation(Scapegoat.getResourcePath("char/character_skin.gif"));
         }
         this.frameBuffer = new FrameBuffer(Pixmap.Format.RGBA8888, Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), false);
         this.img = frameBuffer.getColorBufferTexture();
@@ -87,6 +83,10 @@ public class ScapegoatCharacter extends CustomPlayer {
 
     @Override
     public void render(SpriteBatch sb) {
+        if (CharacterSelectScreenPatch.reskinIndex == 0) {
+            super.render(sb);
+            return;
+        }
         this.stance.render(sb);
         if ((AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.getCurrRoom() instanceof MonsterRoom) && !this.isDead) {
             this.renderHealth(sb);
