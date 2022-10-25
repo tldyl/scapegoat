@@ -60,7 +60,7 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <copy file="target\scapegoat.jar" tofile="${steam.path}\steamapps\common\SlayTheSpire\mods\scapegoat.jar"/>
+                                <copy file="target\scapegoat.jar" tofile="${steam.path}\common\SlayTheSpire\mods\scapegoat.jar"/>
                             </target>
                         </configuration>
                         <goals>
