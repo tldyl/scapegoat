@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import demoMod.scapegoat.characters.ScapegoatCharacter;
 import demoMod.scapegoat.interfaces.PostBurialSubscriber;
@@ -73,7 +74,17 @@ public class BurialAction extends AbstractGameAction {
                             }
                         }
                     }
-
+                    for (AbstractRelic relic : AbstractDungeon.player.relics) {
+                        if (relic instanceof PostBurialSubscriber) {
+                            ((PostBurialSubscriber) relic).onBurial(card);
+                        }
+                        if (modLoaded) {
+                            if (burial.isInstance(relic)) {
+                                Method method = burial.getDeclaredMethod("onBurial", AbstractCard.class);
+                                method.invoke(relic, card);
+                            }
+                        }
+                    }
                     for (AbstractCard card1 : AbstractDungeon.player.drawPile.group) {
                         if (card1 instanceof PostBurialSubscriber) {
                             ((PostBurialSubscriber) card1).onBurial(card);
@@ -130,7 +141,17 @@ public class BurialAction extends AbstractGameAction {
                         }
                     }
                 }
-
+                for (AbstractRelic relic : AbstractDungeon.player.relics) {
+                    if (relic instanceof PostBurialSubscriber) {
+                        ((PostBurialSubscriber) relic).onBurial();
+                    }
+                    if (modLoaded) {
+                        if (burial.isInstance(relic)) {
+                            Method method = burial.getDeclaredMethod("onBurial");
+                            method.invoke(relic);
+                        }
+                    }
+                }
                 for (AbstractCard card1 : AbstractDungeon.player.drawPile.group) {
                     if (card1 instanceof PostBurialSubscriber) {
                         ((PostBurialSubscriber) card1).onBurialForCard();
