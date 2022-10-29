@@ -1,0 +1,374 @@
+{
+  "Scapegoat:Strike_Scapegoat": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "Scapegoat:Defend_Scapegoat": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "Scapegoat:Preparation": {
+    "NAME": "준비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 되갚기 를 !M! 얻습니다."
+  },
+  "Scapegoat:Ritual": {
+    "NAME": "의식",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 !M! 회복합니다. NL 카드 !M! 장을 귀장 합니다. NL 소멸."
+  },
+  "Scapegoat:FetterDagger": {
+    "NAME": "계약의 단검",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 카드의 효과로 체력을 잃을때마다,  NL 이 카드를 버린 카드 더미에서 NL 다시 손으로 가져옵니다."
+  },
+  "Scapegoat:BladeImpact": {
+    "NAME": "칼날 충격",
+    "DESCRIPTION": "체력을 !M! 잃습니다. NL 피해를 !D! 줍니다."
+  },
+  "Scapegoat:ProbeStrike": {
+    "NAME": "타진 타격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 지정한 적이 공격할 의도가 없다면, NL 다시 피해를 !D! 줍니다."
+  },
+  "Scapegoat:CutThroat": {
+    "NAME": "목 노리기",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 막히지 않은 피해를 입혔다면, 취약을 !M! 부여합니다."
+  },
+  "Scapegoat:TailWhip": {
+    "NAME": "흩날리는 꼬리",
+    "DESCRIPTION": "적 전체에게 !D! 피해를 !M! 번 줍니다. NL 카드를 1 장 뽑습니다."
+  },
+  "Scapegoat:SoulFlame": {
+    "NAME": "영혼 불길",
+    "DESCRIPTION": "적 전체에게 !D! 피해를 !M! 번 줍니다. NL 플래시백 : 적 전체에게 !D! 피해를 !M! 번 줍니다."
+  },
+  "Scapegoat:TodoCard": {
+    "NAME": "제작중",
+    "DESCRIPTION": "이 카드는 아직 제대로 제작되지도 않았습니다. 왜 꺼내셨죠?"
+  },
+  "Scapegoat:Punish": {
+    "NAME": "징벌",
+    "DESCRIPTION": "대상의 방어도를 전부 제거합니다. NL 피해를 !D! 줍니다. NL 카드 !M! 장을 귀장 합니다."
+  },
+  "Scapegoat:EquivalentSubstitution": {
+    "NAME": "등액 교환",
+    "DESCRIPTION": "리콜 !M! . NL 손패의 카드 1장을 선택해 뽑을 카드 더미 맨 위에 올립니다."
+  },
+  "Scapegoat:BloodyThorns": {
+    "NAME": "핏빛 가시",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 가시 를 !Misc! 얻습니다.  NL 치명타라면, 이 카드의 가시 획득량이 영구적으로 !M! 증가합니다. NL 소멸."
+  },
+  "Scapegoat:Reloaded": {
+    "NAME": "재장전",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 총탄 을 !M! 부여합니다."
+  },
+  "Scapegoat:AvoidCombat": {
+    "NAME": "싸움 회피",
+    "DESCRIPTION": "손패의 공격 카드를 전부 버립니다.  NL 버린 카드 수만큼 다시 카드를 뽑습니다. NL 방어도를 !B! 얻습니다."
+  },
+  "Scapegoat:Convene": {
+    "NAME": "소집",
+    "DESCRIPTION": "취약 을 !M! 받습니다. NL 방어도를 !B! 얻습니다."
+  },
+  "Scapegoat:Barrier": {
+    "NAME": "배리어",
+    "DESCRIPTION": "방어도를 !B! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL [E] 를 얻습니다."
+  },
+  "Scapegoat:Redemption": {
+    "NAME": "구원",
+    "DESCRIPTION": "카드 5 장을 귀장 합니다. NL 리콜 !M! ."
+  },
+  "Scapegoat:GunSlinger": {
+    "NAME": "탄환 요술",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드 3 장을 귀장 합니다. NL *유리 총탄 !M! 장을 얻습니다."
+  },
+  "Scapegoat:SerialBullet": {
+    "NAME": "유리 총탄",
+    "DESCRIPTION": "!D! 피해를 2 번 줍니다. NL 대상에게 총탄 이 없다면, 총탄 을 !M! 부여합니다. NL 소멸."
+  },
+  "Scapegoat:DualMark": {
+    "NAME": "이중 각인",
+    "DESCRIPTION": "되갚기 를 !M! 얻습니다. NL 가시 를 !M! 얻습니다. NL 소멸."
+  },
+  "Scapegoat:Peeper": {
+    "NAME": "정탐",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 리콜 !M! . NL 이 효과로 리콜한 카드는 이번 턴 동안 비용이 0 이 됩니다. NL 소멸."
+  },
+  "Scapegoat:Sacrifice": {
+    "NAME": "헌제",
+    "DESCRIPTION": "체력을 !M! 잃습니다. NL 카드의 효과로 체력을 잃을 때마다, NL 전투 종료시, NL 그만큼 체력을 다시 회복합니다. "
+  },
+  "Scapegoat:ForTheSin": {
+    "NAME": "제물 대체품",
+    "DESCRIPTION": "카드의 효과로 체력을 잃을 때마다, 무작위 적에게 잃은 체력의 !M! 배에 해당하는 총탄 을 부여합니다."
+  },
+  "Scapegoat:AggravatedSin": {
+    "NAME": "겹쳐가는 죄악",
+    "DESCRIPTION": "보유한 되갚기 를 2 배로 늘립니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보유한 되갚기 를 2 배로 늘립니다."
+  },
+  "Scapegoat:BloodForBlade": {
+    "NAME": "피로 씻긴 칼날",
+    "DESCRIPTION": "[E] [E] 를 얻습니다. NL *대가 1 장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "[E] [E] [E] 를 얻습니다. NL *대가 1 장을 얻습니다."
+  },
+  "Scapegoat:Cost": {
+    "NAME": "대가",
+    "DESCRIPTION": "사용불가. NL 이 카드가 손에 있다면, NL 카드를 사용할 때마다 NL 체력을 1 잃습니다. NL 휘발성."
+  },
+  "Scapegoat:Liquidation": {
+    "NAME": "청산",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이 카드는 총탄 의 효과가 !M! 배로 적용됩니다."
+  },
+  "Scapegoat:Convergence": {
+    "NAME": "응집",
+    "DESCRIPTION": "버린 카드 더미에 있는 카드 !M! 장마다 [E] 를 얻습니다."
+  },
+  "Scapegoat:FalseAccusation": {
+    "NAME": "죄악의 대부",
+    "DESCRIPTION": "카드를 귀장 할 때마다, NL 되갚기 를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "카드를 귀장 할 때마다, NL 되갚기 를 !M! 얻습니다; NL 적 전체에게 총탄 을 !M! 부여합니다."
+  },
+  "Scapegoat:Weave": {
+    "NAME": "편직",
+    "DESCRIPTION": "뽑을 카드 더미에 무작위 일반 등급 카드 !M! 장을 넣습니다. "
+  },
+  "Scapegoat:ReturnedBlade": {
+    "NAME": "회귀의 검",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 다음 턴 시작시 무작위 적에게 피해를 !2M! 줍니다."
+  },
+  "Scapegoat:AllOutParry": {
+    "NAME": "전력 수비",
+    "DESCRIPTION": "카드를 귀장 할 때마다, 방어도를 !M! 얻습니다. NL 카드를 3 장 귀장 합니다."
+  },
+  "Scapegoat:Malice": {
+    "NAME": "악념 응집체",
+    "DESCRIPTION": "적 전체의 총탄 을 2 배로 늘립니다."
+  },
+  "Scapegoat:BurnTheBoat": {
+    "NAME": "배수진",
+    "DESCRIPTION": "체력을 5 잃습니다. 카드를 !M! 장 뽑습니다. [E] [E] 를 얻습니다 . NL 이번 턴 동안 더 이상 카드를 뽑을 수 없습니다. NL 소멸."
+  },
+  "Scapegoat:PryIntoTruth": {
+    "NAME": "진실 엿보기",
+    "DESCRIPTION": "뽑을 카드 더미에 있는 무작위 카드 !M! 장을 이번 전투 동안 강화합니다. NL 소멸."
+  },
+  "Scapegoat:BloodVibration": {
+    "NAME": "혈진",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 대상에게 취약 효과가 있다면, 이 카드의 피해량이 2배가 됩니다."
+  },
+  "Scapegoat:InstinctJump": {
+    "NAME": "본능적인 전이",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 플래시백 : 카드를 !M! 장 뽑습니다."
+  },
+  "Scapegoat:SkilledChopping": {
+    "NAME": "능숙한 참격",
+    "DESCRIPTION": "피해를 !D! 줍니다. 방어도를 !B! 얻습니다. NL 이번 전투 동안 이 카드의 피해량과 방어도가 !M! 증가합니다."
+  },
+  "Scapegoat:MaliciousErosion": {
+    "NAME": "부식군주",
+    "DESCRIPTION": "손패의 카드 1 장을 선택하여 사용하고, 그 카드를 소멸시킵니다. 그 카드의 비용만큼 카드를 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "손패의 카드 1 장을 선택하여 사용하고, 그 카드를 소멸시킵니다. 그 카드의 비용만큼 카드를 뽑습니다. "
+  },
+  "Scapegoat:RunningFireOfTheDead": {
+    "NAME": "최후의 발악",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *유리 총탄 !M! 장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL *유리 총탄+ !M! 장을 얻습니다."
+  },
+  "Scapegoat:DealWithDevil": {
+    "NAME": "악마의 거래",
+    "DESCRIPTION": "체력을 5 잃습니다. NL 매 턴 종료시 적들의 체력을 !M! 감소시킵니다."
+  },
+  "Scapegoat:BrandishingNeedle": {
+    "NAME": "가시 윤무",
+    "DESCRIPTION": "가시 를 !M! 얻습니다. NL 리콜 !M! ."
+  },
+  "Scapegoat:CrossDominate": {
+    "NAME": "교차 지배력",
+    "DESCRIPTION": "카드 !M! 장을 귀장 할 때마다, 카드를 1 장 뽑습니다."
+  },
+  "Scapegoat:MasteryOfFirearms": {
+    "NAME": "총기 전문가",
+    "DESCRIPTION": "매 턴 시작시, *유리 총탄 1 장을 얻습니다. ",
+    "UPGRADE_DESCRIPTION": "매 턴 시작시, *유리 총탄+ 1 장을 얻습니다. "
+  },
+  "Scapegoat:DelayedFlame": {
+    "NAME": "퍼져나가는 불길",
+    "DESCRIPTION": "카드를 귀장 할 때마다, 이번 턴 동안 이 카드의 비용이 [E] 감소합니다. NL !D! 피해를 !M! 번 줍니다."
+  },
+  "Scapegoat:ReturnToSilence": {
+    "NAME": "고요의 연기",
+    "DESCRIPTION": "체력을 2 잃습니다. NL 뽑을 카드 더미의 카드를 전부 귀장 시킵니다. NL 리콜 !M! . NL 소멸.",
+    "UPGRADE_DESCRIPTION": "체력을 2 잃습니다. NL 뽑을 카드 더미의 카드를 전부 귀장 시킵니다. NL 리콜 !M! . "
+  },
+  "Scapegoat:EmergencyCall": {
+    "NAME": "긴급 소집",
+    "DESCRIPTION": "체력을 3 잃습니다. NL 리콜 !M! . NL 소멸. "
+  },
+  "Scapegoat:Vibration": {
+    "NAME": "공명 진격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 뽑을 카드 더미에 *조각 !M! 장을 넣습니다."
+  },
+  "Scapegoat:Shard": {
+    "NAME": "조각",
+    "DESCRIPTION": "리콜 !M! . NL 플래시백 : 리콜 !M! . 소멸. NL 소멸."
+  },
+  "Scapegoat:Adaptability": {
+    "NAME": "적응성",
+    "DESCRIPTION": "카드의 효과로 체력을 잃을 때마다, 다음 턴에 방어도를 !M! 얻습니다."
+  },
+  "Scapegoat:RitualLunge": {
+    "NAME": "의식의 참격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에 체력을 잃었다면, 체력을 !M! 회복하고 이 카드가 소멸 합니다."
+  },
+  "Scapegoat:Splash": {
+    "NAME": "스플래시 스퍼터링",
+    "DESCRIPTION": "총탄 을 !M! 부여합니다. NL 대상 적이 죽으면, 대상에게 부여되어있는 총탄 의 !2M! 배만큼 적 전체에게 피해를 줍니다."
+  },
+  "Scapegoat:HeadStart": {
+    "NAME": "기선 제압",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 !M! 장 뽑습니다. NL 선천성. NL 소멸."
+  },
+  "Scapegoat:BlazeAway": {
+    "NAME": "연속 사격",
+    "DESCRIPTION": "무작위 적들에게 총탄 1 을 !M! 번 부여합니다."
+  },
+  "Scapegoat:Gnaw": {
+    "NAME": "갉아먹기",
+    "DESCRIPTION": "피해를 !D! 줍니다.  NL 막히지 않은 피해를 입혔다면, 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "Scapegoat:SacrificeGarrotte": {
+    "NAME": "교살의 의식",
+    "DESCRIPTION": "이번 턴에 카드를 사용할 때마다, 대상의 체력을 !M! 감소시킵니다."
+  },
+  "Scapegoat:ExtraordinaryFood": {
+    "NAME": "비상 식량 준비",
+    "DESCRIPTION": "손패의 카드를 2장까지 선택해 소멸시킵니다. 소멸시킨 카드 1장당, 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "Scapegoat:AimingShot": {
+    "NAME": "조준 사격",
+    "DESCRIPTION": "총탄 을 !M! 부여합니다. NL 모든 '무작위 대상' 효과가 지정한 적을 공격하게 됩니다. NL 소멸."
+  },
+  "Scapegoat:Binding": {
+    "NAME": "번제",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴 동안 카드의 효과로 체력을 잃지 않습니다. NL 소멸."
+  },
+  "Scapegoat:SacrificeReplacement": {
+    "NAME": "제물 교체",
+    "DESCRIPTION": "이번 턴 동안 카드의 효과로 체력을 잃지 않습니다. NL 자해 효과를 발동할 때마다, 뽑을 카드 더미에 *조각 !M! 장을 넣습니다. NL 소멸."
+  },
+  "Scapegoat:DrinkPoisonToEndThirst": {
+    "NAME": "눈 가리고 아웅",
+    "DESCRIPTION": "보존. NL 방어도를 !B! 얻습니다. NL 체력을 !M! 회복합니다. NL 턴 종료시 체력을 12 잃습니다. NL 소멸. "
+  },
+  "Scapegoat:MarkerCapture": {
+    "NAME": "각인 박제",
+    "DESCRIPTION": "총탄 이 부여된 적을 공격할 때마다, 방어도를 !M! 얻습니다."
+  },
+  "Scapegoat:TurnBackForSin": {
+    "NAME": "죄악 환산",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투에서 얻은 되갚기 의 !M! 배에 해당하는 추가 피해를 줍니다."
+  },
+  "Scapegoat:CurtainCall": {
+    "NAME": "커튼콜",
+    "DESCRIPTION": "사용불가. NL 대단원. NL 플래시백 : 적 전체에게 피해를 !D! 줍니다. 이번 턴 동안 이 카드의 피해량이 !M! 증가합니다."
+  },
+  "Scapegoat:PriorRepair": {
+    "NAME": "사전 수리",
+    "DESCRIPTION": "다음 X 턴 동안, 턴 시작시 카드를 !M! 장 뽑고 [E] 를 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "다음 X 턴 동안, 턴 시작시 카드를 !M! 장 뽑고 [E] 를 얻습니다. NL 소멸."
+  },
+  "Scapegoat:SequinShard": {
+    "NAME": "스팽글 조각",
+    "DESCRIPTION": "사용불가. NL 플래시백 : [E] 를 얻고 되갚기 를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "사용불가. NL 플래시백 : [E] [E] 를 얻고 되갚기 를 !M! 얻습니다."
+  },
+  "Scapegoat:StockUp": {
+    "NAME": "하나의 술수",
+    "DESCRIPTION": "리콜 !M! . NL 가져올 카드를 1 장만 선택했다면, 그 카드를 2 장 복사하여 뽑을 카드 더미에 넣습니다. NL 소멸. "
+  },
+  "Scapegoat:BaresTheSoul": {
+    "NAME": "영혼 박피",
+    "DESCRIPTION": "지정한 적의 영혼을 박피시켜 !M! 의 체력을 가진 박피 인형을 생성합니다. NL 해당 박피 영혼에게 피해를 주면, 그 피해만큼 지정했던 적에게 피해를 2배로 줍니다. (오버킬로 인한 피해도 되돌려줍니다.) NL 소멸."
+  },
+  "Scapegoat:GunSwordDance": {
+    "NAME": "총검 난무",
+    "DESCRIPTION": "*유리 총탄 X 장을 얻습니다. NL 적 전체에게 총탄 을 !M! 부여합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "*유리 총탄+ X 장을 얻습니다. NL 적 전체에게 총탄 을 !M! 부여합니다. NL 소멸."
+  },
+  "Scapegoat:EmergencyMeasurement": {
+    "NAME": "긴급 조치",
+    "DESCRIPTION": "체력을 3 잃습니다. 카드를 !M! 장 뽑습니다."
+  },
+  "Scapegoat:AbyssMemory": {
+    "NAME": "심연의 기억",
+    "DESCRIPTION": "카드를 !M! 장 귀장 합니다.  NL 리콜 !M! .  NL 소멸."
+  },
+  "Scapegoat:BloodyCrown": {
+    "NAME": "구부러진 핏빛 왕관",
+    "DESCRIPTION": "대상이 기절 상태가 아니라면, 체력을 !M! 잃고 대상을 기절 시킵니다. NL 소멸."
+  },
+  "Scapegoat:WashAway": {
+    "NAME": "세척",
+    "DESCRIPTION": "매 턴 시작시, 해로운 효과를 보유하고 있다면, 그 중 1가지를 제거하고 카드를 !M! 장 귀장 합니다. ",
+    "UPGRADE_DESCRIPTION": "선천성. NL 매 턴 시작시, 매 턴 시작시, 해로운 효과를 보유하고 있다면, 그 중 1가지를 제거하고 카드를 !M! 귀장 합니다."
+  },
+  "Scapegoat:PunishmentForm": {
+    "NAME": "징벌의 형상",
+    "DESCRIPTION": "턴 종료시 총탄 이 감소하지 않습니다. NL 매 턴 시작시, 적 전체에게 총탄 을 !M! 부여합니다."
+  },
+  "Scapegoat:SelfSacrifice": {
+    "NAME": "희생",
+    "DESCRIPTION": "보존. NL 체력을 10 잃고, 최대 체력을 !M! 증가시킵니다. NL 이 카드로 자살하게 되면, 죽는 대신 체력을 전부 회복하고, 이 카드가 일회성 이 됩니다. NL 소멸."
+  },
+  "Scapegoat:Shame": {
+    "NAME": "모함",
+    "DESCRIPTION": ""
+  },
+  "Scapegoat:AscendersBane": {
+    "NAME": "무지성",
+    "DESCRIPTION": ""
+  },
+  "Scapegoat:Doubt": {
+    "NAME": "두려움",
+    "DESCRIPTION": ""
+  },
+  "Scapegoat:Regret": {
+    "NAME": "굶주림",
+    "DESCRIPTION": ""
+  },
+  "Scapegoat:Awe": {
+    "NAME": "진섭",
+    "DESCRIPTION": "취약을 !M! 부여합니다. NL 적의 의도가 공격 이었다면, 약화를 !M! 부여합니다. ",
+    "UPGRADE_DESCRIPTION": "적 전체에게 취약을 !M! 부여합니다. NL 적의 의도가 공격 이었다면, 약화를 !M! 부여합니다. "
+  },
+  "Scapegoat:Deflagration": {
+    "NAME": "폭연",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 이번 턴 동안 공격 카드를 사용할 수 없습니다."
+  },
+  "Scapegoat:CounterAttack": {
+    "NAME": "반격",
+    "DESCRIPTION": "플레이어의 턴이 아닐때, 적에게 입히는 모든 피해가 2 배로 증가합니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 플레이어의 턴이 아닐때, 적에게 입히는 모든 피해가 2 배로 증가합니다. "
+  },
+  "Scapegoat:Asterism": {
+    "NAME": "성군",
+    "DESCRIPTION": "리콜 효과가 발동할 때마다, 금속화 를 !M! 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "리콜 효과가 발동할 때마다, 금속화 를 !M! 얻습니다."
+  },
+  "Scapegoat:TemporaryCollaboration": {
+    "NAME": "임시 협력",
+    "DESCRIPTION": "매 턴 시작시, 카드를 !M! 장 귀장 하고, 리콜 !2M! 합니다."
+  },
+  "Scapegoat:Alpha2": {
+    "NAME": "알파",
+    "DESCRIPTION": "뽑을 카드 더미에 *베타 를 섞어 넣습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 뽑을 카드 더미에 *베타 를 섞어 넣습니다. NL 소멸."
+  },
+  "Scapegoat:Beta2": {
+    "NAME": "베타",
+    "DESCRIPTION": "뽑을 카드에 *오메가 를 섞어 넣습니다. NL 소멸."
+  },
+  "Scapegoat:Omega2": {
+    "NAME": "오메가",
+    "DESCRIPTION": "턴 종료 시 적 전체에게 피해를 !M! 줍니다."
+  }
+}

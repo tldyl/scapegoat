@@ -1,0 +1,208 @@
+{
+  "Scapegoat:PayBackPower": {
+    "NAME": "되갚기",
+    "DESCRIPTIONS": [
+      "#y공격 피해를 받을때마다, 공격한 대상의 피해량만큼 피해를 반사시키고 되갚기 중첩이 #b1 감소합니다."
+    ]
+  },
+  "Scapegoat:BulletPower": {
+    "NAME": "총탄",
+    "DESCRIPTIONS": [
+      "이 적의 받는 피해량이 #b  ",
+      " 증가합니다.(파워 효과 포함) NL  #b",
+      " 턴 동안 지속 됩니다. "
+    ]
+  },
+  "Scapegoat:SacrificePower": {
+    "NAME": "헌제",
+    "DESCRIPTIONS": [
+      "카드의 효과로 체력을 잃을 때마다, 전투 종료시, 그만큼 체력을 다시 회복합니다.."
+    ]
+  },
+  "Scapegoat:ForTheSinPower": {
+    "NAME": "제물 대체품",
+    "DESCRIPTIONS": [
+      "카드의 효과로 체력을 잃을 때마다, 무작위 적에게 잃은 체력의 #b",
+      " 배에 해당하는 총탄 을 부여합니다."
+    ]
+  },
+  "Scapegoat:FalseAccusationPower": {
+    "NAME": "죄악의 대부",
+    "DESCRIPTIONS": [
+      "카드를 귀장 할 때마다, #y되갚기 를 #b",
+      " 얻습니다.",
+      " NL 적 전체에게 #y총탄 을 #b",
+      "  부여합니다. "
+    ]
+  },
+  "Scapegoat:NextTurnDamagePower": {
+    "NAME": "회귀의 검",
+    "DESCRIPTIONS": [
+      "다음 턴 시작시 무작위 적에게 #y피해를 #b",
+      "  줍니다."
+    ]
+  },
+  "Scapegoat:AllOutParryPower": {
+    "NAME": "전력 수비",
+    "DESCRIPTIONS": [
+      "카드를 #y귀장 할 때마다, 방어도를 #b",
+      "  얻습니다."
+    ]
+  },
+  "Scapegoat:DealWithDevilPower": {
+    "NAME": "악마의 거래",
+    "DESCRIPTIONS": [
+      "매 턴 종료시 적들의 체력을 #b",
+      " 감소시킵니다."
+    ]
+  },
+  "Scapegoat:CrossDominatePower": {
+    "NAME": "교차 지배력",
+    "DESCRIPTIONS": [
+      "카드 #b",
+      " 장을 귀장 할 때마다, 카드를 #b",
+      " 장 뽑습니다."
+    ]
+  },
+  "Scapegoat:MasteryOfFirearmsPower": {
+    "NAME": "총기 전문가",
+    "DESCRIPTIONS": [
+      "매 턴 시작시, #b",
+      "  장의 #y유리 #y총탄 을 얻습니다.",
+      "  장의 #y유리 #y총탄+ 을 얻습니다."
+    ]
+  },
+  "Scapegoat:AdaptabilityPower": {
+    "NAME": "적응성",
+    "DESCRIPTIONS": [
+      "체력을 잃을 때마다, 다음 턴에 #y방어도를 #b",
+      " 얻습니다."
+    ]
+  },
+  "Scapegoat:SplashPower": {
+    "NAME": "스플래시 스퍼터링",
+    "DESCRIPTIONS": [
+      "이 적이 죽으면, 이 적에게 부여된 #y총탄 의  #b",
+      " 배에 해당하는 피해를 적 전체에게 입힙니다."
+    ]
+  },
+  "Scapegoat:AimingShotPower": {
+    "NAME": "조준 사격",
+    "DESCRIPTIONS": [
+      "모든 '무작위 대상' 효과가 이 적을 공격하게 됩니다."
+    ]
+  },
+  "Scapegoat:BindingPower": {
+    "NAME": "번제",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 카드의 효과로 체력을 잃지 않습니다."
+    ]
+  },
+  "Scapegoat:SacrificeReplacementPower": {
+    "NAME": "제물 교체",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 카드의 효과로 체력을 잃지 않습니다. NL 자해 효과를 발동할 때마다, 뽑을 카드 더미에 #y조각 #b",
+      " 장을 넣습니다. "
+    ]
+  },
+  "Scapegoat:DrinkPoisonToEndThirstPower": {
+    "NAME": "눈 가리고 아웅",
+    "DESCRIPTIONS": [
+      "턴 종료시 체력을 #b",
+      " 잃습니다. ",
+      "턴 종료시 체력을 #b"
+    ]
+  },
+  "Scapegoat:PriorRepairPower": {
+    "NAME": "사전 수리",
+    "DESCRIPTIONS": [
+      "매 턴 시작시, #b",
+      " [E] 를 얻고 카드를 #b",
+      " 장 뽑습니다. #b",
+      " 턴 동안 지속 됩니다."
+    ]
+  },
+  "Scapegoat:MarkerCapturePower": {
+    "NAME": "각인 박제",
+    "DESCRIPTIONS": [
+      "총탄 이 부여된 적을 공격할 때마다, #y방어도를 #b",
+      " 얻습니다."
+    ]
+  },
+  "Scapegoat:SpiritLinkPower": {
+    "NAME": "영혼 연결",
+    "DESCRIPTIONS": [
+      "영혼이 피해를 받으면, 그 영혼과 연결된 생물이 피해를 2 배 더 받습니다."
+    ]
+  },
+  "Scapegoat:WashAwayPower": {
+    "NAME": "세척",
+    "DESCRIPTIONS": [
+      "해로운 효과를 보유하고 있다면, 그 중 #b",
+      " 가지를 제거하고 카드를 #b",
+      " 장 귀장 합니다."
+    ]
+  },
+  "Scapegoat:PunishmentFormPower": {
+    "NAME": "징벌의 형상",
+    "DESCRIPTIONS": [
+      "턴 종료시 #y총탄 이 감소하지 않습니다. 매 턴 시작시, 적 전체에게 총탄 을 #b",
+      " 부여합니다."
+    ]
+  },
+  "Scapegoat:BloodstainPower": {
+    "NAME": "혈흔",
+    "DESCRIPTIONS": [
+      "#y공격 의 피해량이 #b",
+      "% 증가합니다."
+    ]
+  },
+  "Scapegoat:SinPower": {
+    "NAME": "죄악",
+    "DESCRIPTIONS": [
+      "카드로 얻는 #y방어도가 #b",
+      "% 증가합니다."
+    ]
+  },
+  "Scapegoat:DevilInAJarPower": {
+    "NAME": "병 속의 악마",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 체력을 잃을 때마다, 잃은 만큼 #y재생 을 얻습니다."
+    ]
+  },
+  "Scapegoat:CounterAttackPower": {
+    "NAME": "반격",
+    "DESCRIPTIONS": [
+      "플레이어의 턴이 아닐때, 적에게 입히는 모든 피해가 2 배로 증가합니다."
+    ]
+  },
+  "Scapegoat:AsterismPower": {
+    "NAME": "성군",
+    "DESCRIPTIONS": [
+      "#y리콜 카드를 사용할 때마다, #y금속화 를 #b",
+      " 얻습니다."
+    ]
+  },
+  "Scapegoat:TemporaryCollaborationPower": {
+    "NAME": "임시 협력",
+    "DESCRIPTIONS": [
+      "매 턴 시작시, #y카드를 #b",
+      " 장 하고 #y리콜 #b",
+      "  합니다."
+    ]
+  },
+  "Scapegoat:Omega2Power": {
+    "NAME": "오메가",
+    "DESCRIPTIONS": [
+      "턴 종료시, 적 전체에게 피해를 #b",
+      " 줍니다."
+    ]
+  },
+  "Scapegoat:ProtectionPower": {
+    "NAME": "보호",
+    "DESCRIPTIONS": [
+      "공격으로 받는 피해량이 #b",
+      " 감소합니다."
+    ]
+  }
+}

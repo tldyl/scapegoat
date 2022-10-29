@@ -1,0 +1,29 @@
+{
+  "HandToDrawPileAction": {
+    "TEXT": [
+      "뽑을 카드 더미에 넣을 카드 1 장을 선택하세요."
+    ]
+  },
+  "Scapegoat:Reskin": {
+    "TEXT": [
+      "스킨",
+      "오리지널",
+      "속죄양 Jr."
+    ]
+  },
+  "Scapegoat:ReskinUnlocked": {
+    "TEXT": [
+      "속죄양의 추가 리스킨 해금됨!"
+    ]
+  },
+  "Scapegoat:AbstractAbnormalityPages": {
+    "TEXT": [
+      "효과를 선택하세요."
+    ]
+  },
+  "Scapegoat:ModPanel": {
+    "TEXT": [
+      "특수한 엘리트의 등장 애니메이션을 활성화 시킵니다."
+    ]
+  }
+}

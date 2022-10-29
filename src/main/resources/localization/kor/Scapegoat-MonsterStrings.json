@@ -1,0 +1,12 @@
+{
+  "Scapegoat:BaredSoul": {
+    "NAME": " '의 영혼 ",
+    "DIALOG": [""],
+    "MOVES": [""]
+  },
+  "Scapegoat:CityVampire": {
+    "NAME": "흡혈귀",
+    "DIALOG": ["#r@너@ #r@같은@ #r@악마는@ #r@우리와@ #r@함께@ #r@할@ #r@이유가@ #r@없다!@"],
+    "MOVES": ["물어뜯기", "할퀴기"]
+  }
+}

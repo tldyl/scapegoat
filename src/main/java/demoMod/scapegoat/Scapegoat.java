@@ -111,10 +111,10 @@ public class Scapegoat implements EditCardsSubscriber,
             case ZHS:
                 language = "zhs";
                 break;
-                /*
             case KOR:
                 language = "kor";
                 break;
+                /*
             case JPN:
                 language = "jpn";
                 break;

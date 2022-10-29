@@ -1,0 +1,22 @@
+{
+  "Scapegoat:LiquidSequin": {
+    "NAME": "액상 조각",
+    "DESCRIPTIONS": [
+      "#y되갚기 를 #b",
+      "  #y얻습니다. "
+    ]
+  },
+  "Scapegoat:BottledRedemption": {
+    "NAME": "병 속의 구제",
+    "DESCRIPTIONS": [
+      "#y리콜 #b",
+      " ."
+    ]
+  },
+  "Scapegoat:DevilInAJar": {
+    "NAME": "병 속의 악마",
+    "DESCRIPTIONS": [
+      "이번 턴 동안 체력을 잃을때마다, 그만큼 #y재생 을 얻습니다. "
+    ]
+  }
+}
