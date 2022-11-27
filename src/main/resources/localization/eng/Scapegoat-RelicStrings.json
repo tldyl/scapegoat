@@ -1,7 +1,7 @@
 {
   "Scapegoat:BronzePipe": {
     "NAME": "Bronze Pipe",
-    "FLAVOR": "The empty brass pipe was badly worn and looked very old.",
+    "FLAVOR": "The empty brass pipe it's badly worn and looks ancient.",
     "DESCRIPTIONS": [
       "At the start of each combat, #yReburial #b4 , #yRecall #b1 ."
     ]
