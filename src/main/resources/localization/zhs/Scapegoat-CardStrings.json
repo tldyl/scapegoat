@@ -98,7 +98,7 @@
   },
   "Scapegoat:ForTheSin": {
     "NAME": "替罪",
-    "DESCRIPTION": "每当你自身失去生命时，给予随机敌人 !M! 倍于失去生命的子弹"
+    "DESCRIPTION": "每当你自身失去生命时，给予随机敌人 !M! 倍于失去生命的 子弹 。"
   },
   "Scapegoat:AggravatedSin": {
     "NAME": "罪孽复加",
