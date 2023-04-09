@@ -4,21 +4,21 @@
       "return"
     ],
     "PROPER_NAME": "Return",
-    "DESCRIPTION": "When receiving #yAttack damage ,deals same damage back.Then Return is reduced by #b1 ."
+    "DESCRIPTION": "When receiving #yAttack damage ,deals same damage back. NL Then reduce the Return by #b1 ."
   },
   {
     "NAMES": [
       "reburial"
    ],
     "PROPER_NAME": "Reburial",
-    "DESCRIPTION": "Throw #bX card from the top of your draw pile.(When the number of card from your draw pile less than  #bX ,throw them ALL)."
+    "DESCRIPTION": "Discard set amount of cards from the top of your draw pile.(If the number of cards in your draw pile is less than the specified number, discard them ALL)."
   },
   {
     "NAMES": [
       "recall"
     ],
     "PROPER_NAME": "Recall",
-    "DESCRIPTION": "Look #bX random cards from your discard pile, you can choose any of them into your hand."
+    "DESCRIPTION": "View specified number of random cards in your discard pile, you can choose to add any of them into your hand."
   },
   {
     "NAMES": [

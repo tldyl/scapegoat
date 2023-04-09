@@ -48,7 +48,7 @@
     "DESCRIPTION": "Remove all Block from the enemy. NL Deal !D! damege. NL Reburial !M! ."
   },
   "Scapegoat:EquivalentSubstitution": {
-    "NAME": "Equal Replace",
+    "NAME": "Equivalent Exchange",
     "DESCRIPTION": "Recall !M! . NL Put a card from your hand to your draw pile."
   },
   "Scapegoat:BloodyThorns": {
@@ -282,7 +282,7 @@
     "UPGRADE_DESCRIPTION": "Unplayable. NL Spark: Gain [E] [E] ,Gain !M! Return ."
   },
   "Scapegoat:StockUp": {
-    "NAME": "Hold Back A Trick",
+    "NAME": "Ace In The Hole",
     "DESCRIPTION": "Recall !M! . NL If only one was selected, add 2 copies of that cards into your draw pile. NL Exhaust. "
   },
   "Scapegoat:BaresTheSoul": {
