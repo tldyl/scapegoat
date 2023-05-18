@@ -17,7 +17,7 @@
   },
   "Scapegoat:FetterDagger": {
     "NAME": "Contract Dagger",
-    "DESCRIPTION": "Deal !D! damage. NL Whenever you lose HP from a card , NL If this card in your discard pile, NL return to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you lose HP, NL If this card in your discard pile, NL put it into your hand."
   },
   "Scapegoat:BladeImpact": {
     "NAME": "Hemo Impact",
