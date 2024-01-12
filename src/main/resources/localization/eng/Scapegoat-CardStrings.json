@@ -13,11 +13,11 @@
   },
   "Scapegoat:Ritual": {
     "NAME": "Ceremony",
-    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP. NL Reburial !M! . NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP. NL Reburial !M!. NL Exhaust."
   },
   "Scapegoat:FetterDagger": {
     "NAME": "Contract Dagger",
-    "DESCRIPTION": "Deal !D! damage. NL Whenever you lose HP, NL If this card in your discard pile, NL put it into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you lose HP, NL if this card in your discard pile, NL put it into your hand."
   },
   "Scapegoat:BladeImpact": {
     "NAME": "Hemo Impact",
@@ -45,15 +45,15 @@
   },
   "Scapegoat:Punish": {
     "NAME": "Punishment",
-    "DESCRIPTION": "Remove all Block from the enemy. NL Deal !D! damege. NL Reburial !M! ."
+    "DESCRIPTION": "Remove all Block from the enemy. NL Deal !D! damage. NL Reburial !M!."
   },
   "Scapegoat:EquivalentSubstitution": {
     "NAME": "Equivalent Exchange",
-    "DESCRIPTION": "Recall !M! . NL Put a card from your hand to your draw pile."
+    "DESCRIPTION": "Recall !M!. NL Put a card from your hand into your draw pile."
   },
   "Scapegoat:BloodyThorns": {
     "NAME": "Blood Thorn",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !Misc! Thorns.  NL If Fatal, permanently increase this card's Thorns by !M! . NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !Misc! Thorns. NL If Fatal, permanently increase this card's Thorns by !M!. NL Exhaust."
   },
   "Scapegoat:Reloaded": {
     "NAME": "Reload",
@@ -61,7 +61,7 @@
   },
   "Scapegoat:AvoidCombat": {
     "NAME": "Respite",
-    "DESCRIPTION": "Discard all attack cards in your hand,  NL Then draw that many cards. NL Gain !B! Block."
+    "DESCRIPTION": "Discard all attack cards in your hand then, NL draw that many cards. NL Gain !B! Block."
   },
   "Scapegoat:Convene": {
     "NAME": "Summon",
@@ -70,11 +70,11 @@
   "Scapegoat:Barrier": {
     "NAME": "Barrier",
     "DESCRIPTION": "Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain [E] ."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain [E]."
   },
   "Scapegoat:Redemption": {
     "NAME": "Save",
-    "DESCRIPTION": "Reburial 5 . NL Recall !M! ."
+    "DESCRIPTION": "Reburial 5. NL Recall !M!."
   },
   "Scapegoat:GunSlinger": {
     "NAME": "Gun-fu",
@@ -82,7 +82,7 @@
   },
   "Scapegoat:SerialBullet": {
     "NAME": "Glass Bullet",
-    "DESCRIPTION": "Deal !D! damage twice. NL If the enemy has no Bullet, apply !M! Bullet. NL  Exhaust."
+    "DESCRIPTION": "Deal !D! damage twice. NL If the enemy has no Bullet, apply !M! Bullet. NL Exhaust."
   },
   "Scapegoat:DualMark": {
     "NAME": "Double Imprint",
@@ -90,11 +90,11 @@
   },
   "Scapegoat:Peeper": {
     "NAME": "Peep",
-    "DESCRIPTION": "Deal !D! damage. NL Recall !M! . NL It costs 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Recall !M!. NL It costs 0 this turn. NL Exhaust."
   },
   "Scapegoat:Sacrifice": {
     "NAME": "Offering",
-    "DESCRIPTION": "Lose !M! HP. NL Whenever you lose HP by youself, NL At the end of combat, NL heal same HP. "
+    "DESCRIPTION": "Lose !M! HP. NL Whenever you lose HP by your NL own effect, at the end of NL combat, heal the same amount of HP."
   },
   "Scapegoat:ForTheSin": {
     "NAME": "Substitute",
@@ -107,8 +107,8 @@
   },
   "Scapegoat:BloodForBlade": {
     "NAME": "Blood For Blade",
-    "DESCRIPTION": "Gain [E] [E] . NL Add 1 *Cost into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] . NL Add 1 *Cost into your hand."
+    "DESCRIPTION": "Gain [E] [E]. NL Add 1 *Cost into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Add 1 *Cost into your hand."
   },
   "Scapegoat:Cost": {
     "NAME": "Cost",
@@ -120,7 +120,7 @@
   },
   "Scapegoat:Convergence": {
     "NAME": "Congeal",
-    "DESCRIPTION": " Gain [E] for every !M!  cards in your discard pile."
+    "DESCRIPTION": " Gain [E] for every !M! cards in your discard pile."
   },
   "Scapegoat:FalseAccusation": {
     "NAME": "Sin Loaner",
@@ -129,7 +129,7 @@
   },
   "Scapegoat:Weave": {
     "NAME": "Weave",
-    "DESCRIPTION": "Add !M!  random Common cards into your draw pile. "
+    "DESCRIPTION": "Add !M! random Common cards into your draw pile. "
   },
   "Scapegoat:ReturnedBlade": {
     "NAME": "Double Play",
@@ -145,7 +145,7 @@
   },
   "Scapegoat:BurnTheBoat": {
     "NAME": "The Last Stand",
-    "DESCRIPTION": "Lose 5 HP. Draw !M!. Gain [E] [E] . NL You cannot draw additional cards this turn. NL Exhaust."
+    "DESCRIPTION": "Lose 5 HP. Draw !M!. Gain [E] [E]. NL You cannot draw additional cards this turn. NL Exhaust."
   },
   "Scapegoat:PryIntoTruth": {
     "NAME": "See The Truth",
@@ -166,50 +166,50 @@
   "Scapegoat:MaliciousErosion": {
     "NAME": "Demonize",
     "DESCRIPTION": "Play and a Exhaust a card, Draw cards equal to its cost. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Play and a Exhaust a card, Draw cards equal to its cost. "
+    "UPGRADE_DESCRIPTION": "Play and a Exhaust a card, Draw cards equal to its cost."
   },
   "Scapegoat:RunningFireOfTheDead": {
     "NAME": "Last Stand",
-    "DESCRIPTION": "Deal !D! damage. NL Add !M!  *Glass Bullet into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add !M!  *Glass Bullet+ into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Glass Bullet into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add !M! *Glass Bullet+ into your hand."
   },
   "Scapegoat:DealWithDevil": {
     "NAME": "Fiendish Deal",
-    "DESCRIPTION": "Lose5HP. NL Whenever you end your turn,  ALL enemies lose !M! HP."
+    "DESCRIPTION": "Lose 5 HP. NL Whenever you end your turn, ALL enemies lose !M! HP."
   },
   "Scapegoat:BrandishingNeedle": {
     "NAME": "Dancing Needle",
-    "DESCRIPTION": "Gain !M! Thorns. NL Recall !M! ."
+    "DESCRIPTION": "Gain !M! Thorns. NL Recall !M!."
   },
   "Scapegoat:CrossDominate": {
     "NAME": "Cross Domination",
-    "DESCRIPTION": "Whenever you Reburial !M! card , draw 1."
+    "DESCRIPTION": "Whenever you Reburial !M! cards, draw 1."
   },
   "Scapegoat:MasteryOfFirearms": {
     "NAME": "SimGuns",
-    "DESCRIPTION": "At the start of your turn, add a *Glass Bullet into your hand. ",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, add a *Glass Bullet+ into your hand. "
+    "DESCRIPTION": "At the start of your turn, add a *Glass Bullet into your hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add a *Glass Bullet+ into your hand."
   },
   "Scapegoat:DelayedFlame": {
     "NAME": "Spread",
-    "DESCRIPTION": "Whenever you Reburial card , cost 1 less [E] this turn. NL Deal !D! damage !M!  times."
+    "DESCRIPTION": "Whenever you Reburial a card, it cost 1 less [E] this turn. NL Deal !D! damage !M! times."
   },
   "Scapegoat:ReturnToSilence": {
     "NAME": "Deathly Stillness",
-    "DESCRIPTION": "Lose 2 HP. NL Reburial ALL cards in your draw pile. NL Recall !M! . NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Lose 2 HP. NL Reburial ALL cards in your draw pile. NL Recall !M! . "
+    "DESCRIPTION": "Lose 2 HP. NL Reburial ALL cards in your draw pile. NL Recall !M!. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Lose 2 HP. NL Reburial ALL cards in your draw pile. NL Recall !M!."
   },
   "Scapegoat:EmergencyCall": {
     "NAME": "On Call",
-    "DESCRIPTION": "Lose 3 HP. NL Recall !M! . NL Exhaust. "
+    "DESCRIPTION": "Lose 3 HP. NL Recall !M!. NL Exhaust."
   },
   "Scapegoat:Vibration": {
     "NAME": "Vibration",
-    "DESCRIPTION": "Deal !D! damage. NL Add !M!  *Shard to your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Shard to your draw pile."
   },
   "Scapegoat:Shard": {
     "NAME": "Shard",
-    "DESCRIPTION": "Recall !M! . NL Spark:  Recall !M!  Exhaust. NL Exhaust."
+    "DESCRIPTION": "Recall !M!. NL Spark: Recall !M! Exhaust. NL Exhaust."
   },
   "Scapegoat:Adaptability": {
     "NAME": "Adaptability",
@@ -233,7 +233,7 @@
   },
   "Scapegoat:Gnaw": {
     "NAME": "Gnaw",
-    "DESCRIPTION": "Deal !D! damage.  NL If you break an enemy's Block. Heal !M! HP. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If you break an enemy's Block. Heal !M! HP. NL Exhaust."
   },
   "Scapegoat:SacrificeGarrotte": {
     "NAME": "Slaughter",
@@ -241,11 +241,11 @@
   },
   "Scapegoat:ExtraordinaryFood": {
     "NAME": "Energency Provisions",
-    "DESCRIPTION": "Exhaust up to 2 cards in your hand. Heal !M! HP for each card Exhaust. NL Exhaust."
+    "DESCRIPTION": "Exhaust up to 2 cards in your hand. Heal !M! HP for each card Exhausted. NL Exhaust."
   },
   "Scapegoat:AimingShot": {
     "NAME": "Aim",
-    "DESCRIPTION": "Apply !M! Bullet. NL All the random Attack target this enemy. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Bullet. NL All random Attacks now target this enemy. NL Exhaust."
   },
   "Scapegoat:Binding": {
     "NAME": "Binding",
@@ -253,11 +253,11 @@
   },
   "Scapegoat:SacrificeReplacement": {
     "NAME": "Replacement",
-    "DESCRIPTION": "Stop lose HP by yourself this turn. NL When trigger, add !M!  *Shard  to your draw pile. NL Exhaust."
+    "DESCRIPTION": "Stop lose HP by yourself this turn. NL When trigger, add !M! *Shard to your draw pile. NL Exhaust."
   },
   "Scapegoat:DrinkPoisonToEndThirst": {
     "NAME": "Harm Than",
-    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Heal !M! HP. NL Lose 12 HP at the next end of your turn. NL Exhaust. "
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Heal !M! HP. NL Lose 12 HP at the next end of your turn. NL Exhaust."
   },
   "Scapegoat:MarkerCapture": {
     "NAME": "Imprint Marker",
@@ -274,25 +274,25 @@
   "Scapegoat:PriorRepair": {
     "NAME": "Prior Repair",
     "DESCRIPTION": "At the start of your next X turn, draw !M! and Gain [E] . NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "At the start of your next X+1 turn, draw !M! and Gain [E] . NL Exhaust."
+    "UPGRADE_DESCRIPTION": "At the start of your next X+1 turn, draw !M! and Gain [E]. NL Exhaust."
   },
   "Scapegoat:SequinShard": {
     "NAME": "Sequin Shard",
     "DESCRIPTION": "Unplayable. NL Spark: Gain [E] ,Gain !M! Return .",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL Spark: Gain [E] [E] ,Gain !M! Return ."
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Spark: Gain [E] [E], Gain !M! Return."
   },
   "Scapegoat:StockUp": {
     "NAME": "Ace In The Hole",
-    "DESCRIPTION": "Recall !M! . NL If only one was selected, add 2 copies of that cards into your draw pile. NL Exhaust. "
+    "DESCRIPTION": "Recall !M!. NL If only one was selected, add 2 copies of that cards into your draw pile. NL Exhaust."
   },
   "Scapegoat:BaresTheSoul": {
     "NAME": "Soul Stripping",
-    "DESCRIPTION": "Strip the soul of an enemy which has !M! HP. NL The damage taken by this soul is now returned to the enemy twice as much.(Overflow damage will also return.) NL Exhaust."
+    "DESCRIPTION": "Strip the soul of an enemy which has !M! HP. NL The damage taken by this soul is now returned to the enemy twice as much. (Overflow damage will also return). NL Exhaust."
   },
   "Scapegoat:GunSwordDance": {
     "NAME": "Gun And Sword",
-    "DESCRIPTION": "Add X *Glass Bullet  into your hand. NL Apply !M! Bullet to ALL enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add X+1 *Glass Bullet  into your hand. NL Apply !M! Bullet to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Add X *Glass Bullet into your hand. NL Apply !M! Bullet to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X+1 *Glass Bullet into your hand. NL Apply !M! Bullet to ALL enemies. NL Exhaust."
   },
   "Scapegoat:EmergencyMeasurement": {
     "NAME": "Emergency Action",
@@ -300,16 +300,16 @@
   },
   "Scapegoat:AbyssMemory": {
     "NAME": "Abyss Memory",
-    "DESCRIPTION": "Reburial !M! .  NL Recall !M! .  NL Exhaust."
+    "DESCRIPTION": "Reburial !M!. NL Recall !M!. NL Exhaust."
   },
   "Scapegoat:BloodyCrown": {
     "NAME": "Crooked Crown",
-    "DESCRIPTION": "If the enemy has not Stunned, lose !M! HP and stun this enemy. NL Exhaust."
+    "DESCRIPTION": "If the enemy has not been Stunned, lose !M! HP and stun this enemy. NL Exhaust."
   },
   "Scapegoat:WashAway": {
     "NAME": "Cleanse",
-    "DESCRIPTION": "At the start of your turn, if you have debuff, remove one of them and Reburial !M! . ",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, if you have debuff, remove one of them and Reburial !M! ."
+    "DESCRIPTION": "At the start of your turn, if you have any debuffs, remove one of them and Reburial !M!.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, if you have any debuffs, remove one of them and Reburial !M!."
   },
   "Scapegoat:PunishmentForm": {
     "NAME": "Punishment Form",
@@ -317,7 +317,7 @@
   },
   "Scapegoat:SelfSacrifice": {
     "NAME": "Self Sacrifice",
-    "DESCRIPTION": "Retain. NL Lose 10 HP, raise your Max HP by !M! . NL If this card will kill you, heal ALL of your HP and this card gain Fleeting. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Lose 10 HP, raise your Max HP by !M!. NL If this card would kill you, heal ALL of your HP and this card gains Fleeting. NL Exhaust."
   },
   "Scapegoat:Shame": {
     "NAME": "Frame",
@@ -337,8 +337,8 @@
   },
   "Scapegoat:Awe": {
     "NAME": "Awe",
-    "DESCRIPTION": "Apply !M! Vulnerable. NL If the enemy's intends to attack, apply !M! weak. ",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL If the enemy's intends to attack, apply !M! weak. "
+    "DESCRIPTION": "Apply !M! Vulnerable. NL If the enemy's intends to attack, apply !M! weak.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL If the enemy's intends to attack, apply !M! weak."
   },
   "Scapegoat:Deflagration": {
     "NAME": "Deflagration",
@@ -347,16 +347,16 @@
   "Scapegoat:CounterAttack": {
     "NAME": "Counter",
     "DESCRIPTION": "Double ALL damage sources from you when outside of your turn.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Double ALL damage sources from you when outside of your turn. "
+    "UPGRADE_DESCRIPTION": "Innate. NL Double ALL damage sources from you when outside of your turn."
   },
   "Scapegoat:Asterism": {
     "NAME": "Asterism",
-    "DESCRIPTION": "Whenever you Recall card , Gain !M! Metallicize. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Whenever you Recall card , Gain !M! Metallicize."
+    "DESCRIPTION": "Whenever you Recall card, Gain !M! Metallicize. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you Recall card, Gain !M! Metallicize."
   },
   "Scapegoat:TemporaryCollaboration": {
     "NAME": "Short-term Cooperation",
-    "DESCRIPTION": "At the start of your turn, Reburial !M! , Recall !2M! ."
+    "DESCRIPTION": "At the start of your turn, Reburial !M!, Recall !2M!."
   },
   "Scapegoat:Alpha2": {
     "NAME": "Alpha",
