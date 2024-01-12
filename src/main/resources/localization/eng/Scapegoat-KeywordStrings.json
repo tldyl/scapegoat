@@ -54,7 +54,7 @@
       "bloodstain"
     ],
     "PROPER_NAME": "Blood",
-    "DESCRIPTION": "Your next #bX combat(s) will be paid for by #pBlood.  NL The cost of #rBlood：At the start of combat, shuffle #b2 #yWounds / #yDazed / #yCost into your draw pile and gain #b1 #yWeak / #yFrail / #yVulnerable. NL For each #b1 #pBlood you have, increase the damage you deal by #b10%. NL #pBlood is reduced by #b1 at the end of combat."
+    "DESCRIPTION": "Your next #bX combat(s) will be paid for by #pBlood. NL The cost of #rBlood：At the start of combat, shuffle #b2 #yWounds / #yDazed / #yCost into your draw pile and gain #b1 #yWeak / #yFrail / #yVulnerable. NL For each #b1 #pBlood you have, increase the damage you deal by #b10%. NL #pBlood is reduced by #b1 at the end of combat."
   },
   {
     "NAMES": [
