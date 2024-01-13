@@ -209,7 +209,7 @@
   },
   "Scapegoat:Shard": {
     "NAME": "Shard",
-    "DESCRIPTION": "Recall !M!. NL Spark: Recall !M! Exhaust. NL Exhaust."
+    "DESCRIPTION": "Recall !M!. NL Exhaust. NL Spark: Recall !M! then Exhaust."
   },
   "Scapegoat:Adaptability": {
     "NAME": "Adaptability",
