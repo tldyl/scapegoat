@@ -4,42 +4,42 @@
       "return"
     ],
     "PROPER_NAME": "Return",
-    "DESCRIPTION": "When receiving #yAttack damage ,deals same damage back. NL Then reduce the Return by #b1 ."
+    "DESCRIPTION": "When receiving #yAttack damage, deal the same damage back. NL Then reduce the Return by #b1."
   },
   {
     "NAMES": [
       "reburial"
    ],
     "PROPER_NAME": "Reburial",
-    "DESCRIPTION": "Discard set amount of cards from the top of your draw pile.(If the number of cards in your draw pile is less than the specified number, discard them ALL)."
+    "DESCRIPTION": "Discard a set amount of cards from the top of your draw pile. (If the number of cards in your draw pile is less than the specified number, discard them ALL)."
   },
   {
     "NAMES": [
       "recall"
     ],
     "PROPER_NAME": "Recall",
-    "DESCRIPTION": "View specified number of random cards in your discard pile, you can choose to add any of them into your hand."
+    "DESCRIPTION": "View the specified number of random cards in your discard pile, you can choose to add any of them into your hand."
   },
   {
     "NAMES": [
       "spark"
     ],
     "PROPER_NAME": "Spark",
-    "DESCRIPTION": "When the card is #yReburial or #yExhausted, trigger the effect. "
+    "DESCRIPTION": "When the card is #yReburial or #yExhausted, trigger the effect."
   },
   {
     "NAMES": [
       "bullet"
     ],
     "PROPER_NAME": "Bullet",
-    "DESCRIPTION": "Creatures with #yBullet takes more amount of #yBullet damage. NL Each turn, Bullet is reduced by #b1 ."
+    "DESCRIPTION": "Creatures with #yBullet take #yBullet more damage. NL Each turn, Bullet is reduced by #b1."
   },
   {
     "NAMES": [
       "finale"
     ],
     "PROPER_NAME": "Finale",
-    "DESCRIPTION": "At the start of a combat or shuffle, this card is on the bottom of your draw pile."
+    "DESCRIPTION": "At the start of combat or after shuffling, this card goes to the bottom of your draw pile."
   },
   {
     "NAMES": [
@@ -54,7 +54,7 @@
       "bloodstain"
     ],
     "PROPER_NAME": "Blood",
-    "DESCRIPTION": "Your next #bX combat(s) will be paid for by #pBlood.  NL The cost of #rBlood ：At the start of combat, shuffle #b2 #yWounds / #yDazed / #yCost into your draw pile and gain #b1 #yWeak / #yFrail / #yVulnerable. NL For each #b1 #pBlood you have, increase #b10% damage you deal. NL #pBlood is reduced by #b1 at the end of combat."
+    "DESCRIPTION": "Your next #bX combat(s) will be paid for by #pBlood. NL The cost of #rBlood：At the start of combat, shuffle #b2 #yWounds / #yDazed / #yCost into your draw pile and gain #b1 #yWeak / #yFrail / #yVulnerable. NL For each #b1 #pBlood you have, increase the damage you deal by #b10%. NL #pBlood is reduced by #b1 at the end of combat."
   },
   {
     "NAMES": [
