@@ -3,7 +3,7 @@
     "NAME": "黄铜烟斗",
     "FLAVOR": "空空的黄铜烟斗，磨损的痕迹很严重，看起来已经使用了很久。",
     "DESCRIPTIONS": [
-      "在每场战斗开始时， #y归葬 #b4 ， #y回溯 #b1 。"
+      "在每场战斗开始时， #y归葬 #b4 ， #y回溯 #b2 。"
     ]
   },
   "Scapegoat:BurningPipe": {
@@ -29,7 +29,7 @@
   },
   "Scapegoat:MarkOfThePayback": {
     "NAME": "赋还刻痕",
-    "FLAVOR": "欲加之罪，何患无辞——埃罗恩·戕罚。",
+    "FLAVOR": "“欲加之罪，何患无辞”——埃罗恩·戕罚。",
     "DESCRIPTIONS": [
       "#y赋还 造成的伤害增加 #b25％ 。"
     ]

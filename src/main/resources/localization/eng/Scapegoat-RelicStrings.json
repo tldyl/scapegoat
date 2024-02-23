@@ -3,7 +3,7 @@
     "NAME": "Bronze Pipe",
     "FLAVOR": "The empty brass pipe it's badly worn and looks ancient.",
     "DESCRIPTIONS": [
-      "At the start of each combat, #yReburial #b4 , #yRecall #b1 ."
+      "At the start of each combat, #yReburial #b4 , #yRecall #b2 ."
     ]
   },
   "Scapegoat:BurningPipe": {
@@ -29,7 +29,7 @@
   },
   "Scapegoat:MarkOfThePayback": {
     "NAME": "Signet of Return",
-    "FLAVOR": "He who has a mind to beat his dog will easily find a stick - Iron Overlord. ",
+    "FLAVOR": "\"He who has a mind to beat his dog will easily find a stick\" - Iron Overlord. ",
     "DESCRIPTIONS": [
       "#yReturn deals #b25% more damage. "
     ]

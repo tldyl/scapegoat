@@ -29,6 +29,6 @@ public class BronzePipe extends CustomRelic {
         this.flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToBot(new BurialAction(4));
-        addToBot(new RecallAction(1));
+        addToBot(new RecallAction(2));
     }
 }
